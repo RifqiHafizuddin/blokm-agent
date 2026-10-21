@@ -111,7 +111,7 @@ def cluster_candidates(candidates: list[dict]) -> list[dict]:
 
 
 def mention_record(c: dict) -> dict:
-    keep = ("source_type", "source_url", "source_title", "published_at", "views", "quote", "area_hint")
+    keep = ("source_type", "source_url", "source_title", "published_at", "views", "quote", "area_hint", "recent")
     return {k: c[k] for k in keep if c.get(k) not in (None, "")}
 
 

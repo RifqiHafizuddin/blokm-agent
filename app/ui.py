@@ -83,14 +83,35 @@ async def group(table):
 
 # ---------- trending / work spots ----------
 
-async def trending(category):
-    data = await agent.call_tool("trending", {"k": 10, "category": None if category == "all" else category})
-    rows = []
+BUZZ_INTRO = {
+    "now": "Momentum from the **last 60 days**: views per day on recent videos plus past-month food articles. "
+           "Old hits don't count here.",
+    "new": "**🆕 opening** = a source says it just opened (quote shown) · **👀 spotted** = first mentioned "
+           "anywhere in the last 120 days.",
+    "favorites": "All-time most-covered places, with no time decay: the Blok M classics.",
+}
+
+
+async def buzz(mode, category):
+    data = await agent.call_tool("trending", {"mode": mode, "k": 10,
+                                              "category": None if category == "all" else category})
+    rows = [BUZZ_INTRO[mode]]
     for i, r in enumerate(data["results"], 1):
         b = r["buzz"]
-        top = f" · [top video]({r['top_video']})" if r.get("top_video") else ""
-        rows.append(f"{i}. " + place_md(r, f" · 🔥 {r['viral_score']}") +
-                    f"  \n{b['n_videos']} videos, {b['n_articles']} articles, last seen {b['last_seen']}{top}")
+        video = f" · [latest video]({r['latest_video']})" if r.get("latest_video") else ""
+        if mode == "now":
+            badge = f" · 🔥 {r['trending_score']}"
+            line = f"{b['n_recent_videos']} videos in 60 days ({b['views_60d']:,} views), {b['n_recent_articles']} recent articles"
+        elif mode == "new":
+            badge = " · 🆕 opening" if r["new"] == "opening" else " · 👀 spotted"
+            quote = r["new_evidence"][0]["quote"] if r.get("new_evidence") else ""
+            line = f"first seen {b['first_seen'] or 'recently'}" + (f" · “{quote[:140]}”" if quote else "")
+        else:
+            badge = f" · ⭐ {r['favorite_score']}"
+            line = f"{b['n_videos']} videos, {b['n_articles']} articles overall"
+        rows.append(f"{i}. " + place_md(r, badge) + f"  \n{line}{video}")
+    if len(rows) == 1:
+        rows.append("Nothing in this view yet.")
     return "\n\n".join(rows)
 
 
@@ -107,7 +128,7 @@ async def work(halal_only):
 def map_html() -> str:
     pts = [{"lat": p["lat"], "lon": p["lon"], "name": p["name"], "cat": p["category"],
             "color": CATEGORY_COLORS.get(p["category"], "#495057"), "summary": p["summary"],
-            "precision": p["location_precision"], "viral": p["viral"]["score"]}
+            "precision": p["location_precision"], "viral": p["buzz"]["trending_score"]}
            for p in places().values() if p["location_precision"] != "area"]
     doc = f"""<!doctype html><html><head><meta charset="utf-8">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
@@ -147,7 +168,7 @@ with gr.Blocks(title="Food Scout: Blok M") as demo:
             bot = gr.Chatbot(height=480)
             box = gr.Textbox(placeholder='e.g. "ramen halal yang enak" or "cozy cafe for nugas under 50k"', label="Ask Food Scout")
             with gr.Row():
-                for q in ["What's viral in Blok M right now?", "Cafe buat nugas yang ada colokan",
+                for q in ["What's viral in Blok M right now?", "Ada tempat makan baru di Blok M?", "Cafe buat nugas yang ada colokan",
                           "Halal ramen near Melawai", "Cheap eats under Rp30k"]:
                     gr.Button(q, size="sm").click(chat, [gr.State(q), bot, turns], [bot, turns, box])
             box.submit(chat, [box, bot, turns], [bot, turns, box])
@@ -174,11 +195,15 @@ with gr.Blocks(title="Food Scout: Blok M") as demo:
             gp = gr.Button("Pick for the group", variant="primary")
             gout = gr.Markdown()
             gp.click(group, [table], [gout])
-        with gr.Tab("🔥 Trending"):
+        with gr.Tab("🔥 Buzz"):
             cat = gr.Dropdown(["all", "cafe", "restaurant", "street_food", "dessert", "bakery"], value="all", label="Category")
-            tout = gr.Markdown()
-            cat.change(trending, [cat], [tout])
-            demo.load(trending, [cat], [tout])
+            with gr.Tabs():
+                for mode, label in (("now", "🔥 Trending now"), ("new", "🆕 New spots"), ("favorites", "⭐ Favorites")):
+                    with gr.Tab(label):
+                        out = gr.Markdown()
+                        m = gr.State(mode)
+                        cat.change(buzz, [m, cat], [out])
+                        demo.load(buzz, [m, cat], [out])
         with gr.Tab("💻 Work Spots"):
             halal = gr.Checkbox(label="Halal only")
             wout = gr.Markdown()

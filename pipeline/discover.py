@@ -4,6 +4,7 @@ Collects videos (with view counts) and articles about Blok M food, then asks an 
 to extract the specific places each one mentions, with a supporting quote."""
 import os
 from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timedelta, timezone
 
 from common import RAW, cached, http, llm_json, write_json
 
@@ -33,6 +34,13 @@ TAVILY_QUERIES = [
     "kuliner basement Blok M Square",
     "makanan viral TikTok Blok M",
 ]
+# Freshness: newest-first YouTube searches and past-month web searches, for "trending now" and "new spots"
+RECENT_DAYS = 120
+RECENT_YT_QUERIES = ["kuliner blok m", "makanan viral blok m", "cafe baru blok m", "tempat makan baru blok m",
+                     "kuliner baru blok m", "jajanan viral blok m", "new cafe blok m", "blok m food"]
+RECENT_TAVILY_QUERIES = ["cafe baru buka di Blok M", "tempat makan baru di Blok M", "kuliner viral Blok M terbaru",
+                         "restoran baru Melawai Little Tokyo", "tenant baru M Bloc Space",
+                         "makanan viral TikTok Blok M bulan ini"]
 AREA_KEYWORDS = ["blok m", "blokm", "melawai", "little tokyo", "m bloc", "mbloc",
                  "panglima polim", "bulungan", "kebayoran baru"]
 PUBLISHED_AFTER = "2024-01-01T00:00:00Z"
@@ -55,12 +63,19 @@ def yt_get(endpoint: str, **params) -> dict:
     return http("GET", f"https://www.googleapis.com/youtube/v3/{endpoint}", params=params).json()
 
 
+def recent_after() -> str:
+    """Start of the freshness window, at day granularity so the cache refreshes once a day."""
+    return (datetime.now(timezone.utc) - timedelta(days=RECENT_DAYS)).strftime("%Y-%m-%dT00:00:00Z")
+
+
 def fetch_videos() -> list[dict]:
     ids = {}
-    for q, order in YT_QUERIES:
-        res = cached("youtube_search", f"{q}|{order}|{PUBLISHED_AFTER}", lambda: yt_get(
+    searches = [(q, order, PUBLISHED_AFTER) for q, order in YT_QUERIES]
+    searches += [(q, "date", recent_after()) for q in RECENT_YT_QUERIES]
+    for q, order, after in searches:
+        res = cached("youtube_search", f"{q}|{order}|{after}", lambda: yt_get(
             "search", part="snippet", q=q, type="video", maxResults=50, order=order,
-            regionCode="ID", relevanceLanguage="id", publishedAfter=PUBLISHED_AFTER))
+            regionCode="ID", relevanceLanguage="id", publishedAfter=after))
         for item in res.get("items", []):
             ids.setdefault(item["id"]["videoId"], q)
 
@@ -93,17 +108,24 @@ def fetch_videos() -> list[dict]:
 
 def fetch_articles() -> list[dict]:
     seen = {}
-    for q in TAVILY_QUERIES:
-        res = cached("tavily", q, lambda: http(
+    today = datetime.now(timezone.utc).date().isoformat()
+    searches = [(q, None) for q in TAVILY_QUERIES] + [(q, "month") for q in RECENT_TAVILY_QUERIES]
+    for q, time_range in searches:
+        body = {"query": q, "search_depth": "basic", "max_results": 8,
+                "include_raw_content": True, "country": "indonesia"}
+        if time_range:
+            body["time_range"] = time_range
+        key = q if not time_range else f"{q}|{time_range}|{today}"
+        res = cached("tavily", key, lambda: http(
             "POST", "https://api.tavily.com/search",
-            headers={"Authorization": f"Bearer {os.environ['TAVILY_API_KEY']}"},
-            json={"query": q, "search_depth": "basic", "max_results": 8,
-                  "include_raw_content": True, "country": "indonesia"},
+            headers={"Authorization": f"Bearer {os.environ['TAVILY_API_KEY']}"}, json=body,
         ).json())
         for r in res.get("results", []):
             text = r.get("raw_content") or r.get("content") or ""
             if r["url"] not in seen and any(k in text.lower() for k in AREA_KEYWORDS):
-                seen[r["url"]] = {"url": r["url"], "title": r.get("title", ""), "content": text, "query": q}
+                seen[r["url"]] = {"url": r["url"], "title": r.get("title", ""), "content": text, "query": q,
+                                  "recent": bool(time_range), "published_date": r.get("published_date"),
+                                  "retrieved": today}
     print(f"Tavily: {len(seen)} relevant articles")
     return list(seen.values())
 
@@ -131,7 +153,8 @@ def main():
                             "published_at": v["published_at"], "views": v["views"]}))
     for a in articles:
         text = f"ARTICLE TITLE: {a['title']}\nCONTENT:\n{a['content'][:7000]}"
-        jobs.append((text, {"source_type": "article", "source_url": a["url"], "source_title": a["title"]}))
+        jobs.append((text, {"source_type": "article", "source_url": a["url"], "source_title": a["title"],
+                            "recent": a.get("recent", False), "published_at": a.get("published_date")}))
 
     print(f"Extracting places from {len(jobs)} documents (Groq + Gemini Flash Lite in parallel)...")
 

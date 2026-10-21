@@ -5,3 +5,4 @@ __pycache__/
 # raw API responses and cache (third-party content, regenerable)
 data/raw/
 data/cache/
+data/chroma/

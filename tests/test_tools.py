@@ -66,8 +66,22 @@ def test_every_high_confidence_signal_has_evidence():
                 assert s["evidence"], f"{p['name']}.{name} is {s['confidence']} without evidence"
 
 
-def test_trending_sorted_by_viral_score():
-    scores = [r["viral_score"] for r in call("trending", {"k": 10})["results"]]
+def test_trending_now_is_recent_momentum():
+    data = call("trending", {"mode": "now", "k": 10})
+    scores = [r["trending_score"] for r in data["results"]]
+    assert scores and scores == sorted(scores, reverse=True) and scores[0] == 100
+    assert all(r["buzz"]["n_recent_videos"] or r["buzz"]["n_recent_articles"] for r in data["results"])
+
+
+def test_new_spots_have_a_reason():
+    for r in call("trending", {"mode": "new", "k": 20})["results"]:
+        assert r["new"] in ("opening", "spotted")
+        if r["new"] == "opening":
+            assert r["new_evidence"], "an 'opening' badge must carry its quote"
+
+
+def test_favorites_sorted_all_time():
+    scores = [r["favorite_score"] for r in call("trending", {"mode": "favorites", "k": 10})["results"]]
     assert len(scores) == 10 and scores == sorted(scores, reverse=True) and scores[0] == 100
 
 

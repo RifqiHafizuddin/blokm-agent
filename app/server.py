@@ -28,9 +28,18 @@ def places() -> dict:
 
 @lru_cache(maxsize=1)
 def chroma():
+    """In-memory Chroma collections, loaded from data/vectors.json (built by pipeline/index.py)."""
     import chromadb
-    client = chromadb.PersistentClient(path=str(DATA / "chroma"))
-    return client.get_collection("places_text"), client.get_collection("places_photo")
+    client = chromadb.EphemeralClient()
+    vectors = json.loads((DATA / "vectors.json").read_text(encoding="utf-8"))
+    cols = []
+    for name in ("places_text", "places_photo"):
+        col = client.get_or_create_collection(name)
+        v = vectors[name]
+        if v["ids"] and col.count() == 0:
+            col.add(**{k: v[k] for k in ("ids", "embeddings", "metadatas", "documents") if k in v})
+        cols.append(col)
+    return tuple(cols)
 
 
 @lru_cache(maxsize=1)
@@ -70,7 +79,9 @@ def card(p: dict, **extra) -> dict:
         "halal": ("not confirmed" if s["halal"]["value"] == "unknown"
                   else f'{s["halal"]["value"]} ({s["halal"]["confidence"]} confidence)'),
         "vegetarian_friendly": s["vegetarian_friendly"]["value"],
-        "work_from_cafe_score": p["wfc_score"], "viral_score": p["viral"]["score"],
+        "work_from_cafe_score": p["wfc_score"], "trending_score": p["buzz"]["trending_score"],
+        "favorite_score": p["buzz"]["favorite_score"],
+        "new": p["buzz"]["new"]["kind"] if p["buzz"]["new"] else None,
         "vibe": p["vibe_tags"], "summary": p["summary"],
         "location": p.get("address") or p.get("area_hint") or "Blok M",
         "location_precision": p["location_precision"],
@@ -137,7 +148,9 @@ def get_place(name_or_id: str) -> str:
     signals = {k: {"value": v["value"], "confidence": v["confidence"], "evidence": v["evidence"][:4]}
                for k, v in p["signals"].items()}
     full = card(p, signals=signals, price_evidence=p["price_evidence"][:2],
-                videos=sorted(p["videos"], key=lambda v: -v["views"])[:3], viral=p["viral"])
+                videos=sorted(p["videos"], key=lambda v: -v["views"])[:3],
+                buzz={k: v for k, v in p["buzz"].items() if k != "new"},
+                new_evidence=(p["buzz"]["new"] or {}).get("evidence", []))
     return json.dumps({"status": "found", "place": full}, ensure_ascii=False, indent=2)
 
 
@@ -166,16 +179,36 @@ def vibe_match_photo(image_path: str, text_hint: Optional[str] = None, w_photo: 
 
 
 @mcp.tool()
-def trending(k: int = 10, category: Optional[str] = None) -> str:
-    """Viral Radar: Blok M places ranked by recent buzz (YouTube views weighted by recency,
-    plus food-media mentions). Optionally filter by category."""
+def trending(mode: str = "now", k: int = 10, category: Optional[str] = None) -> str:
+    """Buzz in Blok M, in three separate views:
+    mode="now"       what is hot RIGHT NOW: momentum from videos in the last 60 days (views per day)
+                     and food-media articles from the past month. Use for "viral", "trending", "lagi hits".
+    mode="new"       NEW spots: places a source says just opened ("baru buka", grand opening; quote included),
+                     or first mentioned anywhere in the last 120 days. Use for "new", "baru", "just opened".
+    mode="favorites" all-time favorites: most-covered places overall, no time decay. Use for "best known",
+                     "legendary", "must-try classics".
+    Optionally filter by category."""
     ps = [p for p in places().values() if not category or p["category"] == category]
-    ps.sort(key=lambda p: -p["viral"]["score"])
+    b = lambda p: p["buzz"]  # noqa: E731
+    if mode == "new":
+        ps = [p for p in ps if b(p)["new"]]
+        ps.sort(key=lambda p: (b(p)["new"]["kind"] != "opening", -b(p)["trending_score"], b(p)["first_seen"] or ""))
+    elif mode == "favorites":
+        ps.sort(key=lambda p: -b(p)["favorite_score"])
+    else:
+        mode = "now"
+        ps = [p for p in ps if b(p)["trending_score"] > 0]
+        ps.sort(key=lambda p: -b(p)["trending_score"])
     ps = [places()[pid] for pid in unique_by_name([p["id"] for p in ps])]
-    out = [card(p, buzz={k2: p["viral"][k2] for k2 in ("views_90d", "n_videos", "n_articles", "last_seen")},
-                top_video=max(p["videos"], key=lambda v: v["views"])["url"] if p["videos"] else None)
+
+    def latest_video(p):
+        return max(p["videos"], key=lambda v: v["published_at"])["url"] if p["videos"] else None
+
+    out = [card(p, buzz={k2: b(p)[k2] for k2 in ("views_60d", "n_recent_videos", "n_recent_articles",
+                                                  "n_videos", "n_articles", "first_seen", "last_seen")},
+                new_evidence=(b(p)["new"] or {}).get("evidence", [])[:2], latest_video=latest_video(p))
            for p in ps[:k]]
-    return json.dumps({"results": out}, ensure_ascii=False, indent=2)
+    return json.dumps({"mode": mode, "results": out}, ensure_ascii=False, indent=2)
 
 
 @mcp.tool()
