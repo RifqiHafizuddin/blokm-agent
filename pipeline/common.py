@@ -114,6 +114,29 @@ def _google_json(model: str, system: str, user: str, json_mode: bool) -> dict:
     return _parse_json(parts[-1]["text"])
 
 
+def vision_json(prompt: str, image_bytes: bytes, mime: str = "image/jpeg", cache_key: str = "") -> dict:
+    """Gemini Flash Lite on one image, returning JSON; cached by cache_key (e.g. the image URL)."""
+    import base64
+
+    def call():
+        resp = http(
+            "POST",
+            f"https://generativelanguage.googleapis.com/v1beta/models/{FLASH_LITE_MODEL}:generateContent",
+            headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"]},
+            json={
+                "contents": [{"parts": [
+                    {"text": prompt},
+                    {"inline_data": {"mime_type": mime, "data": base64.b64encode(image_bytes).decode()}},
+                ]}],
+                "generationConfig": {"temperature": 0.1, "responseMimeType": "application/json"},
+            },
+            retries=4,
+        )
+        return _parse_json(resp.json()["candidates"][0]["content"]["parts"][-1]["text"])
+
+    return cached("vision", prompt + "|" + cache_key, call)
+
+
 PROVIDERS = {
     "groq": _groq_json,
     "flash": lambda s, u: _google_json(FLASH_LITE_MODEL, s, u, json_mode=True),

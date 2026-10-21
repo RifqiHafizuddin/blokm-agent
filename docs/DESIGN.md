@@ -261,3 +261,19 @@ Stretch goals: Telegram bot front-end, weekly scheduled refresh (GitHub Actions)
 ---
 
 *Attribution: map data © OpenStreetMap contributors (ODbL). Video data via the YouTube Data API.*
+
+---
+
+## 12. Build log: decisions that changed during the build (2026-10-21)
+
+| Planned | Built | Why |
+|---|---|---|
+| Gemma 4 as the main fallback | Groq Qwen → Gemini 3.5 Flash Lite → Gemma | Gemma returned repeated server errors; Flash Lite is reliable and has 250K tokens/min |
+| Groq for structuring | Gemini Flash Lite for structuring (5 places/call), Groq for discovery | Groq's 8K tokens/min is too slow for long evidence documents |
+| Nominatim geocodes new places by name | Name lookup, then a **landmark table** (Blok M Square, M Bloc, Melawai…), then "area" | Nominatim only knows places that are already in OSM |
+| — | **enrich.py**: one targeted Tavily search per place | Multi-place vlogs gave one-line evidence; summaries were too shallow |
+| — | Evidence ordered descriptive-first in the LLM document | Vlog place lists were filling the character budget |
+| — | Photo-only evidence capped at **low** confidence | A vision guess flagged a bakmi stall as non-halal from an ambiguous thumbnail |
+| `group_pick` = one LLM "advocate" per member + mediator | Deterministic maximin tool + one LLM call to explain it | Same behaviour, far fewer LLM calls under free quotas |
+| Agent spawns the MCP server per message | In-process MCP client (FastMCP in-memory transport) | Models load once; tools are still discovered via MCP |
+| — | Results keep one entry per name | Chains (e.g. Kopi Kenangan) have several OSM nodes |
