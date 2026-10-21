@@ -1,17 +1,6 @@
----
-title: Food Scout Blok M
-emoji: 🍜
-colorFrom: yellow
-colorTo: red
-sdk: gradio
-sdk_version: 6.9.0
-python_version: "3.12"
-app_file: app/ui.py
-pinned: false
-short_description: Agentic multimodal food guide for Blok M, Jakarta
----
-
 # 🍜 Food Scout: Blok M
+
+**▶ Live demo: [rifqihafizuddin.github.io/blokm-agent](https://rifqihafizuddin.github.io/blokm-agent/)**: no install, runs in your browser.
 
 An **agentic, multimodal food guide** for Blok M, Jakarta, built entirely on **free, real data**.
 Ask in plain language ("ramen halal yang enak", "cozy cafe for nugas under 50k"), upload a photo to find
@@ -40,6 +29,19 @@ with a confidence level, so the app never presents a guess as a fact.
 | Evidence-backed signals | halal 39 · long-stay 19 · quiet 17 · vegetarian 14 · wifi 11 · price 18 places |
 | Buzz | 81 places with momentum in the last 60 days · 17 confirmed new openings (with quotes) · 39 newly spotted |
 
+## How it's hosted (free, serverless)
+
+The live demo is a **static site on GitHub Pages** (`web/`). There's no backend:
+- **Search and Vibe Match run in the visitor's browser**: MiniLM and CLIP via [transformers.js](https://github.com/huggingface/transformers.js).
+  These are the same models used to build the index, so browser vectors match the Python ones
+  (identical to 5 decimals for text; 0.99 cosine for photos).
+- **Buzz, Work Spots, Group Pick and Map** are computed from `web/data/*.json` in JavaScript.
+- **Chat** calls Gemini with the visitor's **own free API key** (kept only in their browser) and uses the same tool functions.
+- **A weekly GitHub Action** (`.github/workflows/refresh.yml`) reruns the pipeline with API keys stored as encrypted
+  repo secrets, commits the new data, and redeploys the site, so "Trending now" stays current.
+
+The full Python app (FastMCP server + ReAct agent + Gradio) is in `app/` for running locally.
+
 ## Architecture
 
 ```
@@ -53,6 +55,7 @@ OFFLINE PIPELINE (pipeline/)                                   ONLINE APP (app/)
    photos       vision LLM on thumbnails (low confidence only)  Gradio UI (ui.py)
  6 score        work-from-cafe score; trending / new / favorites
  7 index        MiniLM text + CLIP photo vectors → JSON → in-memory Chroma
+ 8 export_web   compact JSON for the static site (web/data/)
 ```
 
 **Trust rules.** The LLM cites sources, but *code* decides confidence: quotes are checked against the source
@@ -67,7 +70,7 @@ the last 120 days, so "trending now" reflects current momentum rather than last 
 are deterministic, so a chat turn costs only 2-4 LLM calls. When every LLM's quota runs out, the chat falls
 back to a plain search instead of failing.
 
-## Run it locally
+## Run the Python app locally
 
 ```bash
 python -m venv .venv && .venv/Scripts/pip install -r requirements.txt   # Windows; use .venv/bin on macOS/Linux
@@ -75,7 +78,9 @@ cp .env.example .env    # add GEMINI_API_KEY and GROQ_API_KEY (YouTube/Tavily ke
 python app/ui.py
 ```
 
-Rebuild the data: `cd pipeline && python seed_osm.py && python discover.py && python resolve.py && python collect.py && python enrich.py && python structure.py && python photos.py && python score.py && python index.py`
+Rebuild the data: `cd pipeline && python seed_osm.py && python discover.py && python resolve.py && python collect.py && python enrich.py && python structure.py && python photos.py && python score.py && python index.py && python export_web.py`
+
+Static site locally: `cd web && python -m http.server` then open http://localhost:8000
 
 Tests: `python -m pytest tests` (13 MCP tool tests, no LLM calls).
 
