@@ -1,0 +1,7 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+# raw API responses and cache (third-party content, regenerable)
+data/raw/
+data/cache/

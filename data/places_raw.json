@@ -1,0 +1,5916 @@
+[
+  {
+    "id": "osm-node-2174682928",
+    "name": "Taco Local",
+    "lat": -6.2505445,
+    "lon": 106.7979146,
+    "category": "restaurant",
+    "cuisine": [
+      "mexican"
+    ],
+    "osm_tags": {
+      "amenity": "restaurant",
+      "cuisine": "mexican",
+      "website": "https://www.tacolocal.com/",
+      "addr:street": "Panglima Polim 5",
+      "addr:housenumber": "38"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-2700937811",
+    "name": "Holy Cow",
+    "lat": -6.2395341,
+    "lon": 106.8064072,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-3152256412",
+    "name": "Ayam Goreng Berkah Rachmat",
+    "lat": -6.247904,
+    "lon": 106.8005381,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-4152597829",
+    "name": "KFC",
+    "lat": -6.2458134,
+    "lon": 106.802113,
+    "category": "fast_food",
+    "cuisine": [
+      "chicken"
+    ],
+    "osm_tags": {
+      "amenity": "fast_food",
+      "cuisine": "chicken",
+      "addr:street": "Jl. Melawai Raya",
+      "addr:housenumber": "No.166",
+      "brand": "KFC"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-4243787801",
+    "name": "MM JUICE Melawai",
+    "lat": -6.246085,
+    "lon": 106.7984528,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant",
+      "addr:street": "Jalan Melawai Raya",
+      "addr:housenumber": "116 A"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-4244097488",
+    "name": "Roti Bakar Eddy Blok M",
+    "lat": -6.2364013,
+    "lon": 106.7997965,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "cafe",
+      "addr:street": "Jalan Raden Patah, Kebayoran Baru, Selong, Kby. Baru,",
+      "addr:housenumber": "11"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-4261957978",
+    "name": "Harvest Dharmawangsa",
+    "lat": -6.2496762,
+    "lon": 106.8050404,
+    "category": "bakery",
+    "cuisine": [],
+    "osm_tags": {
+      "shop": "bakery",
+      "addr:street": "Jalan Dharmawangsa",
+      "addr:housenumber": "10B"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-5245366307",
+    "name": "Starbucks",
+    "lat": -6.246386,
+    "lon": 106.7942813,
+    "category": "cafe",
+    "cuisine": [
+      "coffee_shop"
+    ],
+    "osm_tags": {
+      "amenity": "cafe",
+      "cuisine": "coffee_shop",
+      "addr:street": "Jalan Barito II",
+      "addr:housenumber": "56",
+      "brand": "Starbucks"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=riuIt8dB89E",
+        "source_title": "Nongkrong Asyik di Starbucks Blok M #starbucks",
+        "published_at": "2025-03-13T09:51:37Z",
+        "views": 86,
+        "quote": "Starbucks di Blok M, Tempat yang bagus untuk beristirahat",
+        "area_hint": "Blok M"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 86
+  },
+  {
+    "id": "osm-node-5988876851",
+    "name": "Kopi Oey",
+    "lat": -6.2442661,
+    "lon": 106.8014508,
+    "category": "restaurant",
+    "cuisine": [
+      "asian"
+    ],
+    "osm_tags": {
+      "amenity": "restaurant",
+      "cuisine": "asian"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-6033806385",
+    "name": "Namaaz Dining",
+    "lat": -6.2385955,
+    "lon": 106.8069613,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-6948455786",
+    "name": "Tokyo Skipwith",
+    "lat": -6.2425289,
+    "lon": 106.7960271,
+    "category": "restaurant",
+    "cuisine": [
+      "steak_house"
+    ],
+    "osm_tags": {
+      "amenity": "restaurant",
+      "cuisine": "steak_house",
+      "internet_access": "wlan"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-6948471093",
+    "name": "Udon Donburi",
+    "lat": -6.2426125,
+    "lon": 106.7959389,
+    "category": "fast_food",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "fast_food"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-6948478294",
+    "name": "The Beef Bang",
+    "lat": -6.2426454,
+    "lon": 106.795954,
+    "category": "fast_food",
+    "cuisine": [
+      "burger"
+    ],
+    "osm_tags": {
+      "amenity": "fast_food",
+      "cuisine": "burger"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-6948478885",
+    "name": "Mood Coffee",
+    "lat": -6.2425898,
+    "lon": 106.7960569,
+    "category": "cafe",
+    "cuisine": [
+      "coffee_shop"
+    ],
+    "osm_tags": {
+      "amenity": "cafe",
+      "cuisine": "coffee_shop",
+      "internet_access": "wlan"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-6948478991",
+    "name": "Sarang Oci",
+    "lat": -6.2432448,
+    "lon": 106.7964226,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-6948540592",
+    "name": "Nasi Bebek",
+    "lat": -6.2429431,
+    "lon": 106.7963766,
+    "category": "fast_food",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "fast_food"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-6948587890",
+    "name": "Yoshinoya",
+    "lat": -6.2427626,
+    "lon": 106.7961392,
+    "category": "fast_food",
+    "cuisine": [
+      "beef_bowl"
+    ],
+    "osm_tags": {
+      "amenity": "fast_food",
+      "cuisine": "beef_bowl",
+      "brand": "Yoshinoya"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-6948590387",
+    "name": "Grand Central",
+    "lat": -6.2430809,
+    "lon": 106.7963087,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-6948590989",
+    "name": "Bornga",
+    "lat": -6.2423681,
+    "lon": 106.7959221,
+    "category": "restaurant",
+    "cuisine": [
+      "korean"
+    ],
+    "osm_tags": {
+      "amenity": "restaurant",
+      "cuisine": "korean"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-7038074086",
+    "name": "Daun Muda Soulfood by Peresthu",
+    "lat": -6.2400119,
+    "lon": 106.8045856,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant",
+      "opening_hours": "Mo-Su 11:00-23:00",
+      "addr:street": "Jalan Wolter Monginsidi",
+      "addr:housenumber": "2A"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-7059742591",
+    "name": "Sabana Nasi Kapau",
+    "lat": -6.2460974,
+    "lon": 106.7991551,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-7062423285",
+    "name": "Gado-Gado Boplo",
+    "lat": -6.2498195,
+    "lon": 106.8001044,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant",
+      "opening_hours": "Mo-Su 08:00-22:00",
+      "website": "https://boplo.net/",
+      "addr:street": "Jalan Panglima Polim IX"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-7065528786",
+    "name": "Nasi Kapau Sodagar",
+    "lat": -6.2494894,
+    "lon": 106.7986113,
+    "category": "restaurant",
+    "cuisine": [
+      "indonesian"
+    ],
+    "osm_tags": {
+      "amenity": "restaurant",
+      "cuisine": "indonesian"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-7083910516",
+    "name": "Cecemuwe Cafe & Space",
+    "lat": -6.2360907,
+    "lon": 106.7933692,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "cafe",
+      "opening_hours": "Mo-Su 08:00-21:00",
+      "internet_access": "yes",
+      "phone": "+6281283388128",
+      "addr:street": "Jalan Hang Jebat IX",
+      "addr:housenumber": "6"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-7099094186",
+    "name": "Tea Addict",
+    "lat": -6.2479284,
+    "lon": 106.802445,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "cafe"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-7128637286",
+    "name": "Martabak Top Bandung 1",
+    "lat": -6.2336971,
+    "lon": 106.7937683,
+    "category": "fast_food",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "fast_food"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-9726364169",
+    "name": "KFC",
+    "lat": -6.2461148,
+    "lon": 106.8016749,
+    "category": "fast_food",
+    "cuisine": [
+      "chicken"
+    ],
+    "osm_tags": {
+      "amenity": "fast_food",
+      "cuisine": "chicken",
+      "brand": "KFC"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-9729498121",
+    "name": "Djournal Coffee",
+    "lat": -6.2443248,
+    "lon": 106.8028953,
+    "category": "cafe",
+    "cuisine": [
+      "coffee_shop"
+    ],
+    "osm_tags": {
+      "amenity": "cafe",
+      "cuisine": "coffee_shop"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-9744015540",
+    "name": "Lu'Miere - Melawai",
+    "lat": -6.2519895,
+    "lon": 106.7975306,
+    "category": "bakery",
+    "cuisine": [],
+    "osm_tags": {
+      "shop": "bakery"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-9744112797",
+    "name": "Bakso Boedjangan - Bulungan",
+    "lat": -6.2441074,
+    "lon": 106.7965955,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-9748429843",
+    "name": "Ramen 38 Sanpachi",
+    "lat": -6.2459486,
+    "lon": 106.7962978,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-9748512421",
+    "name": "D corne",
+    "lat": -6.2445604,
+    "lon": 106.7983704,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "cafe"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-9865063056",
+    "name": "Blooms Bistro Bakery Bar",
+    "lat": -6.242723,
+    "lon": 106.7961142,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant",
+      "addr:street": "Jl. Bulungan",
+      "addr:housenumber": "26"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-10015462362",
+    "name": "LTG by esterakyat",
+    "lat": -6.2444747,
+    "lon": 106.7943665,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "cafe",
+      "internet_access": "wlan"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-11458337518",
+    "name": "Kambing Bakar Cairo",
+    "lat": -6.246263,
+    "lon": 106.7956544,
+    "category": "restaurant",
+    "cuisine": [
+      "middle_eastern"
+    ],
+    "osm_tags": {
+      "amenity": "restaurant",
+      "cuisine": "middle_eastern",
+      "addr:street": "Jalan Sungai Sambas Ⅵ",
+      "addr:housenumber": "35"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-11458345922",
+    "name": "Abang Turki",
+    "lat": -6.2459788,
+    "lon": 106.7956742,
+    "category": "fast_food",
+    "cuisine": [
+      "turkish"
+    ],
+    "osm_tags": {
+      "amenity": "fast_food",
+      "cuisine": "turkish",
+      "addr:street": "Jalan Sungai Sambas Ⅲ"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-11681193421",
+    "name": "People's Cafe",
+    "lat": -6.2443749,
+    "lon": 106.8029194,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://www.rumah123.com/explore/kota-jakarta-selatan/cafe-di-blok-m",
+        "source_title": "7 Cafe di Blok M yang Hits & Instagramable",
+        "quote": "Kalau kamu cari tempat luas dan family-friendly, The People’s Cafe di Pasaraya Blok M jawabannya.",
+        "area_hint": "Pasaraya Blok M"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-11681193422",
+    "name": "Kisaku",
+    "lat": -6.2443595,
+    "lon": 106.8027268,
+    "category": "cafe",
+    "cuisine": [
+      "coffee_shop"
+    ],
+    "osm_tags": {
+      "amenity": "cafe",
+      "cuisine": "coffee_shop"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-11681193423",
+    "name": "Cotti Coffee",
+    "lat": -6.2440832,
+    "lon": 106.8026935,
+    "category": "cafe",
+    "cuisine": [
+      "coffee_shop"
+    ],
+    "osm_tags": {
+      "amenity": "cafe",
+      "cuisine": "coffee_shop"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-11681193424",
+    "name": "Kopi Kenangan",
+    "lat": -6.2438958,
+    "lon": 106.8027039,
+    "category": "cafe",
+    "cuisine": [
+      "coffee_shop"
+    ],
+    "osm_tags": {
+      "amenity": "cafe",
+      "cuisine": "coffee_shop",
+      "diet:halal": "only",
+      "brand": "Kopi Kenangan"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-11681193425",
+    "name": "Tomoro",
+    "lat": -6.244482,
+    "lon": 106.8031879,
+    "category": "cafe",
+    "cuisine": [
+      "coffee_shop"
+    ],
+    "osm_tags": {
+      "amenity": "cafe",
+      "cuisine": "coffee_shop"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-11681193426",
+    "name": "di.bawahtangga",
+    "lat": -6.2445182,
+    "lon": 106.8031191,
+    "category": "cafe",
+    "cuisine": [
+      "coffee_shop"
+    ],
+    "osm_tags": {
+      "amenity": "cafe",
+      "cuisine": "coffee_shop"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-11681193427",
+    "name": "Harvest",
+    "lat": -6.2444308,
+    "lon": 106.8032202,
+    "category": "bakery",
+    "cuisine": [],
+    "osm_tags": {
+      "shop": "bakery"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-11681193428",
+    "name": "Kyuka Ramen",
+    "lat": -6.2440937,
+    "lon": 106.8023853,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Kyuka Ramen"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=X6-WIdjbx9E",
+        "source_title": "Ramen halal ini bikin aku lupa kalau lagi di Jakarta 😭🔥 #ramenhalal #foodie #kulinerblokm #matcha",
+        "published_at": "2026-05-07T11:11:26Z",
+        "views": 1974,
+        "quote": "Kyuka Ramen Blok M jadi salah satu spot ramen halal yang lagi viral di Jakarta.",
+        "area_hint": "Blok M"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 38415
+  },
+  {
+    "id": "osm-node-12110042118",
+    "name": "Toko Kopi TUKU - Blok M",
+    "lat": -6.2439142,
+    "lon": 106.7997041,
+    "category": "cafe",
+    "cuisine": [
+      "coffee_shop"
+    ],
+    "osm_tags": {
+      "amenity": "cafe",
+      "cuisine": "coffee_shop",
+      "opening_hours": "Mo-Su 07:00-21:00",
+      "website": "https://tuku.coffee/"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://www.liputan6.com/lifestyle/read/7296582/rekomendasi-tempat-makan-viral-di-blok-m",
+        "source_title": "15 Rekomendasi Tempat Makan Viral di Blok M 2026, dari Mie Legendaris hingga Donat Labu Artisan",
+        "quote": "• Kopi Tuku — Ikon Kopi Susu Kekinian yang Tak Pernah Sepi"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.rumah123.com/explore/kota-jakarta-selatan/cafe-di-blok-m",
+        "source_title": "7 Cafe di Blok M yang Hits & Instagramable",
+        "quote": "Nama besar Tuku tentu sudah tidak asing. Cabangnya di Blok M tetap ramai",
+        "area_hint": "Blok M"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-12157326132",
+    "name": "Gulai Tikungan Blok M",
+    "lat": -6.2437635,
+    "lon": 106.7970625,
+    "category": "food_court",
+    "cuisine": [
+      "indonesian"
+    ],
+    "osm_tags": {
+      "amenity": "food_court",
+      "cuisine": "indonesian",
+      "opening_hours": "Mo-Su 17:00-05:00"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=boGf7aJSYZA",
+        "source_title": "EXPLORE KULINER BLOK M VIRAL MALAM HARI 2026.❗ TEMPAT NONGKRONG ANAK JAKARTA SELATAN.! ",
+        "published_at": "2026-03-23T10:00:06Z",
+        "views": 540,
+        "quote": "Gulai Tikungan (Gultik)",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=0A-4tnfITIA",
+        "source_title": "SUASANA MALAM MINGGU BLOK M JAKARTA SELATAN#blokm#walkingtour#viral#fyp#viralvideo#trending#jakarta ",
+        "published_at": "2026-10-05T03:00:08Z",
+        "views": 478,
+        "quote": "berburu kuliner legendaris seperti Gultik (Gulai Tikungan) dan jajanan malam lainnya.",
+        "area_hint": "Blok M"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 1018
+  },
+  {
+    "id": "osm-node-12160426877",
+    "name": "Misoa Story | Blok M Square",
+    "lat": -6.2449582,
+    "lon": 106.8021557,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Misoa Story"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=QYb70iN_0Ag",
+        "source_title": "PUAS KULINERAN SEHARIAN DI BLOK M JAKARTA! 😍 Banyak Jajanan Enak & Viral!",
+        "published_at": "2025-12-23T08:06:44Z",
+        "views": 6984,
+        "quote": "The Misoa Story – Misoa & menu comfort food",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5TEjnnc8rt0",
+        "source_title": "JANGAN KE BLOK M SEBELUM NONTON INI! + Buffet Hotel Bintang 5 TER-MURAH 🇮🇩 2026 | JAKARTA Vlog",
+        "published_at": "2026-10-01T05:15:15Z",
+        "views": 890,
+        "quote": "Misoa Story"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.grab.com/id/food-blog/12-rekomendasi-tempat-makan-di-blok-m-mall-plaza",
+        "source_title": "12 Rekomendasi Tempat Makan di Blok M Mall & Plaza | Grab ID",
+        "quote": "The Misoa Story — Spesialis misoa dan mi kuah ringan halal.",
+        "area_hint": "Blok M Square"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.nibble.id/tempat-makan-halal-di-blok-m",
+        "source_title": "10 Tempat Makan Halal di Blok M yang Recommended! - Nibble",
+        "quote": "Tempat makan halal di Blok M ini merupakan cabang ke-4 dari The Misoa Story.",
+        "area_hint": "Pasaraya Blok M, Jl. Iskandarsyah II"
+      }
+    ],
+    "n_mentions": 5,
+    "n_sources": 5,
+    "total_views": 44315
+  },
+  {
+    "id": "osm-node-12179467546",
+    "name": "Subway",
+    "lat": -6.2459715,
+    "lon": 106.7968176,
+    "category": "fast_food",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "fast_food"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-12301057157",
+    "name": "Vilo Gelato",
+    "lat": -6.2439507,
+    "lon": 106.8022836,
+    "category": "ice_cream",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "ice_cream"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-12301057158",
+    "name": "Make Some Room",
+    "lat": -6.2439165,
+    "lon": 106.8021627,
+    "category": "restaurant",
+    "cuisine": [
+      "dessert"
+    ],
+    "osm_tags": {
+      "amenity": "restaurant",
+      "cuisine": "dessert"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-12301057159",
+    "name": "Little Salt Bread",
+    "lat": -6.2441992,
+    "lon": 106.8021669,
+    "category": "bakery",
+    "cuisine": [],
+    "osm_tags": {
+      "shop": "bakery"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Little Salt Bread"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Little Salt Bread"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Little Salt Bread"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=QYb70iN_0Ag",
+        "source_title": "PUAS KULINERAN SEHARIAN DI BLOK M JAKARTA! 😍 Banyak Jajanan Enak & Viral!",
+        "published_at": "2025-12-23T08:06:44Z",
+        "views": 6984,
+        "quote": "Little Salt Bread – Roti kekinian yang fluffy banget",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=f-8JZRRXh_I",
+        "source_title": "blok m viral places",
+        "published_at": "2024-08-31T04:05:00Z",
+        "views": 45113,
+        "quote": "📍 Little Salt Bread",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=-qePkYQznPs",
+        "source_title": "blok m jakarta | japanese restaurant, viral snacks, coffee, book & lifestyle store",
+        "published_at": "2026-03-09T14:56:00Z",
+        "views": 135375,
+        "quote": "Little Salt Bread"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5TEjnnc8rt0",
+        "source_title": "JANGAN KE BLOK M SEBELUM NONTON INI! + Buffet Hotel Bintang 5 TER-MURAH 🇮🇩 2026 | JAKARTA Vlog",
+        "published_at": "2026-10-01T05:15:15Z",
+        "views": 890,
+        "quote": "Little Salt Bread"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=gSegfIL2Dec",
+        "source_title": "Exploring Blok M Jakarta | LRT Ride, Cafes & Night Walk |Family Silent Vlog Jakarta",
+        "published_at": "2026-05-09T01:45:07Z",
+        "views": 12190,
+        "quote": "Haus Ninete, Little Salt Bread, Takeichi, and ending the night at Scarlet.",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.liputan6.com/lifestyle/read/7296582/rekomendasi-tempat-makan-viral-di-blok-m",
+        "source_title": "15 Rekomendasi Tempat Makan Viral di Blok M 2026, dari Mie Legendaris hingga Donat Labu Artisan",
+        "quote": "• Little Salt Bread — Salt Bread Ala Korea yang Gurih Adiktif"
+      }
+    ],
+    "n_mentions": 9,
+    "n_sources": 9,
+    "total_views": 616885
+  },
+  {
+    "id": "osm-node-12301057160",
+    "name": "Bakso Bondan",
+    "lat": -6.2454598,
+    "lon": 106.8026116,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-12301057161",
+    "name": "Kami Makmur",
+    "lat": -6.245502,
+    "lon": 106.8026138,
+    "category": "restaurant",
+    "cuisine": [
+      "noodle"
+    ],
+    "osm_tags": {
+      "amenity": "restaurant",
+      "cuisine": "noodle"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-12301057162",
+    "name": "Deracikan",
+    "lat": -6.2447664,
+    "lon": 106.8021711,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "cafe"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-12506117287",
+    "name": "Kurasu",
+    "lat": -6.2433594,
+    "lon": 106.8042314,
+    "category": "cafe",
+    "cuisine": [
+      "coffee_shop"
+    ],
+    "osm_tags": {
+      "amenity": "cafe",
+      "cuisine": "coffee_shop"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=gSegfIL2Dec",
+        "source_title": "Exploring Blok M Jakarta | LRT Ride, Cafes & Night Walk |Family Silent Vlog Jakarta",
+        "published_at": "2026-05-09T01:45:07Z",
+        "views": 12190,
+        "quote": "exploring several popular cafés and food spots around Blok M, including KURASU, Busy Cafe",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=gSegfIL2Dec",
+        "source_title": "Exploring Blok M Jakarta | LRT Ride, Cafes & Night Walk |Family Silent Vlog Jakarta",
+        "published_at": "2026-05-09T01:45:07Z",
+        "views": 12190,
+        "quote": "2:20 Kurasu Kissaten"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.nibble.id/tempat-nongkrong-di-blok-m",
+        "source_title": "10 Tempat Nongkrong di Blok M yang Bikin Betah Seharian",
+        "quote": "1. Kurasu. Tempat nongkrong di Blok M yang termasuk salah satu cafe estetik di Jakarta adalah Kurasu Kissaten."
+      }
+    ],
+    "n_mentions": 3,
+    "n_sources": 2,
+    "total_views": 24380
+  },
+  {
+    "id": "osm-node-12506117288",
+    "name": "Bagel Coffee Company",
+    "lat": -6.2447597,
+    "lon": 106.8023358,
+    "category": "cafe",
+    "cuisine": [
+      "coffee_shop"
+    ],
+    "osm_tags": {
+      "amenity": "cafe",
+      "cuisine": "coffee_shop"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5TEjnnc8rt0",
+        "source_title": "JANGAN KE BLOK M SEBELUM NONTON INI! + Buffet Hotel Bintang 5 TER-MURAH 🇮🇩 2026 | JAKARTA Vlog",
+        "published_at": "2026-10-01T05:15:15Z",
+        "views": 890,
+        "quote": "BAGEL COFFEE COMPANY"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 890
+  },
+  {
+    "id": "osm-node-12506117289",
+    "name": "Mack's Creamery",
+    "lat": -6.2440862,
+    "lon": 106.8021448,
+    "category": "ice_cream",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "ice_cream"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Mack's Creamery"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Mack's Creamery"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Mack's Creamery"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=QYb70iN_0Ag",
+        "source_title": "PUAS KULINERAN SEHARIAN DI BLOK M JAKARTA! 😍 Banyak Jajanan Enak & Viral!",
+        "published_at": "2025-12-23T08:06:44Z",
+        "views": 6984,
+        "quote": "Macks Creamery – Ice cream yang bikin nagih",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=f-8JZRRXh_I",
+        "source_title": "blok m viral places",
+        "published_at": "2024-08-31T04:05:00Z",
+        "views": 45113,
+        "quote": "📍 Mack's Creamery",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5TEjnnc8rt0",
+        "source_title": "JANGAN KE BLOK M SEBELUM NONTON INI! + Buffet Hotel Bintang 5 TER-MURAH 🇮🇩 2026 | JAKARTA Vlog",
+        "published_at": "2026-10-01T05:15:15Z",
+        "views": 890,
+        "quote": "Mack's Creamery"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.liputan6.com/lifestyle/read/7296582/rekomendasi-tempat-makan-viral-di-blok-m",
+        "source_title": "15 Rekomendasi Tempat Makan Viral di Blok M 2026, dari Mie Legendaris hingga Donat Labu Artisan",
+        "quote": "• Mack's Creamery — Es Krim dengan Rasa Anti-Mainstream"
+      }
+    ],
+    "n_mentions": 7,
+    "n_sources": 7,
+    "total_views": 469320
+  },
+  {
+    "id": "osm-node-13180084805",
+    "name": "Onickoe",
+    "lat": -6.2444388,
+    "lon": 106.8029923,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-13180084807",
+    "name": "Mie Bandung Kejaksaan 1964",
+    "lat": -6.2441063,
+    "lon": 106.8027138,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-13180084808",
+    "name": "LBRY",
+    "lat": -6.2453554,
+    "lon": 106.8025404,
+    "category": "cafe",
+    "cuisine": [
+      "coffee_shop"
+    ],
+    "osm_tags": {
+      "amenity": "cafe",
+      "cuisine": "coffee_shop"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-13180084811",
+    "name": "Teazzi",
+    "lat": -6.2446028,
+    "lon": 106.8028212,
+    "category": "cafe",
+    "cuisine": [
+      "bubble_tea"
+    ],
+    "osm_tags": {
+      "amenity": "cafe",
+      "cuisine": "bubble_tea"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=FI9bGJac8-A",
+        "source_title": "AESTHETIC TEAZZI X BUKA CABANG BARU DI BLOK M!",
+        "published_at": "2025-09-06T10:46:38Z",
+        "views": 696,
+        "quote": "Asthetic Teazzi ada di Pasaraya Blok M!",
+        "area_hint": "Pasaraya Blok M"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 696
+  },
+  {
+    "id": "osm-node-13180084812",
+    "name": "Beanstar",
+    "lat": -6.2447717,
+    "lon": 106.8032325,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "cafe"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=JqT2vpEH_x4",
+        "source_title": "Cobain Kopi Beku -86° di Blok M, Gimana Rasanya Ya?",
+        "published_at": "2025-11-07T02:41:24Z",
+        "views": 7097,
+        "quote": "#beanstarcoffee #kopi-86°",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=MRdeUJEJ67Y",
+        "source_title": "Dengan 100rb bisa ngopi berapa kali di blok M?",
+        "published_at": "2026-02-10T09:17:45Z",
+        "views": 3563,
+        "quote": "Kalau mau cobain yang sempat viral, cobain dirty latte di Beanstar.",
+        "area_hint": "Blok M"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 10660
+  },
+  {
+    "id": "osm-node-13245397807",
+    "name": "Lokiin",
+    "lat": -6.2457184,
+    "lon": 106.8024907,
+    "category": "restaurant",
+    "cuisine": [
+      "indonesian"
+    ],
+    "osm_tags": {
+      "amenity": "restaurant",
+      "cuisine": "indonesian"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-13301318137",
+    "name": "Dobah Experience",
+    "lat": -6.2444443,
+    "lon": 106.802593,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-13301318138",
+    "name": "Tjahaja Baru",
+    "lat": -6.2446482,
+    "lon": 106.8021537,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-13301318139",
+    "name": "Butter Baby",
+    "lat": -6.2447191,
+    "lon": 106.8021519,
+    "category": "bakery",
+    "cuisine": [],
+    "osm_tags": {
+      "shop": "bakery"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Butter Baby"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Butter Baby"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Butter Baby"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=QYb70iN_0Ag",
+        "source_title": "PUAS KULINERAN SEHARIAN DI BLOK M JAKARTA! 😍 Banyak Jajanan Enak & Viral!",
+        "published_at": "2025-12-23T08:06:44Z",
+        "views": 6984,
+        "quote": "Butter Baby – Dessert hits yang cute",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5TEjnnc8rt0",
+        "source_title": "JANGAN KE BLOK M SEBELUM NONTON INI! + Buffet Hotel Bintang 5 TER-MURAH 🇮🇩 2026 | JAKARTA Vlog",
+        "published_at": "2026-10-01T05:15:15Z",
+        "views": 890,
+        "quote": "Butter Baby"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=gSegfIL2Dec",
+        "source_title": "Exploring Blok M Jakarta | LRT Ride, Cafes & Night Walk |Family Silent Vlog Jakarta",
+        "published_at": "2026-05-09T01:45:07Z",
+        "views": 12190,
+        "quote": "Busy Cafe, Butter Baby, Haus Ninete, Little Salt Bread, Takeichi",
+        "area_hint": "Blok M"
+      }
+    ],
+    "n_mentions": 6,
+    "n_sources": 6,
+    "total_views": 436397
+  },
+  {
+    "id": "osm-node-13301318140",
+    "name": "Hap!",
+    "lat": -6.2445068,
+    "lon": 106.8021609,
+    "category": "bakery",
+    "cuisine": [],
+    "osm_tags": {
+      "shop": "bakery"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-13301318142",
+    "name": "Kaya Tiam",
+    "lat": -6.2445976,
+    "lon": 106.8021528,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5TEjnnc8rt0",
+        "source_title": "JANGAN KE BLOK M SEBELUM NONTON INI! + Buffet Hotel Bintang 5 TER-MURAH 🇮🇩 2026 | JAKARTA Vlog",
+        "published_at": "2026-10-01T05:15:15Z",
+        "views": 890,
+        "quote": "Kayatiam"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.rumah123.com/explore/kota-jakarta-selatan/cafe-di-blok-m",
+        "source_title": "7 Cafe di Blok M yang Hits & Instagramable",
+        "quote": "Buat kamu yang ingin nuansa lebih heritage dengan sentuhan modern, Kayatiam bisa jadi pilihan."
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 890
+  },
+  {
+    "id": "osm-node-13301318143",
+    "name": "T99",
+    "lat": -6.2444551,
+    "lon": 106.8021617,
+    "category": "cafe",
+    "cuisine": [
+      "bubble_tea"
+    ],
+    "osm_tags": {
+      "amenity": "cafe",
+      "cuisine": "bubble_tea"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-13301318144",
+    "name": "Cups",
+    "lat": -6.2444151,
+    "lon": 106.8021611,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "cafe"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-13301318145",
+    "name": "Busy Cheesecake",
+    "lat": -6.2443607,
+    "lon": 106.8021592,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "cafe"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-13383327701",
+    "name": "Sushi Maru",
+    "lat": -6.2350232,
+    "lon": 106.7963769,
+    "category": "restaurant",
+    "cuisine": [
+      "japanese"
+    ],
+    "osm_tags": {
+      "amenity": "restaurant",
+      "cuisine": "japanese"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-13654332244",
+    "name": "Kissaten",
+    "lat": -6.2437313,
+    "lon": 106.80045,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://www.tiktok.com/discover/tempat-makan-halal-blok-m",
+        "source_title": "Tempat Makan Halal Blok M",
+        "quote": "Temukan pengalaman kuliner unik di Sai Ramen Kissaten Blok M!",
+        "area_hint": "Blok M"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 0
+  },
+  {
+    "id": "osm-node-14078404166",
+    "name": "Deracikan",
+    "lat": -6.2437077,
+    "lon": 106.8023066,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "cafe"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-318794663",
+    "name": "KFC",
+    "lat": -6.238965,
+    "lon": 106.8074573,
+    "category": "fast_food",
+    "cuisine": [
+      "chicken"
+    ],
+    "osm_tags": {
+      "amenity": "fast_food",
+      "cuisine": "chicken",
+      "opening_hours": "24/7",
+      "addr:street": "Jalan Gunawarman",
+      "addr:housenumber": "80",
+      "brand": "KFC"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-498423494",
+    "name": "KFC",
+    "lat": -6.2440846,
+    "lon": 106.7968198,
+    "category": "fast_food",
+    "cuisine": [
+      "chicken"
+    ],
+    "osm_tags": {
+      "amenity": "fast_food",
+      "cuisine": "chicken",
+      "brand": "KFC"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-498423514",
+    "name": "Hanamasa Mahakam",
+    "lat": -6.2436858,
+    "lon": 106.7964195,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-498436330",
+    "name": "Toko Kue Vivi",
+    "lat": -6.2487451,
+    "lon": 106.7961084,
+    "category": "bakery",
+    "cuisine": [],
+    "osm_tags": {
+      "shop": "bakery"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-498714081",
+    "name": "Pelaspas Nipah Petogogan",
+    "lat": -6.2470066,
+    "lon": 106.8073314,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-528298786",
+    "name": "Mie Kingkong Senopati Selong",
+    "lat": -6.2389222,
+    "lon": 106.804547,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-528332248",
+    "name": "Holywings Gunawarman - Selong",
+    "lat": -6.2387882,
+    "lon": 106.8071135,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-528332257",
+    "name": "HW Bukan Ayam Goreng Biasa",
+    "lat": -6.2362771,
+    "lon": 106.8078235,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant",
+      "addr:street": "Jalan Gunawarman",
+      "addr:housenumber": "47"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-528332265",
+    "name": "Crab",
+    "lat": -6.2368172,
+    "lon": 106.8078114,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant",
+      "addr:street": "Jalan Gunawarman",
+      "addr:housenumber": "55"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-529301730",
+    "name": "Ann's Bakehouse & Creamery - Kramat Pela",
+    "lat": -6.2473932,
+    "lon": 106.7952637,
+    "category": "bakery",
+    "cuisine": [],
+    "osm_tags": {
+      "shop": "bakery"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-529363054",
+    "name": "Javanegra Gourmet Atelier - Kramat Pela",
+    "lat": -6.2503369,
+    "lon": 106.7950091,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-529396678",
+    "name": "Kopi Kalyan - Kramat Pela",
+    "lat": -6.2437353,
+    "lon": 106.7934233,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "cafe"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-529399145",
+    "name": "Gregs Banana Cake - Melawai",
+    "lat": -6.2492155,
+    "lon": 106.80118,
+    "category": "bakery",
+    "cuisine": [],
+    "osm_tags": {
+      "shop": "bakery"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-529402949",
+    "name": "Six Ounces - Melawai",
+    "lat": -6.2494476,
+    "lon": 106.8004246,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "cafe"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-538876309",
+    "name": "Soul Food",
+    "lat": -6.233308,
+    "lon": 106.8079741,
+    "category": "restaurant",
+    "cuisine": [
+      "indonesian"
+    ],
+    "osm_tags": {
+      "amenity": "restaurant",
+      "cuisine": "indonesian"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-539176976",
+    "name": "McDonald's",
+    "lat": -6.2422862,
+    "lon": 106.8021241,
+    "category": "fast_food",
+    "cuisine": [
+      "burger"
+    ],
+    "osm_tags": {
+      "amenity": "fast_food",
+      "cuisine": "burger",
+      "brand": "McDonald's"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-659806383",
+    "name": "HAKA Dimsum Shop - Blok M",
+    "lat": -6.244011,
+    "lon": 106.7985838,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "restaurant"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://www.liputan6.com/lifestyle/read/7296582/rekomendasi-tempat-makan-viral-di-blok-m",
+        "source_title": "15 Rekomendasi Tempat Makan Viral di Blok M 2026, dari Mie Legendaris hingga Donat Labu Artisan",
+        "quote": "• Haka Dimsum — Dimsum 24 Jam Bergaya Hong Kong"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.grab.com/id/food-blog/12-rekomendasi-tempat-makan-di-blok-m-mall-plaza",
+        "source_title": "12 Rekomendasi Tempat Makan di Blok M Mall & Plaza | Grab ID",
+        "quote": "HAKA Dimsum — Dimsum halal dengan variasi lengkap, buka hingga larut malam.",
+        "area_hint": "Blok M Square"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.nibble.id/tempat-makan-halal-di-blok-m",
+        "source_title": "10 Tempat Makan Halal di Blok M yang Recommended! - Nibble",
+        "quote": "Satu lagi tempat makan halal di Blok M yaitu HAKA Dimsum.",
+        "area_hint": "Indomaret, Lantai 2, Jl. Sultan Hasanudin Dalam No. 3"
+      }
+    ],
+    "n_mentions": 3,
+    "n_sources": 3,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-1145126667",
+    "name": "Sahaja Restoran Padang",
+    "lat": -6.2407985,
+    "lon": 106.7936607,
+    "category": "restaurant",
+    "cuisine": [
+      "padang"
+    ],
+    "osm_tags": {
+      "amenity": "restaurant",
+      "cuisine": "padang"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-1145126668",
+    "name": "Kopi Kenangan",
+    "lat": -6.2408257,
+    "lon": 106.793566,
+    "category": "cafe",
+    "cuisine": [
+      "coffee_shop"
+    ],
+    "osm_tags": {
+      "amenity": "cafe",
+      "cuisine": "coffee_shop",
+      "diet:halal": "only",
+      "brand": "Kopi Kenangan"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-1256503476",
+    "name": "Fumo Chicken Bar",
+    "lat": -6.2452605,
+    "lon": 106.8026605,
+    "category": "restaurant",
+    "cuisine": [
+      "chicken"
+    ],
+    "osm_tags": {
+      "amenity": "restaurant",
+      "cuisine": "chicken",
+      "diet:halal": "yes",
+      "website": "https://www.instagram.com/fumochickenbar"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "osm-way-1296446325",
+    "name": "Old Town White Coffee",
+    "lat": -6.2401441,
+    "lon": 106.801087,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {
+      "amenity": "cafe",
+      "addr:street": "Jalan Palatehan"
+    },
+    "origin": "osm",
+    "location_precision": "osm",
+    "mentions": [],
+    "n_mentions": 0,
+    "n_sources": 0,
+    "total_views": 0
+  },
+  {
+    "id": "disc-uma-oma-cafe",
+    "name": "Uma Oma Cafe",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "Blok M",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Uma Oma Cafe"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Uma Oma Cafe"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Uma Oma Cafe"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ssBABIeMOmU",
+        "source_title": "Kafe Uma Oma di Blok M yang Pekerjakan Lansia Umrohkan Karyawannya",
+        "published_at": "2025-01-15T05:45:21Z",
+        "views": 1673,
+        "quote": "Kafe Uma Oma di Blok M",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=7PdTyMThil8",
+        "source_title": "Jakarta Diaries - Vlog - Life in Jakarta - Indonesian Food, Coffee, viral Doughnuts in Blok M",
+        "published_at": "2024-07-07T12:26:26Z",
+        "views": 171234,
+        "quote": "1. Uma Oma",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "quote": "Langsung aja nih ke uma oma. Kalau kamu pecinta kuliner tradisional, kamu wajib mampir ke sini."
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.grab.com/id/food-blog/12-rekomendasi-tempat-makan-di-blok-m-mall-plaza",
+        "source_title": "12 Rekomendasi Tempat Makan di Blok M Mall & Plaza | Grab ID",
+        "quote": "UMA OMA CAFE — Kafe kasual yang menyajikan aneka dessert, minuman kekinian, dan menu ringan.",
+        "area_hint": "Area Blok M"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.halaltrip.com/id/other/blog/blok-m-kafe-spot-asik-jakarta-selatan",
+        "source_title": "Blok M: 6 Kafe dan Spot Nongkrong Asik di Jakarta Selatan",
+        "quote": "Sebagai salah satu kafe favorit di Blok M, kenyamanan yang ditawarkan UMA OMA",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.liputan6.com/lifestyle/read/6315967/11-rekomendasi-tempat-makan-enak-di-m-bloc-space-pusat-kuliner-anak-muda-2026",
+        "source_title": "11 Rekomendasi Tempat Makan Enak di M Bloc Space ...",
+        "quote": "1. Uma Oma Cafe Angkat Masakan Rumahan Jadi Daya Tarik Utama Uma Oma Cafe",
+        "area_hint": "M Bloc Space"
+      }
+    ],
+    "n_mentions": 9,
+    "n_sources": 8,
+    "total_views": 589240
+  },
+  {
+    "id": "disc-gyomo-fish-house",
+    "name": "Gyomo Fish House",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "Blok M",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Gyomo Fish House"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Gyomo Fish House"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Gyomo Fish House"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "quote": "Pencinta makanan Jepang bisa berkunjung ke sini, [musik] Guomo Fish House."
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://3second.co.id/blog/traveling/rekomendasi-makan-di-blok-m",
+        "source_title": "12 Rekomendasi Makan di Blok M Paling Hits 2026, Wajib Kamu Coba! - 3Second",
+        "quote": "Gyomo Fish House bisa jadi pilihan yang menarik.",
+        "area_hint": "Blok M"
+      }
+    ],
+    "n_mentions": 5,
+    "n_sources": 4,
+    "total_views": 416333
+  },
+  {
+    "id": "disc-neighbor",
+    "name": "Neighbor",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Neighbor"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Neighbor"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Neighbor"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5TEjnnc8rt0",
+        "source_title": "JANGAN KE BLOK M SEBELUM NONTON INI! + Buffet Hotel Bintang 5 TER-MURAH 🇮🇩 2026 | JAKARTA Vlog",
+        "published_at": "2026-10-01T05:15:15Z",
+        "views": 890,
+        "quote": "Neighbor"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=xfr79dzCGag",
+        "source_title": "VIRAL BLOK M 🇮🇩 | Ube Matcha, Butter Tteok & Cool Cafés in Jakarta",
+        "published_at": "2026-08-10T12:36:19Z",
+        "views": 19846,
+        "quote": "Thai food at Neighbour"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "quote": "Kalau kamu pecinta Thai Food, nah restoran ini bisa jadi pilihan ya. Thai Resto Vibes [musik] alas Kena, sua, cengkrama, dan kelana. Namanya Resto Neighbor."
+      }
+    ],
+    "n_mentions": 6,
+    "n_sources": 5,
+    "total_views": 437069
+  },
+  {
+    "id": "disc-bungkushin-z",
+    "name": "Bungkushin Z",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Bungkushin Z"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Bungkushin Z"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "-Bungkushin"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Bungkushin Z"
+      }
+    ],
+    "n_mentions": 4,
+    "n_sources": 3,
+    "total_views": 452774
+  },
+  {
+    "id": "disc-dimsum-mentai-difar",
+    "name": "Dimsum Mentai Difar",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Dimsum Mentai Difar"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Dimsum Mentai Difar"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Dimsum Mentai Difar"
+      }
+    ],
+    "n_mentions": 3,
+    "n_sources": 3,
+    "total_views": 416333
+  },
+  {
+    "id": "disc-bakmie-jemar",
+    "name": "Bakmie Jemar",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Bakmie Jemar"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Bakmie Jemar"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Bakmie Jemar"
+      }
+    ],
+    "n_mentions": 3,
+    "n_sources": 3,
+    "total_views": 416333
+  },
+  {
+    "id": "disc-ayam-renald",
+    "name": "Ayam Renald",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "Blok M",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Ayam Renald"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Ayam Renald"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Ayam Renald"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5TEjnnc8rt0",
+        "source_title": "JANGAN KE BLOK M SEBELUM NONTON INI! + Buffet Hotel Bintang 5 TER-MURAH 🇮🇩 2026 | JAKARTA Vlog",
+        "published_at": "2026-10-01T05:15:15Z",
+        "views": 890,
+        "quote": "Ayam Renald"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.tiktok.com/discover/rekomendasi-kuliner-di-blok-m",
+        "source_title": "Rekomendasi Kuliner Di Blok M",
+        "quote": "Rekomendasi Kuliner Viral di Blok M: Ayam Renald, Lesehan & Misoa.",
+        "area_hint": "Blok M"
+      }
+    ],
+    "n_mentions": 5,
+    "n_sources": 5,
+    "total_views": 417223
+  },
+  {
+    "id": "disc-matchaman",
+    "name": "Matchaman",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Matchaman"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Matchaman"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Matchaman"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.liputan6.com/lifestyle/read/7296582/rekomendasi-tempat-makan-viral-di-blok-m",
+        "source_title": "15 Rekomendasi Tempat Makan Viral di Blok M 2026, dari Mie Legendaris hingga Donat Labu Artisan",
+        "quote": "• Matchaman — Matcha Bar yang Antreannya Sudah Jadi Pemandangan Khas"
+      }
+    ],
+    "n_mentions": 4,
+    "n_sources": 4,
+    "total_views": 416333
+  },
+  {
+    "id": "disc-kedai-penuh-nikmat",
+    "name": "Kedai Penuh Nikmat",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Blok M Square",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Kedai Penuh Nikmat"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Kedai Penuh Nikmat"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Kedai Penuh Nikmat"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=az_S3O1EA3I",
+        "source_title": "GANG VIRAL PASARAYA BLOK M",
+        "published_at": "2026-06-01T03:12:57Z",
+        "views": 721,
+        "quote": "13:03 Penuh Nikmat",
+        "area_hint": "Blok M Square"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.liputan6.com/lifestyle/read/7296582/rekomendasi-tempat-makan-viral-di-blok-m",
+        "source_title": "15 Rekomendasi Tempat Makan Viral di Blok M 2026, dari Mie Legendaris hingga Donat Labu Artisan",
+        "quote": "• Kedai Penuh Nikmat — Fusion Chinese-Jepang di Bawah Tangga",
+        "area_hint": "Di Bawah Tangga"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.grab.com/id/food-blog/12-rekomendasi-tempat-makan-di-blok-m-mall-plaza",
+        "source_title": "12 Rekomendasi Tempat Makan di Blok M Mall & Plaza | Grab ID",
+        "quote": "Kedai Penuh Nikmat — Chinese comfort food dengan porsi besar dan cita rasa rumahan. Berlokasi di Blok M Square lantai G",
+        "area_hint": "Blok M Square lantai G"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://3second.co.id/blog/traveling/rekomendasi-makan-di-blok-m",
+        "source_title": "12 Rekomendasi Makan di Blok M Paling Hits 2026, Wajib Kamu Coba! - 3Second",
+        "quote": "Kedai Penuh Nikmat memang menawarkan menu rumahan yang bikin kamu ngerasa kayak makan di rumah sendiri.",
+        "area_hint": "Blok M"
+      }
+    ],
+    "n_mentions": 7,
+    "n_sources": 7,
+    "total_views": 417054
+  },
+  {
+    "id": "disc-donatopia",
+    "name": "Donatopia",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "bakery",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Donatopia"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Donatopia"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Donatopia"
+      }
+    ],
+    "n_mentions": 3,
+    "n_sources": 3,
+    "total_views": 416333
+  },
+  {
+    "id": "disc-claypot-popo",
+    "name": "Claypot Popo",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Claypot Popo"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Claypot Popo"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Claypot Popo"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.liputan6.com/lifestyle/read/7296582/rekomendasi-tempat-makan-viral-di-blok-m",
+        "source_title": "15 Rekomendasi Tempat Makan Viral di Blok M 2026, dari Mie Legendaris hingga Donat Labu Artisan",
+        "quote": "• Claypot Popo — Chinese Comfort Food dalam Pot Tanah Liat"
+      }
+    ],
+    "n_mentions": 4,
+    "n_sources": 4,
+    "total_views": 416333
+  },
+  {
+    "id": "disc-echigoya-ramen",
+    "name": "Echigoya Ramen",
+    "lat": -6.2458862,
+    "lon": 106.8018956,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Melawai",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Echigoya Ramen"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Echigoya Ramen"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Echigoya Ramen"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=vtdQm85YvPA",
+        "source_title": "Ngapain di LITTLE TOKYO Blok M ?",
+        "published_at": "2025-10-23T11:14:52Z",
+        "views": 1183,
+        "quote": "📍 Echigoya Ramen Melawai @echigoya_ramen udah kita buktiin beberapa kali sini.",
+        "area_hint": "Melawai"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=sNareYnfeRs",
+        "source_title": "RELA ANTRI DARI PAGI DEMI RAMEN TERENAK SE BLOK M!, ECHIGOYA RAMEN.",
+        "published_at": "2025-05-19T08:02:58Z",
+        "views": 903,
+        "quote": "RELA ANTRI DARI PAGI DEMI RAMEN TERENAK SE BLOK M!, ECHIGOYA RAMEN.",
+        "area_hint": "Jl. Melawai VIII No.2A 3, Melawai, Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=iKpwrwnqOwM",
+        "source_title": "Ramen Paling Enak di Jakarta! Chef Langsung dari Jepang 🇯🇵 | Echigoya Ramen Blok M",
+        "published_at": "2026-02-12T00:44:14Z",
+        "views": 555,
+        "quote": "mampir ke salah satu ramen house paling legendaris dan otentik di kawasan Little Tokyo, Blok M, yaitu Echigoya Ramen!",
+        "area_hint": "Jl. Melawai Kav 189, Little Tokyo"
+      }
+    ],
+    "n_mentions": 6,
+    "n_sources": 6,
+    "total_views": 418974
+  },
+  {
+    "id": "disc-bakmi-khas-jaksel",
+    "name": "Bakmi Khas Jaksel",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "street_food",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "Blok M",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Bakmi Khas Jaksel"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Bakmi Khas Jaksel"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Bakmi Khas Jaksel"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://3second.co.id/blog/traveling/rekomendasi-makan-di-blok-m",
+        "source_title": "12 Rekomendasi Makan di Blok M Paling Hits 2026, Wajib Kamu Coba! - 3Second",
+        "quote": "Bakmie Khas Jaksel jadi salah satu spot mie yang lagi sering banget dibicarakan di Blok M.",
+        "area_hint": "Blok M"
+      }
+    ],
+    "n_mentions": 4,
+    "n_sources": 4,
+    "total_views": 416333
+  },
+  {
+    "id": "disc-drunk-baker",
+    "name": "Drunk Baker",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "bakery",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Drunk Baker"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Drunk Baker"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Drunk Baker"
+      }
+    ],
+    "n_mentions": 3,
+    "n_sources": 3,
+    "total_views": 416333
+  },
+  {
+    "id": "disc-madmatcha",
+    "name": "Madmatcha",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Madmatcha"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Madmatcha"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Mamatcha"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Madmatcha"
+      }
+    ],
+    "n_mentions": 4,
+    "n_sources": 3,
+    "total_views": 452774
+  },
+  {
+    "id": "disc-oo-donut",
+    "name": "OO Donut",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "dessert",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "Blok M",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "OO Donut"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "OO Donut"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- OO Donut"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=f-8JZRRXh_I",
+        "source_title": "blok m viral places",
+        "published_at": "2024-08-31T04:05:00Z",
+        "views": 45113,
+        "quote": "📍 OO Donut",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5TEjnnc8rt0",
+        "source_title": "JANGAN KE BLOK M SEBELUM NONTON INI! + Buffet Hotel Bintang 5 TER-MURAH 🇮🇩 2026 | JAKARTA Vlog",
+        "published_at": "2026-10-01T05:15:15Z",
+        "views": 890,
+        "quote": "OO Donut"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=7PdTyMThil8",
+        "source_title": "Jakarta Diaries - Vlog - Life in Jakarta - Indonesian Food, Coffee, viral Doughnuts in Blok M",
+        "published_at": "2024-07-07T12:26:26Z",
+        "views": 171234,
+        "quote": "4. OO Donut",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=iP1J_9eejm0",
+        "source_title": "1 Day in Blok M, Jakarta | little tokyo, cafes, mrt, plaza mall, blok m square, parks",
+        "published_at": "2026-09-10T12:13:04Z",
+        "views": 9702,
+        "quote": "OO Donuts"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.liputan6.com/lifestyle/read/7296582/rekomendasi-tempat-makan-viral-di-blok-m",
+        "source_title": "15 Rekomendasi Tempat Makan Viral di Blok M 2026, dari Mie Legendaris hingga Donat Labu Artisan",
+        "quote": "• OO Donut — Donat Labu Artisan yang Masih Viral Sejak 2024"
+      }
+    ],
+    "n_mentions": 8,
+    "n_sources": 8,
+    "total_views": 643272
+  },
+  {
+    "id": "disc-bakmi-piring",
+    "name": "Bakmi Piring",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "street_food",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "Blok M",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Bakmi Piring"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Bakmi Piring"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Bakmi Piring"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=QYb70iN_0Ag",
+        "source_title": "PUAS KULINERAN SEHARIAN DI BLOK M JAKARTA! 😍 Banyak Jajanan Enak & Viral!",
+        "published_at": "2025-12-23T08:06:44Z",
+        "views": 6984,
+        "quote": "Bakmi Piring – Bakmi enak, teksturnya keyel.",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=az_S3O1EA3I",
+        "source_title": "GANG VIRAL PASARAYA BLOK M",
+        "published_at": "2026-06-01T03:12:57Z",
+        "views": 721,
+        "quote": "17:20 Bakmi Piring"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=SVOh8ezQnsI",
+        "source_title": "DARI SEPI JADI HITS! Keliling Spot Viral Blok M dari Underground Sampai Konser Musik",
+        "published_at": "2026-09-04T10:00:06Z",
+        "views": 7800,
+        "quote": "Kesegaran Es Cendol Sri Rahayu & Bakmi Piring Legendaris",
+        "area_hint": "Pujasera Basement 2 Blok M Square"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=m-LKaYQ8sIM",
+        "source_title": "Keliling di Pujasera Blok M yang super ramai, banyak makanan viral yang direview food blogger!",
+        "published_at": "2025-06-27T11:45:10Z",
+        "views": 510,
+        "quote": "Siapa yang gak tau bakmi piring, thai baby, snack bentuk sendal dengan isian keju mulur, gorengan pak de, dan mie ayam dondon?",
+        "area_hint": "Basement Pujasera Blok M Square"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=HcqICFnoNRE",
+        "source_title": "Akhirnya Nyobain Bakmi Piring yang lagi Viral di Blok M",
+        "published_at": "2024-08-04T15:08:12Z",
+        "views": 2277,
+        "quote": "Akhirnya Nyobain Bakmi Piring yang lagi Viral di Blok M",
+        "area_hint": "Kantin Pujasera, Blok M Square, Lantai Basement"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.grab.com/id/food-blog/12-rekomendasi-tempat-makan-di-blok-m-mall-plaza",
+        "source_title": "12 Rekomendasi Tempat Makan di Blok M Mall & Plaza | Grab ID",
+        "quote": "Bakmi Piring — Bakmi lokal dengan bumbu khas yang kerap direkomendasikan pengunjung setia Blok M.",
+        "area_hint": "Area Blok M"
+      }
+    ],
+    "n_mentions": 9,
+    "n_sources": 9,
+    "total_views": 434625
+  },
+  {
+    "id": "disc-moou-milk-bar",
+    "name": "Moou Milk Bar",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Moou Milk Bar"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Moou Milk Bar"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Moou Milk Bar"
+      }
+    ],
+    "n_mentions": 3,
+    "n_sources": 3,
+    "total_views": 416333
+  },
+  {
+    "id": "disc-artirasa",
+    "name": "Artirasa",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "Blok M",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Artirasa"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Artirasa"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Artirasa"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=uTb6cwNxlFQ",
+        "source_title": "TASYI REVIEW JAJANAN VIRAL BLOK M DESSERT 2025 – HARGA MAHAL TAPI GAK SESUAI EKSPEKTASI?! 😭",
+        "published_at": "2025-06-18T06:10:00Z",
+        "views": 752674,
+        "quote": "4. Beautiful Cake by Arti Rasa",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=-qePkYQznPs",
+        "source_title": "blok m jakarta | japanese restaurant, viral snacks, coffee, book & lifestyle store",
+        "published_at": "2026-03-09T14:56:00Z",
+        "views": 135375,
+        "quote": "Artirasa (Melted Cheesetart)"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5TEjnnc8rt0",
+        "source_title": "JANGAN KE BLOK M SEBELUM NONTON INI! + Buffet Hotel Bintang 5 TER-MURAH 🇮🇩 2026 | JAKARTA Vlog",
+        "published_at": "2026-10-01T05:15:15Z",
+        "views": 890,
+        "quote": "Artirasa Blok M",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.liputan6.com/lifestyle/read/7296582/rekomendasi-tempat-makan-viral-di-blok-m",
+        "source_title": "15 Rekomendasi Tempat Makan Viral di Blok M 2026, dari Mie Legendaris hingga Donat Labu Artisan",
+        "quote": "• Artirasa — Cheesecake Premium Andalan Warga Blok"
+      }
+    ],
+    "n_mentions": 7,
+    "n_sources": 7,
+    "total_views": 1305272
+  },
+  {
+    "id": "disc-love-cheese",
+    "name": "Love Cheese",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "dessert",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "Blok M",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=19QJvwyu8xU",
+        "source_title": "EKSPLOR 23 SPOT KULINER BLOK M PART 1🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-03-04T04:00:03Z",
+        "views": 372906,
+        "quote": "Love Cheese"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Love Cheese"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Love Cheese"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=uTb6cwNxlFQ",
+        "source_title": "TASYI REVIEW JAJANAN VIRAL BLOK M DESSERT 2025 – HARGA MAHAL TAPI GAK SESUAI EKSPEKTASI?! 😭",
+        "published_at": "2025-06-18T06:10:00Z",
+        "views": 752674,
+        "quote": "2. Cheese Cake by Love Cheese",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5TEjnnc8rt0",
+        "source_title": "JANGAN KE BLOK M SEBELUM NONTON INI! + Buffet Hotel Bintang 5 TER-MURAH 🇮🇩 2026 | JAKARTA Vlog",
+        "published_at": "2026-10-01T05:15:15Z",
+        "views": 890,
+        "quote": "Love Cheese Blok M",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ssnI40RuXn0",
+        "source_title": "JALAN PAGI - Rekomendasi Jajanan Viral Yang Wajib Dicoba di Blok M Hub Jakarta",
+        "published_at": "2026-10-18T01:32:58Z",
+        "views": 13679,
+        "quote": "antara lain Nasi Kokoh, Love Cheese, serta Susu Bahagia",
+        "area_hint": "Blok M Hub"
+      }
+    ],
+    "n_mentions": 6,
+    "n_sources": 6,
+    "total_views": 1183576
+  },
+  {
+    "id": "disc-secte-ayam-pop",
+    "name": "Secte* ayam pop",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Secte* ayam pop"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Secte Ayam Pop"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5TEjnnc8rt0",
+        "source_title": "JANGAN KE BLOK M SEBELUM NONTON INI! + Buffet Hotel Bintang 5 TER-MURAH 🇮🇩 2026 | JAKARTA Vlog",
+        "published_at": "2026-10-01T05:15:15Z",
+        "views": 890,
+        "quote": "Secte* Ayam Pop"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=SVOh8ezQnsI",
+        "source_title": "DARI SEPI JADI HITS! Keliling Spot Viral Blok M dari Underground Sampai Konser Musik",
+        "published_at": "2026-09-04T10:00:06Z",
+        "views": 7800,
+        "quote": "Sensasi Makan Ayam Pop Estetik di Secte*"
+      }
+    ],
+    "n_mentions": 4,
+    "n_sources": 4,
+    "total_views": 52117
+  },
+  {
+    "id": "disc-susu-murni-bahagia",
+    "name": "Susu Murni Bahagia",
+    "lat": -6.2435286,
+    "lon": 106.7995921,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Blok M Hub",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Susu Murni Bahagia"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Susu Murni Bahagia"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5TEjnnc8rt0",
+        "source_title": "JANGAN KE BLOK M SEBELUM NONTON INI! + Buffet Hotel Bintang 5 TER-MURAH 🇮🇩 2026 | JAKARTA Vlog",
+        "published_at": "2026-10-01T05:15:15Z",
+        "views": 890,
+        "quote": "Susu Murni Bahagia"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ssnI40RuXn0",
+        "source_title": "JALAN PAGI - Rekomendasi Jajanan Viral Yang Wajib Dicoba di Blok M Hub Jakarta",
+        "published_at": "2026-10-18T01:32:58Z",
+        "views": 13679,
+        "quote": "Love Cheese, serta Susu Bahagia yang selalu ramai diantre",
+        "area_hint": "Blok M Hub"
+      }
+    ],
+    "n_mentions": 4,
+    "n_sources": 4,
+    "total_views": 57996
+  },
+  {
+    "id": "disc-cimol-barito",
+    "name": "Cimol Barito",
+    "lat": -6.2451636,
+    "lon": 106.7946126,
+    "category": "street_food",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Barito",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Cimol Barito"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Cimol Keju Barito",
+        "area_hint": "Barito"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 43427
+  },
+  {
+    "id": "disc-pony",
+    "name": "Pony",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "other",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Pony"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=xfr79dzCGag",
+        "source_title": "VIRAL BLOK M 🇮🇩 | Ube Matcha, Butter Tteok & Cool Cafés in Jakarta",
+        "published_at": "2026-08-10T12:36:19Z",
+        "views": 19846,
+        "quote": "pastries at Pony and The Flour"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 26832
+  },
+  {
+    "id": "disc-choclate-room",
+    "name": "Chocolate Room",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "dessert",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "Blok M",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Choclate room"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Chocolate Room"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5TEjnnc8rt0",
+        "source_title": "JANGAN KE BLOK M SEBELUM NONTON INI! + Buffet Hotel Bintang 5 TER-MURAH 🇮🇩 2026 | JAKARTA Vlog",
+        "published_at": "2026-10-01T05:15:15Z",
+        "views": 890,
+        "quote": "Chocolate Room"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=xfr79dzCGag",
+        "source_title": "VIRAL BLOK M 🇮🇩 | Ube Matcha, Butter Tteok & Cool Cafés in Jakarta",
+        "published_at": "2026-08-10T12:36:19Z",
+        "views": 19846,
+        "quote": "• Chocolate Room"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.instagram.com/reel/DYQ-lNKRxAv?hl=en",
+        "source_title": "8 rekomendasi kuliner blok m yang bisa kalian cobain! Kalo ...",
+        "quote": "@chocolateroomjkt",
+        "area_hint": "Blok M"
+      }
+    ],
+    "n_mentions": 5,
+    "n_sources": 5,
+    "total_views": 64163
+  },
+  {
+    "id": "disc-sarang-semut",
+    "name": "Sarang Semut",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "Blok M",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Sarang semut"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=Z5mmfoxupNg",
+        "source_title": "Sarang semut blok-m bulungan",
+        "published_at": "2025-11-08T08:54:12Z",
+        "views": 5617,
+        "quote": "Cafe baru konsepnya totalitas dan unik banget di blok-M sarang semut cafe",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=IENdxNbak30",
+        "source_title": "Mampir ke Sarang Semut ‼️ Cafe yang Lagi Viral dan Hits di Blok M , Dari Pagi Sampai Malam Penuh !!!",
+        "published_at": "2025-11-15T01:00:34Z",
+        "views": 826,
+        "quote": "Mampir ke Sarang Semut ‼️ Cafe yang Lagi Viral dan Hits di Blok M",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=H8WZynkghzg",
+        "source_title": "Tempat dan makanan wajib di blok m Jakarta, Sarang semut blok m wisata kuliner viral baru di Jakarta",
+        "published_at": "2025-11-27T08:00:06Z",
+        "views": 1109,
+        "quote": "Sarang semut blok m plaza",
+        "area_hint": "blok m plaza"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=grxoUukjxGQ",
+        "source_title": "JANGAN KESINI KALAU NGGAK MAU ANTRI...! REVIEW JUJUR CAFE VIRAL SARANG SEMUT |ANDREPRODUCTIONCHANNEL",
+        "published_at": "2025-12-23T01:53:13Z",
+        "views": 590,
+        "quote": "mampir ke Sarang Semut, cafe yang lagi viral banget di kawasan Blok M",
+        "area_hint": "Blok M (Dekat MRT Blok M BCA / M Bloc Space)"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=73_5JqnaQn0",
+        "source_title": "Desert Sarang Semut: Tempat Nongkrong Unik di Jakarta!",
+        "published_at": "2026-02-19T01:45:00Z",
+        "views": 1401,
+        "quote": "Desert Sarang Semut punya konsep unik ala gurun dengan spot foto super aesthetic",
+        "area_hint": "Blok M"
+      }
+    ],
+    "n_mentions": 6,
+    "n_sources": 6,
+    "total_views": 16529
+  },
+  {
+    "id": "disc-gultik-pengkolan",
+    "name": "Gultik pengkolan",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "street_food",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Blok M Square",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ShdXrrfxqW4",
+        "source_title": "EKSPLOR SPOT KULINER BLOK M 🤯🔥 Dari foodstreet sampai yg viral! #kulinerblokm #kulinerviral",
+        "published_at": "2026-05-17T01:30:17Z",
+        "views": 6986,
+        "quote": "Gultik pengkolan"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://rooma21.com/blogproperti/article/kuliner-blok-m-square-kebayoran-baru",
+        "source_title": "10 Kuliner Legendaris Blok M Square (Wajib Coba!)",
+        "quote": "1. Gultik (Gulai Tikungan)",
+        "area_hint": "Blok M Square"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 6986
+  },
+  {
+    "id": "disc-minang-pride",
+    "name": "Minang Pride",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Minang Pride"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5TEjnnc8rt0",
+        "source_title": "JANGAN KE BLOK M SEBELUM NONTON INI! + Buffet Hotel Bintang 5 TER-MURAH 🇮🇩 2026 | JAKARTA Vlog",
+        "published_at": "2026-10-01T05:15:15Z",
+        "views": 890,
+        "quote": "Nasi Dendeng Minang Pride"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 37331
+  },
+  {
+    "id": "disc-maiku-cafe",
+    "name": "Maiku Cafe",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "Blok M",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Maiku Cafe"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=f-8JZRRXh_I",
+        "source_title": "blok m viral places",
+        "published_at": "2024-08-31T04:05:00Z",
+        "views": 45113,
+        "quote": "📍 Maiku Cafe",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.liputan6.com/lifestyle/read/7296582/rekomendasi-tempat-makan-viral-di-blok-m",
+        "source_title": "15 Rekomendasi Tempat Makan Viral di Blok M 2026, dari Mie Legendaris hingga Donat Labu Artisan",
+        "quote": "• Maiku Cafe — Surga Tiramisu Halal di Melawai",
+        "area_hint": "Melawai"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://gopay.co.id/blog/cafe-di-blok-m",
+        "source_title": "10 Cafe di Blok M, Buat Nongkrong, Me Time, Hingga WFC!",
+        "quote": "Gak cuma itu, Maiku juga surganya pecinta Tiramisu, lho!",
+        "area_hint": "Jl. Melawai 6 No.19"
+      }
+    ],
+    "n_mentions": 4,
+    "n_sources": 4,
+    "total_views": 81554
+  },
+  {
+    "id": "disc-fuku-gelato",
+    "name": "Fuku Gelato",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "dessert",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Fuku Gelato"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=xfr79dzCGag",
+        "source_title": "VIRAL BLOK M 🇮🇩 | Ube Matcha, Butter Tteok & Cool Cafés in Jakarta",
+        "published_at": "2026-08-10T12:36:19Z",
+        "views": 19846,
+        "quote": "• Fuku Gelato"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 56287
+  },
+  {
+    "id": "disc-busy-cafe",
+    "name": "Busy Cafe",
+    "lat": -6.2443607,
+    "lon": 106.8021592,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "exact",
+    "area_hint": "Blok M",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Busy Cafe"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=QYb70iN_0Ag",
+        "source_title": "PUAS KULINERAN SEHARIAN DI BLOK M JAKARTA! 😍 Banyak Jajanan Enak & Viral!",
+        "published_at": "2025-12-23T08:06:44Z",
+        "views": 6984,
+        "quote": "Busy Cheese Cafe – Surga bagi pecinta keju",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=f-8JZRRXh_I",
+        "source_title": "blok m viral places",
+        "published_at": "2024-08-31T04:05:00Z",
+        "views": 45113,
+        "quote": "📍 Busy Cheese Cafe",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=gSegfIL2Dec",
+        "source_title": "Exploring Blok M Jakarta | LRT Ride, Cafes & Night Walk |Family Silent Vlog Jakarta",
+        "published_at": "2026-05-09T01:45:07Z",
+        "views": 12190,
+        "quote": "including KURASU, Busy Cafe, Butter Baby, Haus Ninete, Little Salt Bread, Takeichi, and ending the night at Scarlet.",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=gSegfIL2Dec",
+        "source_title": "Exploring Blok M Jakarta | LRT Ride, Cafes & Night Walk |Family Silent Vlog Jakarta",
+        "published_at": "2026-05-09T01:45:07Z",
+        "views": 12190,
+        "quote": "4:57 Cafe Busy"
+      }
+    ],
+    "n_mentions": 5,
+    "n_sources": 4,
+    "total_views": 112918
+  },
+  {
+    "id": "disc-ayam-sambel",
+    "name": "Ayam Sambel Melawai",
+    "lat": -6.2458862,
+    "lon": 106.8018956,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Melawai",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Ayam Sambel Melawai",
+        "area_hint": "Melawai"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=mUBpZa1Ape8",
+        "source_title": "Ayamnya gurih, sambelnya nampol, jukut gorengnya bikin nagih 🔥 #kulinerblokm #ayamgoreng #nasiayam",
+        "published_at": "2026-05-21T12:17:49Z",
+        "views": 1444,
+        "quote": "Ayam Sambel Melawai jadi salah satu tempat makan legendaris di Blok M Square",
+        "area_hint": "Blok M Square, lantai basement"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 37885
+  },
+  {
+    "id": "disc-matcha-times",
+    "name": "Matcha Times",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Matcha Times"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=xfr79dzCGag",
+        "source_title": "VIRAL BLOK M 🇮🇩 | Ube Matcha, Butter Tteok & Cool Cafés in Jakarta",
+        "published_at": "2026-08-10T12:36:19Z",
+        "views": 19846,
+        "quote": "• Matcha Times"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 56287
+  },
+  {
+    "id": "disc-pony-puff-coffee",
+    "name": "Pony Puff & Coffee",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "bakery",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Pony Puff & Coffee"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5TEjnnc8rt0",
+        "source_title": "JANGAN KE BLOK M SEBELUM NONTON INI! + Buffet Hotel Bintang 5 TER-MURAH 🇮🇩 2026 | JAKARTA Vlog",
+        "published_at": "2026-10-01T05:15:15Z",
+        "views": 890,
+        "quote": "Pony Puff & Coffee"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 37331
+  },
+  {
+    "id": "disc-tokyo-skipjack",
+    "name": "Tokyo Skipjack",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=B-ASGTU8vWs",
+        "source_title": "KULINER BLOK M (PART 2) LAGI : Cobain 22 Spot Kuliner Menarik Blok M #kulinerblokm #makananviral",
+        "published_at": "2026-05-03T09:53:17Z",
+        "views": 36441,
+        "quote": "- Tokyo Skipjack"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.nibble.id/kuliner-enak-di-sekitar-m-bloc-space",
+        "source_title": "10 Tempat Kuliner Enak di Sekitar M Bloc Space - Nibble.id",
+        "quote": "7. Tokyo Skipjack"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 36441
+  },
+  {
+    "id": "disc-rm-kelok-indah",
+    "name": "RM. Kelok Indah",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Pujasera Blok M Square",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ZvggGa3T70w",
+        "source_title": "Nemu resto padang otentik nih di Blok M , lokasi di pujasera Blok M square.",
+        "published_at": "2025-06-14T02:00:35Z",
+        "views": 6854710,
+        "quote": "Nemu resto padang otentik nih di Blok M , lokasi di pujasera Blok M square",
+        "area_hint": "Pujasera Blok M Square"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 6854710
+  },
+  {
+    "id": "disc-flour",
+    "name": "The Flour",
+    "lat": -6.2458862,
+    "lon": 106.8018956,
+    "category": "bakery",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Jl. Melawai IV no.1, Blok M, Jakarta Selatan",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=X0AliW39lNQ",
+        "source_title": "Paling seneng kalau ada brand yang mau terima masukan trus langsung diimprove … good job 👍",
+        "published_at": "2026-09-09T12:01:15Z",
+        "views": 830182,
+        "quote": "📍 The Flour 📌 Jl. Melawai IV no.1 , Blok M , Jakarta Selatan",
+        "area_hint": "Jl. Melawai IV no.1, Blok M, Jakarta Selatan"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5TEjnnc8rt0",
+        "source_title": "JANGAN KE BLOK M SEBELUM NONTON INI! + Buffet Hotel Bintang 5 TER-MURAH 🇮🇩 2026 | JAKARTA Vlog",
+        "published_at": "2026-10-01T05:15:15Z",
+        "views": 890,
+        "quote": "The Flour"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=xfr79dzCGag",
+        "source_title": "VIRAL BLOK M 🇮🇩 | Ube Matcha, Butter Tteok & Cool Cafés in Jakarta",
+        "published_at": "2026-08-10T12:36:19Z",
+        "views": 19846,
+        "quote": "pastries at Pony and The Flour"
+      }
+    ],
+    "n_mentions": 3,
+    "n_sources": 3,
+    "total_views": 850918
+  },
+  {
+    "id": "disc-mie-dondon",
+    "name": "Mie Ayam Baso Dondon",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "street_food",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Blok M Square lt. Basement",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=Y8QU71YD7TY",
+        "source_title": "Sebelum viral mie piring di Blok M , sudah ada mie Dondon yang Legend , dua mie ini beda tipe sih.",
+        "published_at": "2024-07-30T02:00:22Z",
+        "views": 468958,
+        "quote": "📍 Mie Dondon 📌 Blok M square lt. Basement",
+        "area_hint": "Blok M Square lt. Basement"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ifYS5GuchSI",
+        "source_title": "Mie Dondon, Kuliner Viral di Blok M Square | Kabar Siang tvOne",
+        "published_at": "2025-06-20T07:06:38Z",
+        "views": 6779,
+        "quote": "Mie Dondon, Kuliner Viral di Blok M Square",
+        "area_hint": "basement Blok M Square"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=m-LKaYQ8sIM",
+        "source_title": "Keliling di Pujasera Blok M yang super ramai, banyak makanan viral yang direview food blogger!",
+        "published_at": "2025-06-27T11:45:10Z",
+        "views": 510,
+        "quote": "Siapa yang gak tau bakmi piring, thai baby, snack bentuk sendal dengan isian keju mulur, gorengan pak de, dan mie ayam dondon?",
+        "area_hint": "Basement Pujasera Blok M Square"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=FWnbR5C9A-w",
+        "source_title": "AJIB!! JUALAN DI BASEMENT MALL TAPI SELALU RUAME! MIE AYAM DONDON DI BLOK M SQUARE!!",
+        "published_at": "2024-05-12T03:00:14Z",
+        "views": 144876,
+        "quote": "Mie Ayam Bakso Dondon Blok M Square Lt. Basement No. 170 Pujasera B",
+        "area_hint": "Blok M Square Lt. Basement No. 170 Pujasera B"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.liputan6.com/lifestyle/read/7296582/rekomendasi-tempat-makan-viral-di-blok-m",
+        "source_title": "15 Rekomendasi Tempat Makan Viral di Blok M 2026, dari Mie Legendaris hingga Donat Labu Artisan",
+        "quote": "• Mie Ayam Baso Dondon — Legenda Basement Sejak 1984",
+        "area_hint": "Basement"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.grab.com/id/food-blog/12-rekomendasi-tempat-makan-di-blok-m-mall-plaza",
+        "source_title": "12 Rekomendasi Tempat Makan di Blok M Mall & Plaza | Grab ID",
+        "quote": "Mie Ayam Baso Dondon — Mie ayam dan bakso klasik dengan kuah kaldu gurih.",
+        "area_hint": "Area Blok M"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://3second.co.id/blog/traveling/rekomendasi-makan-di-blok-m",
+        "source_title": "12 Rekomendasi Makan di Blok M Paling Hits 2026, Wajib Kamu Coba! - 3Second",
+        "quote": "Mie Ayam Dondon termasuk yang sering direkomendasikan warga lokal maupun foodie.",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://gopay.co.id/blog/tempat-makan-di-pujasera-blok-m",
+        "source_title": "10 Rekomendasi Tempat Makan di Pujasera Blok M!",
+        "quote": "Mie Ayam Baso Dondon jadi legenda hidup di Blok M.",
+        "area_hint": "Blok M Square Lantai Basement, No.170, Pujasera Pintu M-M06"
+      }
+    ],
+    "n_mentions": 8,
+    "n_sources": 8,
+    "total_views": 621123
+  },
+  {
+    "id": "disc-boemi-ayam-goreng",
+    "name": "Boemi Ayam Goreng",
+    "lat": -6.2436702,
+    "lon": 106.8030412,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Pasaraya Blok M",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=n5bGWP_NaVQ",
+        "source_title": "Bukan di goreng tapi di guyur … penghuni negara Blok M nih … cobain deh unik banget.",
+        "published_at": "2026-09-13T04:00:11Z",
+        "views": 310328,
+        "quote": "@boemiyamgor \n📌 Pasaraya Blok M , Jakarta Selatan",
+        "area_hint": "Pasaraya Blok M"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 310328
+  },
+  {
+    "id": "disc-obihiro-nikudon",
+    "name": "Obihiro Nikudon",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "Blok M",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=QYb70iN_0Ag",
+        "source_title": "PUAS KULINERAN SEHARIAN DI BLOK M JAKARTA! 😍 Banyak Jajanan Enak & Viral!",
+        "published_at": "2025-12-23T08:06:44Z",
+        "views": 6984,
+        "quote": "Obihiro Nikudon – Nikmatin daging lembut dengan nuansa yang bener2 .......... 😍",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=3iRs--lwM1E",
+        "source_title": "2 days of eating in blok m (best coffee, desserts & popular nikudon)",
+        "published_at": "2026-05-08T08:00:04Z",
+        "views": 56330,
+        "quote": "obihiro nikudon"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=-qePkYQznPs",
+        "source_title": "blok m jakarta | japanese restaurant, viral snacks, coffee, book & lifestyle store",
+        "published_at": "2026-03-09T14:56:00Z",
+        "views": 135375,
+        "quote": "Quick peek at Obihiru Nikudon"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=2cRgL9JXUoc",
+        "source_title": "Resto Jepang yang Baru Buka dan Viral di Blok M ‼️ Harus Antri 2 Jam Untuk Makan Di Obihiro Nikudon",
+        "published_at": "2025-11-18T08:00:09Z",
+        "views": 2786,
+        "quote": "Harus Antri 2 Jam Untuk Makan Di Obihiro Nikudon",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://3second.co.id/blog/traveling/rekomendasi-makan-di-blok-m",
+        "source_title": "12 Rekomendasi Makan di Blok M Paling Hits 2026, Wajib Kamu Coba! - 3Second",
+        "quote": "Obihiro Nikudon cukup populer di area Blok M.",
+        "area_hint": "Blok M"
+      }
+    ],
+    "n_mentions": 5,
+    "n_sources": 5,
+    "total_views": 201475
+  },
+  {
+    "id": "disc-mattea-social-space",
+    "name": "Mattea Social Space",
+    "lat": -6.2458862,
+    "lon": 106.8018956,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Jl. Melawai Raya No.71",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=RJ908miH4UE",
+        "source_title": "Rekomendasi cafe di Blok M😍(info lebih detail di deskripsi ya)",
+        "published_at": "2024-12-24T12:30:19Z",
+        "views": 10658,
+        "quote": "nama tempatnya Mattea Social Space. Konsep tempatnya bagus, lokasinya strategis dan luas juga ada 2 lantai indoor dan outdoor.",
+        "area_hint": "Jl. Melawai Raya No.71"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://gopay.co.id/blog/cafe-di-blok-m",
+        "source_title": "10 Cafe di Blok M, Buat Nongkrong, Me Time, Hingga WFC!",
+        "quote": "Mattea Social Space bisa jadi pilihan, lho.",
+        "area_hint": "Jl. Melawai Raya No.71"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.rumah123.com/explore/kota-jakarta-selatan/cafe-di-blok-m",
+        "source_title": "7 Cafe di Blok M yang Hits & Instagramable",
+        "quote": "Mattea Social Space adalah tempat ngopi dan ruang sosial tempat orang bisa bekerja"
+      }
+    ],
+    "n_mentions": 3,
+    "n_sources": 3,
+    "total_views": 10658
+  },
+  {
+    "id": "disc-suasana-kopi",
+    "name": "Suasana Kopi",
+    "lat": -6.2428415,
+    "lon": 106.7964067,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Jl. Bulungan No.9",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=zaWizu0WJT0",
+        "source_title": "Suasana Kopi Blok M - Rekomendasi Coffee Shop di Jakarta Selatan yang Enak Buat Ngopi di Pagi Hari",
+        "published_at": "2024-03-10T08:15:02Z",
+        "views": 4766,
+        "quote": "Lagi pengen banget nih ngopi pagi-pagi di Suasana Kopi ☕ Tempatnya ada di Row 9",
+        "area_hint": "Row 9, Jl. Bulungan No.9"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=3tOttOmdJwA",
+        "source_title": "SUASANA KOPI! Coffee Shop Andalan Kalcer Blok M.",
+        "published_at": "2026-02-03T10:13:01Z",
+        "views": 686,
+        "quote": "Salah satu cafe hits di Row 9 Blok M. SUASANA yang cozy dan santai",
+        "area_hint": "Row 9 Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=MY6R-qxi0F8",
+        "source_title": "REVIEW: SUASANA KOPI BLOK M - NONGKRONG DI SINI OTOMATIS FASIH BAHASA JAKSEL VIEW REVIEW",
+        "published_at": "2024-10-03T17:00:28Z",
+        "views": 280,
+        "quote": "baru aja cobain ngopi di Suasana Kopi Blok M nih!",
+        "area_hint": "Jl. Bulungan No.9"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://gopay.co.id/blog/cafe-di-blok-m",
+        "source_title": "10 Cafe di Blok M, Buat Nongkrong, Me Time, Hingga WFC!",
+        "quote": "Suasana Kopi jadi pilihan yang sempurna!",
+        "area_hint": "Jl. Bulungan No.9"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.rumah123.com/explore/kota-jakarta-selatan/cafe-di-blok-m",
+        "source_title": "7 Cafe di Blok M yang Hits & Instagramable",
+        "quote": "Seperti namanya, kafe ini memang menawarkan suasana yang hangat dan bersahabat."
+      }
+    ],
+    "n_mentions": 5,
+    "n_sources": 5,
+    "total_views": 5732
+  },
+  {
+    "id": "disc-scarlett-s-house",
+    "name": "Scarlett's House",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "BLOK M",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=f-8JZRRXh_I",
+        "source_title": "blok m viral places",
+        "published_at": "2024-08-31T04:05:00Z",
+        "views": 45113,
+        "quote": "📍 Scarlett's House BLOK M",
+        "area_hint": "BLOK M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=gSegfIL2Dec",
+        "source_title": "Exploring Blok M Jakarta | LRT Ride, Cafes & Night Walk |Family Silent Vlog Jakarta",
+        "published_at": "2026-05-09T01:45:07Z",
+        "views": 12190,
+        "quote": "Takeichi, and ending the night at Scarlet.",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=gSegfIL2Dec",
+        "source_title": "Exploring Blok M Jakarta | LRT Ride, Cafes & Night Walk |Family Silent Vlog Jakarta",
+        "published_at": "2026-05-09T01:45:07Z",
+        "views": 12190,
+        "quote": "13:51 Scarlett's House"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://gopay.co.id/blog/cafe-di-blok-m",
+        "source_title": "10 Cafe di Blok M, Buat Nongkrong, Me Time, Hingga WFC!",
+        "quote": "Kamu yang suka foto-foto aesthetic, pas banget ke cafe di Blok M ini!",
+        "area_hint": "Jl. Sultan Hasanudin"
+      }
+    ],
+    "n_mentions": 4,
+    "n_sources": 3,
+    "total_views": 69493
+  },
+  {
+    "id": "disc-daitokyo-sakaba",
+    "name": "Daitokyo Sakaba",
+    "lat": -6.2458862,
+    "lon": 106.8018956,
+    "category": "bar",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Little Tokyo",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=-qePkYQznPs",
+        "source_title": "blok m jakarta | japanese restaurant, viral snacks, coffee, book & lifestyle store",
+        "published_at": "2026-03-09T14:56:00Z",
+        "views": 135375,
+        "quote": "Daitokyo Sakaba (Japanese Yakitori Bar & Restaurant)"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=iP1J_9eejm0",
+        "source_title": "1 Day in Blok M, Jakarta | little tokyo, cafes, mrt, plaza mall, blok m square, parks",
+        "published_at": "2026-09-10T12:13:04Z",
+        "views": 9702,
+        "quote": "Daitokyo Sakaba",
+        "area_hint": "Little Tokyo"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://blog.cove.id/little-tokyo-blok-m",
+        "source_title": "8 Tempat Hangout Little Tokyo Blok M yang Wajib Dikunjungi",
+        "quote": "Sakaba",
+        "area_hint": "Little Tokyo Blok M"
+      }
+    ],
+    "n_mentions": 3,
+    "n_sources": 3,
+    "total_views": 145077
+  },
+  {
+    "id": "disc-filosofi-kopi",
+    "name": "Filosofi Kopi",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "Blok M",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=-qePkYQznPs",
+        "source_title": "blok m jakarta | japanese restaurant, viral snacks, coffee, book & lifestyle store",
+        "published_at": "2026-03-09T14:56:00Z",
+        "views": 135375,
+        "quote": "Filosofi Kopi"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=KfMDEXpMQQQ",
+        "source_title": "Walking Tour Blok M Jakarta – Filosofi Kopi, M Bloc Space, Gang Viral & Hunting Buku Bekas",
+        "published_at": "2026-02-28T08:07:40Z",
+        "views": 234,
+        "quote": "Filosofi Kopi Blok M",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=7PdTyMThil8",
+        "source_title": "Jakarta Diaries - Vlog - Life in Jakarta - Indonesian Food, Coffee, viral Doughnuts in Blok M",
+        "published_at": "2024-07-07T12:26:26Z",
+        "views": 171234,
+        "quote": "2. Filosofi Kopi Melawai",
+        "area_hint": "Melawai"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=Q_jjjV-GONo",
+        "source_title": "NONGKRONG ALA BEN & JODY! KEDAI KOPI PALING IKONIK DAN AESTHETIC DI BLOK M! FILOSOFI KOPI MELAWAI!",
+        "published_at": "2026-04-15T12:11:07Z",
+        "views": 495,
+        "quote": "Filosofi Kopi Melawai sukses menjadi salah satu pionir tren coffee shop hits di Jakarta Selatan!",
+        "area_hint": "Kawasan Blok M Square, Jl. Melawai 6 No.1"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=UDUyDbesZeU",
+        "source_title": "Filosofi Kopi Blok M",
+        "published_at": "2026-09-02T13:32:47Z",
+        "views": 200,
+        "quote": "Di tengah ramainya Blok M, Filosofi Kopi punya suasana yang bikin kita pengen duduk lebih lama",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=MRdeUJEJ67Y",
+        "source_title": "Dengan 100rb bisa ngopi berapa kali di blok M?",
+        "published_at": "2026-02-10T09:17:45Z",
+        "views": 3563,
+        "quote": "Mau santai sambil ngopi bisa di Kopi Filosofi.",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://gopay.co.id/blog/cafe-di-blok-m",
+        "source_title": "10 Cafe di Blok M, Buat Nongkrong, Me Time, Hingga WFC!",
+        "quote": "Langsung aja ke Filosofi Kopi dan cobain Long Black-nya!",
+        "area_hint": "Jl. Melawai 6"
+      }
+    ],
+    "n_mentions": 7,
+    "n_sources": 7,
+    "total_views": 311101
+  },
+  {
+    "id": "disc-k-life",
+    "name": "K-life",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "street_food",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=-qePkYQznPs",
+        "source_title": "blok m jakarta | japanese restaurant, viral snacks, coffee, book & lifestyle store",
+        "published_at": "2026-03-09T14:56:00Z",
+        "views": 135375,
+        "quote": "K-life (Lifestyle store & Korean Chewy Rice Cake)"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=xfr79dzCGag",
+        "source_title": "VIRAL BLOK M 🇮🇩 | Ube Matcha, Butter Tteok & Cool Cafés in Jakarta",
+        "published_at": "2026-08-10T12:36:19Z",
+        "views": 19846,
+        "quote": "• K-Life"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 155221
+  },
+  {
+    "id": "disc-ngl-burger-joint",
+    "name": "NGL Burger Joint",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5TEjnnc8rt0",
+        "source_title": "JANGAN KE BLOK M SEBELUM NONTON INI! + Buffet Hotel Bintang 5 TER-MURAH 🇮🇩 2026 | JAKARTA Vlog",
+        "published_at": "2026-10-01T05:15:15Z",
+        "views": 890,
+        "quote": "NGL Burger Joint"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=gSegfIL2Dec",
+        "source_title": "Exploring Blok M Jakarta | LRT Ride, Cafes & Night Walk |Family Silent Vlog Jakarta",
+        "published_at": "2026-05-09T01:45:07Z",
+        "views": 12190,
+        "quote": "11:05 NGL Burger Joint"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 13080
+  },
+  {
+    "id": "disc-ayam-becek-legendaris",
+    "name": "Ayam Becek Legendaris",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "Koridor B1",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5TEjnnc8rt0",
+        "source_title": "JANGAN KE BLOK M SEBELUM NONTON INI! + Buffet Hotel Bintang 5 TER-MURAH 🇮🇩 2026 | JAKARTA Vlog",
+        "published_at": "2026-10-01T05:15:15Z",
+        "views": 890,
+        "quote": "Ayam Becek Legendaris"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=SVOh8ezQnsI",
+        "source_title": "DARI SEPI JADI HITS! Keliling Spot Viral Blok M dari Underground Sampai Konser Musik",
+        "published_at": "2026-09-04T10:00:06Z",
+        "views": 7800,
+        "quote": "Antrean Mengular Ayam Becek Legendaris di Koridor B1",
+        "area_hint": "Koridor B1"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 8690
+  },
+  {
+    "id": "disc-seba-izakaya",
+    "name": "Seba Izakaya",
+    "lat": -6.2458862,
+    "lon": 106.8018956,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Little Tokyo, Blok M",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5TEjnnc8rt0",
+        "source_title": "JANGAN KE BLOK M SEBELUM NONTON INI! + Buffet Hotel Bintang 5 TER-MURAH 🇮🇩 2026 | JAKARTA Vlog",
+        "published_at": "2026-10-01T05:15:15Z",
+        "views": 890,
+        "quote": "Seba Izakaya"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=7YwDQ8ktIAg",
+        "source_title": "Check Here 👉🏼| Resto Jepang Seba Izakaya Blok M Yang Viral",
+        "published_at": "2026-08-25T10:00:26Z",
+        "views": 1221,
+        "quote": "Seba Izakaya Blok M adalah restoran bergaya izakaya (kedai minum/bar Jepang) yang dipadukan dengan listening bar.",
+        "area_hint": "Little Tokyo, Blok M"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 2111
+  },
+  {
+    "id": "disc-maru",
+    "name": "Maru",
+    "lat": -6.2350232,
+    "lon": 106.7963769,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "exact",
+    "area_hint": "Blok M",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=MujE4Mekj0Q",
+        "source_title": "Tempat Nugas Estetik di Blok M😱Maru Bikin Betah💫",
+        "published_at": "2025-11-28T10:00:39Z",
+        "views": 74,
+        "quote": "Maru tempat yang pas banget! Suasananya calm, interiornya estetik",
+        "area_hint": "Blok M"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 74
+  },
+  {
+    "id": "disc-maru-cafe",
+    "name": "Maru Cafe",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "Blok M",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=JZpQbodWk2I",
+        "source_title": "Tempat Nugas dan Nongkrong Ternyaman di Blok M🤔 Gabin Start dari 9rb aja❗",
+        "published_at": "2025-11-28T10:00:37Z",
+        "views": 218,
+        "quote": "Maru Cafe jawabannya! Tempat nyaman, vibes warm, minuman enak, plus cocok banget buat nongkrong produktif.",
+        "area_hint": "Blok M"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://3second.co.id/blog/traveling/rekomendasi-makan-di-blok-m",
+        "source_title": "12 Rekomendasi Makan di Blok M Paling Hits 2026, Wajib Kamu Coba! - 3Second",
+        "quote": "Maru Little Cafe punya konsep kecil tapi cozy, cocok buat kamu yang pengen istirahat sejenak",
+        "area_hint": "Blok M"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 218
+  },
+  {
+    "id": "disc-titik-temu-coffee",
+    "name": "Titik Temu Coffee",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "M Bloc",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=iP1J_9eejm0",
+        "source_title": "1 Day in Blok M, Jakarta | little tokyo, cafes, mrt, plaza mall, blok m square, parks",
+        "published_at": "2026-09-10T12:13:04Z",
+        "views": 9702,
+        "quote": "Titik Temu Coffee",
+        "area_hint": "M Bloc"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.goersapp.com/blog/kafe-dekat-mrt-blok-m",
+        "source_title": "10 Kafe Dekat MRT Blok M Paling Rekomended!",
+        "quote": "kamu bisa nugas di Titik Temu Coffee M Bloc",
+        "area_hint": "M Bloc"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 9702
+  },
+  {
+    "id": "disc-kira-kira-ginza",
+    "name": "Kira Kira Ginza",
+    "lat": -6.2458862,
+    "lon": 106.8018956,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Little Tokyo (Melawai)",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=2nEIMh9S12Y",
+        "source_title": "BLOK M SEMAKIN RAMAI | SUASANA TERKINI AKHIR 2025#blokmjakarta#blokm ",
+        "published_at": "2025-12-30T04:00:06Z",
+        "views": 2735,
+        "quote": "Restoran seperti Kira Kira Ginza atau Futago Ya masih menjadi primadona.",
+        "area_hint": "Little Tokyo (Melawai)"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://blog.cove.id/little-tokyo-blok-m",
+        "source_title": "8 Tempat Hangout Little Tokyo Blok M yang Wajib Dikunjungi",
+        "quote": "3. Kira-Kira Ginza.",
+        "area_hint": "Little Tokyo Blok M"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 2735
+  },
+  {
+    "id": "disc-futago-ya",
+    "name": "Futago Ya",
+    "lat": -6.2458862,
+    "lon": 106.8018956,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Little Tokyo (Melawai)",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=2nEIMh9S12Y",
+        "source_title": "BLOK M SEMAKIN RAMAI | SUASANA TERKINI AKHIR 2025#blokmjakarta#blokm ",
+        "published_at": "2025-12-30T04:00:06Z",
+        "views": 2735,
+        "quote": "Restoran seperti Kira Kira Ginza atau Futago Ya masih menjadi primadona.",
+        "area_hint": "Little Tokyo (Melawai)"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=SKPt-63-mMs",
+        "source_title": "Kuah ramen ini creamy banget, salah satu rekomendasi di little tokyo Blok M",
+        "published_at": "2024-02-14T12:21:20Z",
+        "views": 1736,
+        "quote": "Futago Ya di little tokyo Blok M ramen dan udon creamy sauce enak banget.",
+        "area_hint": "Little Tokyo Blok M"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.liputan6.com/lifestyle/read/7296582/rekomendasi-tempat-makan-viral-di-blok-m",
+        "source_title": "15 Rekomendasi Tempat Makan Viral di Blok M 2026, dari Mie Legendaris hingga Donat Labu Artisan",
+        "quote": "• Futago Ya — Kedai Jepang Halal yang Selalu Dipadati Antrean"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.grab.com/id/food-blog/12-rekomendasi-tempat-makan-di-blok-m-mall-plaza",
+        "source_title": "12 Rekomendasi Tempat Makan di Blok M Mall & Plaza | Grab ID",
+        "quote": "Futago Ya — Restoran Jepang halal yang menyajikan ramen, donburi, dan menu teppan.",
+        "area_hint": "Blok M Square"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.nibble.id/tempat-makan-halal-di-blok-m",
+        "source_title": "10 Tempat Makan Halal di Blok M yang Recommended! - Nibble",
+        "quote": "Restoran Jepang lain yang merupakan tempat makan halal di Blok M adalah Futago Ya.",
+        "area_hint": "Jl. Sultan Hasanudin Dalam No. 24"
+      }
+    ],
+    "n_mentions": 5,
+    "n_sources": 5,
+    "total_views": 4471
+  },
+  {
+    "id": "disc-gens-bar-resto",
+    "name": "Gens Bar & Resto",
+    "lat": -6.2458862,
+    "lon": 106.8018956,
+    "category": "bar",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Little Tokyo",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5EC1oPRzbN0",
+        "source_title": "Chillin' at Gens Bar & Resto in Little Tokyo, Blok M in Jakarta",
+        "published_at": "2024-01-02T03:00:01Z",
+        "views": 260,
+        "quote": "chillin' at Gens Bar & Resto in Little Tokyo",
+        "area_hint": "Little Tokyo"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 260
+  },
+  {
+    "id": "disc-ayam-goreng-hj-suharti",
+    "name": "Ayam Goreng Hj. Suharti",
+    "lat": -6.2458862,
+    "lon": 106.8018956,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Pujasera Melawai",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=m-mr9DZ0S4w",
+        "source_title": "TERNYATA SE-ENAK INI!!! AYAM GORENG LEGEND NYEMPIL DI TENGAH PUJASERA MELAWAI...",
+        "published_at": "2025-03-05T09:01:03Z",
+        "views": 136958,
+        "quote": "Ayam Goreng Hj. Suharti Kuliner Melawai",
+        "area_hint": "Pujasera Melawai"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=1juuwYwAVMk",
+        "source_title": "Ayam goreng legendaris di Melawai #psnovi #kuliner #streetfood #kulinerviral #ayamgoreng",
+        "published_at": "2026-05-16T09:51:52Z",
+        "views": 1755,
+        "quote": "📍 Ayam Goreng Ibu H.Suharti - Melawai Jaksel",
+        "area_hint": "Melawai Jaksel"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.astrapay.com/blog/rekomendasi-restoran-halal-blok-m",
+        "source_title": "Rekomendasi Restoran Halal di Blok M yang Wajib Dicoba ...",
+        "quote": "5. Ayam Goreng Suharti",
+        "area_hint": "Blok M"
+      }
+    ],
+    "n_mentions": 3,
+    "n_sources": 3,
+    "total_views": 138713
+  },
+  {
+    "id": "disc-nasi-kokoh",
+    "name": "Nasi Kokoh",
+    "lat": -6.2435286,
+    "lon": 106.7995921,
+    "category": "street_food",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Blok M Hub",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ssnI40RuXn0",
+        "source_title": "JALAN PAGI - Rekomendasi Jajanan Viral Yang Wajib Dicoba di Blok M Hub Jakarta",
+        "published_at": "2026-10-18T01:32:58Z",
+        "views": 13679,
+        "quote": "Beberapa kuliner ikonis yang dicicipi dalam penjelajahan ini antara lain Nasi Kokoh",
+        "area_hint": "Blok M Hub"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 13679
+  },
+  {
+    "id": "disc-jiroku-ramen",
+    "name": "Jiroku Ramen Melawai",
+    "lat": -6.2458862,
+    "lon": 106.8018956,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Jl. Sultan Hasanudin No.14, Melawai",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=EKIf_Ps1-Tk",
+        "source_title": "Kuliner Viral Nikudon Blok M ada di Jiroku Ramen Melawai, depan blok m hub gaes cobain vibes Jepang",
+        "published_at": "2026-10-12T13:55:06Z",
+        "views": 958,
+        "quote": "Kuliner Viral Nikudon Blok M ada di Jiroku Ramen Melawai",
+        "area_hint": "Jl. Sultan Hasanudin No.14, Melawai"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 958
+  },
+  {
+    "id": "disc-asinan-sayur-rujak-juhi-si-buhun",
+    "name": "Asinan Sayur & Rujak Juhi (Si Buhun)",
+    "lat": -6.2458862,
+    "lon": 106.8018956,
+    "category": "street_food",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Jl. Panglima Polim II, Melawai",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5yEL3NCjXZc",
+        "source_title": "​Kuliner Legendaris Betawi di Blok M Sejak Era 'Lintas Melawai'!",
+        "published_at": "2026-08-10T06:24:44Z",
+        "views": 1253,
+        "quote": "cobaan Asinan Sayur & Rujak Juhi (Si Buhun) di Jl. Panglima Polim II",
+        "area_hint": "Jl. Panglima Polim II, Melawai"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 1253
+  },
+  {
+    "id": "disc-london-layers",
+    "name": "London Layers",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "bakery",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "M Bloc Space",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=_vqAPkqSdWM",
+        "source_title": "Jalan-Jalan Seru ke M Bloc Space | Jajan di Kedai Roti Buaya & London Layers",
+        "published_at": "2025-08-10T09:04:49Z",
+        "views": 74,
+        "quote": "kita juga cobain pastry premium dari London Layers — teksturnya flaky",
+        "area_hint": "M Bloc Space"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.liputan6.com/lifestyle/read/7296582/rekomendasi-tempat-makan-viral-di-blok-m",
+        "source_title": "15 Rekomendasi Tempat Makan Viral di Blok M 2026, dari Mie Legendaris hingga Donat Labu Artisan",
+        "quote": "• London Layers — Croissant Premium Beraroma Butter Kuat"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 74
+  },
+  {
+    "id": "disc-kuliner-toba",
+    "name": "Kuliner Toba",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Lt. Basement, Blok M Square",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=w2yWeoQyPtA",
+        "source_title": "‼️BLOK M TERNYATA RAME ISI LAPO DAN BPK, DIMANANYA⁉️",
+        "published_at": "2025-06-12T15:58:35Z",
+        "views": 3014,
+        "quote": "Kuliner Toba\nLt. Basement, Blok M Square",
+        "area_hint": "Lt. Basement, Blok M Square"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 3014
+  },
+  {
+    "id": "disc-cendol-sri-rahayu",
+    "name": "Cendol Sri Rahayu",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "dessert",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Pujasera Basement 2 Blok M Square",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=SVOh8ezQnsI",
+        "source_title": "DARI SEPI JADI HITS! Keliling Spot Viral Blok M dari Underground Sampai Konser Musik",
+        "published_at": "2026-09-04T10:00:06Z",
+        "views": 7800,
+        "quote": "Kesegaran Es Cendol Sri Rahayu & Bakmi Piring Legendaris",
+        "area_hint": "Pujasera Basement 2 Blok M Square"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 7800
+  },
+  {
+    "id": "disc-sop-burtok",
+    "name": "Sop Burtok",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "street_food",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Pelataran Outdoor Blok M Square",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=SVOh8ezQnsI",
+        "source_title": "DARI SEPI JADI HITS! Keliling Spot Viral Blok M dari Underground Sampai Konser Musik",
+        "published_at": "2026-09-04T10:00:06Z",
+        "views": 7800,
+        "quote": "Transisi Sore ke Malam: Persiapan Kuliner Lesehan & Sop Burtok",
+        "area_hint": "Pelataran Outdoor Blok M Square"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 7800
+  },
+  {
+    "id": "disc-misoa-utama",
+    "name": "MISOA UTAMA",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "street_food",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Pujasera Lantai Basement, Blok H, Blok M Square",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=5CvnahECYHM",
+        "source_title": "KULINER JAKSEL MISOA UTAMA PUJASERA BLOK M SQUARE",
+        "published_at": "2024-07-08T04:34:15Z",
+        "views": 471,
+        "quote": "MISOA UTAMA (Pujasera Lantai Basement, Blok H)",
+        "area_hint": "Pujasera Lantai Basement, Blok H, Blok M Square"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 471
+  },
+  {
+    "id": "disc-thai-baby",
+    "name": "thai baby",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Basement Pujasera Blok M Square",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=m-LKaYQ8sIM",
+        "source_title": "Keliling di Pujasera Blok M yang super ramai, banyak makanan viral yang direview food blogger!",
+        "published_at": "2025-06-27T11:45:10Z",
+        "views": 510,
+        "quote": "Siapa yang gak tau bakmi piring, thai baby, snack bentuk sendal dengan isian keju mulur, gorengan pak de, dan mie ayam dondon?",
+        "area_hint": "Basement Pujasera Blok M Square"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://gopay.co.id/blog/tempat-makan-di-pujasera-blok-m",
+        "source_title": "10 Rekomendasi Tempat Makan di Pujasera Blok M!",
+        "quote": "Kedai Makanan Thai Baby (Source: instagram.com/dateideas.idn)",
+        "area_hint": "Jl. Melawai IV No.129"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 510
+  },
+  {
+    "id": "disc-gorengan-pak-de",
+    "name": "gorengan pak de",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "street_food",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Basement Pujasera Blok M Square",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=m-LKaYQ8sIM",
+        "source_title": "Keliling di Pujasera Blok M yang super ramai, banyak makanan viral yang direview food blogger!",
+        "published_at": "2025-06-27T11:45:10Z",
+        "views": 510,
+        "quote": "Siapa yang gak tau bakmi piring, thai baby, snack bentuk sendal dengan isian keju mulur, gorengan pak de, dan mie ayam dondon?",
+        "area_hint": "Basement Pujasera Blok M Square"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 510
+  },
+  {
+    "id": "disc-rm-katuju",
+    "name": "RM Katuju",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Pujasera Blok M Square, basement",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=ZO31XFp-Vaw",
+        "source_title": "Nyobain Masakan Padang di RM Katuju Blok M Square: Dimasak di TKP!",
+        "published_at": "2025-10-31T02:58:58Z",
+        "views": 247,
+        "quote": "salah satunya adalah masakan Padang... yakni RM Katuju. Lokasinya di basement",
+        "area_hint": "Pujasera Blok M Square, basement"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 247
+  },
+  {
+    "id": "disc-ril-kebab-burger",
+    "name": "Ril Kebab & Burger",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Basement Blok M Square, Pujasera",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=Xcv_w1XGRaM",
+        "source_title": "Yuk, Jelajahi Basement Blok M Square! Ada Apa Aja Sih?\"",
+        "published_at": "2026-02-05T01:00:06Z",
+        "views": 189,
+        "quote": "Terdapat beberapa gerai baru yang menarik, seperti Ril Kebab & Burger dan Kopi Tiam ALONG",
+        "area_hint": "Basement Blok M Square, Pujasera"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 189
+  },
+  {
+    "id": "disc-kopi-tiam-along",
+    "name": "Kopi Tiam ALONG",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Basement Blok M Square, Pujasera",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=Xcv_w1XGRaM",
+        "source_title": "Yuk, Jelajahi Basement Blok M Square! Ada Apa Aja Sih?\"",
+        "published_at": "2026-02-05T01:00:06Z",
+        "views": 189,
+        "quote": "Terdapat beberapa gerai baru yang menarik, seperti Ril Kebab & Burger dan Kopi Tiam ALONG",
+        "area_hint": "Basement Blok M Square, Pujasera"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 189
+  },
+  {
+    "id": "disc-halo-pasta",
+    "name": "Halo Pasta",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "basement Blok M Square",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=hq9Hlfi4M84",
+        "source_title": "ANTRI PANJANG VIRAL PARAH!! MAKANAN ITALI MURAH DIBAWAH PASAR..",
+        "published_at": "2024-11-16T02:40:02Z",
+        "views": 75501,
+        "quote": "Nemu tempat makan italy di basement nya blok m square yang lagi viral banget.",
+        "area_hint": "basement Blok M Square"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 75501
+  },
+  {
+    "id": "disc-mie-piring",
+    "name": "Mie Piring",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Pujasera Blok M Square, Basement",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=u0c6lw6RDjM",
+        "source_title": "Nyampe juga kesini , mie yang bikin heboh daerah Blok M , siap siap antri lah | #sibungbung",
+        "published_at": "2024-07-14T03:00:38Z",
+        "views": 1100825,
+        "quote": "📍 Mie Piring\n📌 Pujasera Blok M Square , di Basement",
+        "area_hint": "Pujasera Blok M Square, Basement"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 1100825
+  },
+  {
+    "id": "disc-bakmi-udang",
+    "name": "Bakmi Udang Blok M",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Blok M Square Pujasera lt Basement Blok F No 096",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=WLtdA2y0oQw",
+        "source_title": "REKOMENDASI BAKMIE DI BLOK M!! #shots #shortvideo",
+        "published_at": "2025-09-10T06:26:53Z",
+        "views": 1309,
+        "quote": "coba deh @bakmiudang.blokm — bakmi udangnya bukan main-main",
+        "area_hint": "Blok M Square Pujasera lt Basement Blok F No 096"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 1309
+  },
+  {
+    "id": "disc-umakopi",
+    "name": "Umakopi",
+    "lat": -6.2458862,
+    "lon": 106.8018956,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Little Tokyo",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=yoDsAw0wojY",
+        "source_title": "BLOK M RASA TOKYO?! CAFE VINYL INI WAJIB KAMU COBA!",
+        "published_at": "2026-07-29T12:00:18Z",
+        "views": 2916,
+        "quote": "mengunjungi @umakopi Blok M, coffee shop di kawasan Little Tokyo yang mengusung konsep Brews & Beats.",
+        "area_hint": "Little Tokyo"
+      },
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=bE00yqWdGo8",
+        "source_title": "UMA KOPI BLOK M, COFFEE SHOP ESTETIK DENGAN KONSEP VINYL YANG UNIK!",
+        "published_at": "2026-07-29T12:30:27Z",
+        "views": 487,
+        "quote": "mengunjungi @umakopi Blok M, coffee shop di kawasan Little Tokyo",
+        "area_hint": "Little Tokyo"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 3403
+  },
+  {
+    "id": "disc-vigano-coffee",
+    "name": "Vigano Coffee",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Lt Ground (bawah pintu Mutiara 1) Blok M Square",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=cgcvPa-83Ps",
+        "source_title": "NGOPI DI BLOK M ENAKNYA KE VIGANO COFFEE",
+        "published_at": "2026-09-29T10:05:54Z",
+        "views": 1254,
+        "quote": "Ngopi di Blok M enaknya di Vigano Coffee",
+        "area_hint": "Lt Ground (bawah pintu Mutiara 1) Blok M Square"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 1254
+  },
+  {
+    "id": "disc-kopi-toko-djawa",
+    "name": "Kopi Toko Djawa",
+    "lat": -6.2435286,
+    "lon": 106.7995921,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Blok M Hub",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=Y25KTuXisUc",
+        "source_title": "Nyobain Kopi Toko Djawa Blok M Hub @kopitokodjawa #kopitokodjawa #blokm #RZfamily",
+        "published_at": "2026-09-10T08:36:59Z",
+        "views": 294,
+        "quote": "Ngopi dan nyore santai di Kopi Toko Djawa cabang Blok M Hub beneran gak pernah gagal!",
+        "area_hint": "Blok M Hub"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 294
+  },
+  {
+    "id": "disc-tuku",
+    "name": "TUKU",
+    "lat": -6.2439142,
+    "lon": 106.7997041,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "exact",
+    "area_hint": "Blok M",
+    "mentions": [
+      {
+        "source_type": "youtube",
+        "source_url": "https://www.youtube.com/watch?v=4Qtpsb-d6lk",
+        "source_title": "Ngopi di TUKU Blok M, SAMPAI HARUS ANTRE PANJANG! Worth It Nggak Sih?",
+        "published_at": "2025-08-07T23:00:56Z",
+        "views": 355,
+        "quote": "Ngopi di TUKU Blok M",
+        "area_hint": "Blok M"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 355
+  },
+  {
+    "id": "disc-mie-star",
+    "name": "MIE STAR Melawai",
+    "lat": -6.2458862,
+    "lon": 106.8018956,
+    "category": "street_food",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Melawai",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://www.grab.com/id/food-blog/12-rekomendasi-tempat-makan-di-blok-m-mall-plaza",
+        "source_title": "12 Rekomendasi Tempat Makan di Blok M Mall & Plaza | Grab ID",
+        "quote": "MIE STAR Melawai — Kedai mie dan bakmi yang sudah populer di kalangan pekerja dan warga sekitar Melawai.",
+        "area_hint": "Melawai"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 0
+  },
+  {
+    "id": "disc-roji-ramen",
+    "name": "Roji Ramen",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Blok M Square",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://www.grab.com/id/food-blog/12-rekomendasi-tempat-makan-di-blok-m-mall-plaza",
+        "source_title": "12 Rekomendasi Tempat Makan di Blok M Mall & Plaza | Grab ID",
+        "quote": "Roji Ramen — Ramen halal dengan kuah kental dan topping melimpah.",
+        "area_hint": "Blok M Square"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.nibble.id/tempat-makan-halal-di-blok-m",
+        "source_title": "10 Tempat Makan Halal di Blok M yang Recommended! - Nibble",
+        "quote": "Roji Ramen adalah salah satu tempat makan halal di Blok M dengan atmosfer yang menarik.",
+        "area_hint": "KAMAJA Social Space, Jl. Kyai Maja Blok E No. 78 - 79"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 0
+  },
+  {
+    "id": "disc-mister-pho",
+    "name": "Mister Pho",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Blok M Square",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://www.grab.com/id/food-blog/12-rekomendasi-tempat-makan-di-blok-m-mall-plaza",
+        "source_title": "12 Rekomendasi Tempat Makan di Blok M Mall & Plaza | Grab ID",
+        "quote": "Mister Pho — Pho dan sup Asia Tenggara halal dengan kaldu yang kaya rasa.",
+        "area_hint": "Blok M Square"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.nibble.id/tempat-makan-halal-di-blok-m",
+        "source_title": "10 Tempat Makan Halal di Blok M yang Recommended! - Nibble",
+        "quote": "Salah satu tempat makan halal di Blok M terkenal dengan menu pho yang hangat dan gurih.",
+        "area_hint": "Pasaraya Blok M, Lantai Ground Jl. Iskandarsyah II"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 0
+  },
+  {
+    "id": "disc-ricaraja",
+    "name": "Ricaraja",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Blok M Square",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://www.grab.com/id/food-blog/12-rekomendasi-tempat-makan-di-blok-m-mall-plaza",
+        "source_title": "12 Rekomendasi Tempat Makan di Blok M Mall & Plaza | Grab ID",
+        "quote": "Ricaraja — Masakan nusantara dan Chinese halal dengan beragam lauk pauk.",
+        "area_hint": "Blok M Square"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.nibble.id/tempat-makan-halal-di-blok-m",
+        "source_title": "10 Tempat Makan Halal di Blok M yang Recommended! - Nibble",
+        "quote": "Berikutnya ada Ricaraja yang merupakan restoran khas Manado.",
+        "area_hint": "Jl. Bulungan No. 76"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 0
+  },
+  {
+    "id": "disc-sunyi-house-of-coffee-and-hope",
+    "name": "Sunyi House of Coffee and Hope",
+    "lat": -6.2451636,
+    "lon": 106.7946126,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Jl. Barito I No.31",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://gopay.co.id/blog/cafe-di-blok-m",
+        "source_title": "10 Cafe di Blok M, Buat Nongkrong, Me Time, Hingga WFC!",
+        "quote": "Sunyi House of Coffee and Hope cocok banget buat jadi tempat WFC atau me time kamu, nih.",
+        "area_hint": "Jl. Barito I No.31"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 0
+  },
+  {
+    "id": "disc-underground-coffee-kitchen",
+    "name": "Underground Coffee & Kitchen",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Blok M Square, lantai bawah",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://www.rumah123.com/explore/kota-jakarta-selatan/cafe-di-blok-m",
+        "source_title": "7 Cafe di Blok M yang Hits & Instagramable",
+        "quote": "Berlokasi di area Blok M Square, tempat ini berada di lantai bawah.",
+        "area_hint": "Blok M Square, lantai bawah"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 0
+  },
+  {
+    "id": "disc-tis-my-cafe",
+    "name": "Tis My Cafe",
+    "lat": -6.2458862,
+    "lon": 106.8018956,
+    "category": "cafe",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Jl. Melawai Raya No. 116 F, Kebayoran Baru",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://www.instagram.com/p/DSRgQciATZ5",
+        "source_title": "💥 Blok M lagi, Blok M lagi! 🚇 Kali ini #SambilLaptopan di @ ...",
+        "quote": "Tis My Cafe, Jl. Melawai Raya No. 116 F, Kebayoran Baru, Jakarta",
+        "area_hint": "Jl. Melawai Raya No. 116 F, Kebayoran Baru"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 0
+  },
+  {
+    "id": "disc-mamimu",
+    "name": "Mamimu",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Blok M Square",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://www.instagram.com/p/DR53nfPiXXW",
+        "source_title": "FOMO DI BLOK M? BOLEH DONG Asal pilih yang sudah ...",
+        "quote": "Mamimu di blok M square juga sudah bersertifikasi Halal MUI kak.",
+        "area_hint": "Blok M Square"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 0
+  },
+  {
+    "id": "disc-yuki-japanese-restaurant",
+    "name": "Yuki Japanese Restaurant",
+    "lat": -6.2458862,
+    "lon": 106.8018956,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Little Tokyo Blok M",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://blog.cove.id/little-tokyo-blok-m",
+        "source_title": "8 Tempat Hangout Little Tokyo Blok M yang Wajib Dikunjungi",
+        "quote": "2. Yuki Japanese Restaurant",
+        "area_hint": "Little Tokyo Blok M"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.nibble.id/restoran-di-little-tokyo-blok-m",
+        "source_title": "10 Restoran di Little Tokyo Blok M yang Jepang Banget - Nibble",
+        "quote": "Yuki Japanese"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 0
+  },
+  {
+    "id": "disc-naruto-takoyaki",
+    "name": "Naruto Takoyaki",
+    "lat": -6.2458862,
+    "lon": 106.8018956,
+    "category": "street_food",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Little Tokyo Blok M",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://blog.cove.id/little-tokyo-blok-m",
+        "source_title": "8 Tempat Hangout Little Tokyo Blok M yang Wajib Dikunjungi",
+        "quote": "7. Naruto Takoyaki",
+        "area_hint": "Little Tokyo Blok M"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 0
+  },
+  {
+    "id": "disc-tokyo-night",
+    "name": "Tokyo Night",
+    "lat": -6.2458862,
+    "lon": 106.8018956,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Little Tokyo Blok M",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://blog.cove.id/little-tokyo-blok-m",
+        "source_title": "8 Tempat Hangout Little Tokyo Blok M yang Wajib Dikunjungi",
+        "quote": "8. Tokyo Night",
+        "area_hint": "Little Tokyo Blok M"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 0
+  },
+  {
+    "id": "disc-papaya-fresh-gallery",
+    "name": "Papaya Fresh Gallery",
+    "lat": -6.2457486,
+    "lon": 106.7988178,
+    "category": "other",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "exact",
+    "area_hint": "Jl. Melawai Raya No.28, RW",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://blog.cove.id/little-tokyo-blok-m",
+        "source_title": "8 Tempat Hangout Little Tokyo Blok M yang Wajib Dikunjungi",
+        "quote": "1. Papaya Fresh Gallery. Jl. Melawai Raya No.28, RW",
+        "area_hint": "Jl. Melawai Raya No.28, RW"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 0
+  },
+  {
+    "id": "disc-kashiwa-izakaya-restoran",
+    "name": "Kashiwa Izakaya Restoran",
+    "lat": -6.2458862,
+    "lon": 106.8018956,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Little Tokyo Melawai",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://www.nibble.id/restoran-di-little-tokyo-blok-m",
+        "source_title": "10 Restoran di Little Tokyo Blok M yang Jepang Banget - Nibble",
+        "quote": "Kashiwa Izakaya Restoran. Little Tokyo Melawai",
+        "area_hint": "Little Tokyo Melawai"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 0
+  },
+  {
+    "id": "disc-mbok-ndoro",
+    "name": "Mbok Ndoro",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "M Bloc Space",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://www.nibble.id/kuliner-enak-di-sekitar-m-bloc-space",
+        "source_title": "10 Tempat Kuliner Enak di Sekitar M Bloc Space - Nibble.id",
+        "quote": "2. Mbok Ndoro"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.kompas.com/food/read/2023/12/27/120700575/7-tempat-makan-di-m-bloc-space-untuk-habiskan-liburan-tahun-baru",
+        "source_title": "7 Tempat Makan di M Bloc Space untuk Habiskan Liburan ...",
+        "quote": "Mbok Ndoro berada di M Bloc Space, buka dari pukul 10.00-22.00 WIB.",
+        "area_hint": "M Bloc Space"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.liputan6.com/lifestyle/read/6315967/11-rekomendasi-tempat-makan-enak-di-m-bloc-space-pusat-kuliner-anak-muda-2026",
+        "source_title": "11 Rekomendasi Tempat Makan Enak di M Bloc Space ...",
+        "quote": "2. Mbok Ndoro Konsisten Sajikan",
+        "area_hint": "M Bloc Space"
+      }
+    ],
+    "n_mentions": 3,
+    "n_sources": 3,
+    "total_views": 0
+  },
+  {
+    "id": "disc-mr-roastman",
+    "name": "Mr. Roastman",
+    "lat": -6.2425,
+    "lon": 106.8005,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "area",
+    "area_hint": "M Bloc",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://www.nibble.id/kuliner-enak-di-sekitar-m-bloc-space",
+        "source_title": "10 Tempat Kuliner Enak di Sekitar M Bloc Space - Nibble.id",
+        "quote": "3. Mr. Roastman - M Bloc",
+        "area_hint": "M Bloc"
+      },
+      {
+        "source_type": "article",
+        "source_url": "https://www.idntimes.com/food/dining-guide/6-tempat-makan-di-m-bloc-space-mulai-dari-kafe-hingga-resto-01-lssck-xqfk5s",
+        "source_title": "6 Tempat Makan di M Bloc Space, Mulai dari Kafe hingga ...",
+        "quote": "2. Mr Roastman",
+        "area_hint": "M Bloc Space"
+      }
+    ],
+    "n_mentions": 2,
+    "n_sources": 2,
+    "total_views": 0
+  },
+  {
+    "id": "disc-kedai-rukun-yakarta",
+    "name": "Kedai Rukun Yakarta",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Blok M Square, Pujasera No.222 Blok G",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://gopay.co.id/blog/tempat-makan-di-pujasera-blok-m",
+        "source_title": "10 Rekomendasi Tempat Makan di Pujasera Blok M!",
+        "quote": "Tempat makan di Pujasera Blok M ini nyediain menu masakan Jawa ala rumahan",
+        "area_hint": "Blok M Square, Pujasera No.222 Blok G"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 0
+  },
+  {
+    "id": "disc-waroeng-tiki-taka",
+    "name": "WAROENG TIKI TAKA",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Blok M Square Lantai Basement Blok F no V",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://gopay.co.id/blog/tempat-makan-di-pujasera-blok-m",
+        "source_title": "10 Rekomendasi Tempat Makan di Pujasera Blok M!",
+        "quote": "WAROENG TIKI TAKA tuh tempat makan di Pujasera Blok M yang cocok banget buat pecinta sambal pedas.",
+        "area_hint": "Blok M Square Lantai Basement Blok F no V"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 0
+  },
+  {
+    "id": "disc-soto-padang-pak-malin",
+    "name": "Soto Padang Pak Malin",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Blok M Square Lantai Basement Blok J no 072 V",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://gopay.co.id/blog/tempat-makan-di-pujasera-blok-m",
+        "source_title": "10 Rekomendasi Tempat Makan di Pujasera Blok M!",
+        "quote": "Soto Padang Pak Malin (Source: instagram.com/alexdatuk)",
+        "area_hint": "Blok M Square Lantai Basement Blok J no 072 V"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 0
+  },
+  {
+    "id": "disc-mie-aceh-kopi-gayo-aceh-warung-bang-nasir",
+    "name": "Mie Aceh & Kopi Gayo Aceh Warung Bang Nasir",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "restaurant",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Blok M Square, B1 Pujasera JKS 037",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://gopay.co.id/blog/tempat-makan-di-pujasera-blok-m",
+        "source_title": "10 Rekomendasi Tempat Makan di Pujasera Blok M!",
+        "quote": "Mie Aceh & Kopi Gayo Aceh Warung Bang Nasir (Source: instagram.com/sukajajan)",
+        "area_hint": "Blok M Square, B1 Pujasera JKS 037"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 0
+  },
+  {
+    "id": "disc-sate-ayam-khas",
+    "name": "Sate Ayam Khas Blok M",
+    "lat": -6.2445743,
+    "lon": 106.8006164,
+    "category": "street_food",
+    "cuisine": [],
+    "osm_tags": {},
+    "origin": "discovered",
+    "location_precision": "landmark",
+    "area_hint": "Blok M Square",
+    "mentions": [
+      {
+        "source_type": "article",
+        "source_url": "https://rooma21.com/blogproperti/article/kuliner-blok-m-square-kebayoran-baru",
+        "source_title": "10 Kuliner Legendaris Blok M Square (Wajib Coba!)",
+        "quote": "2. Sate Ayam Khas Blok M",
+        "area_hint": "Blok M Square"
+      }
+    ],
+    "n_mentions": 1,
+    "n_sources": 1,
+    "total_views": 0
+  }
+]
