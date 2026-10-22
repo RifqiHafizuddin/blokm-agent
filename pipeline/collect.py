@@ -3,10 +3,9 @@
 Per place: the videos that mention it (incl. Shorts whose title names it), relevant viewer
 comments, article passages around its name, and thumbnail URLs. Output goes to
 data/raw/evidence.json (gitignored: it contains third-party text)."""
-import os
 from collections import defaultdict
 
-from common import DATA, RAW, cached, http, read_json, write_json
+from common import DATA, RAW, cached, read_json, write_json, youtube_get
 from resolve import GENERIC, norm
 
 COMMENTS_PER_VIDEO = 20
@@ -26,10 +25,8 @@ def name_in(text_norm: str, name_norm: str) -> bool:
 def video_comments(video_id: str) -> list[str]:
     def call():
         try:
-            res = http("GET", "https://www.googleapis.com/youtube/v3/commentThreads", params={
-                "part": "snippet", "videoId": video_id, "maxResults": COMMENTS_PER_VIDEO,
-                "order": "relevance", "textFormat": "plainText", "key": os.environ["YOUTUBE_API_KEY"],
-            }, retries=2).json()
+            res = youtube_get("commentThreads", retries=2, part="snippet", videoId=video_id,
+                              maxResults=COMMENTS_PER_VIDEO, order="relevance", textFormat="plainText")
         except Exception:
             return []  # comments disabled or video unavailable
         return [i["snippet"]["topLevelComment"]["snippet"]["textDisplay"] for i in res.get("items", [])]

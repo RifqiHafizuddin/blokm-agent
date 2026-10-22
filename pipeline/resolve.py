@@ -5,7 +5,9 @@ Location precision, from best to worst:
   exact     found by name in Nominatim inside the Blok M box
   landmark  placed at the building/street it was mentioned with (e.g. "Pujasera Blok M Square")
   area      no location found, but mentioned by 2+ independent sources about Blok M
-Anything weaker goes to data/raw/unresolved.json instead of the place list."""
+Places that are not in OSM need 2+ independent sources, so a single (possibly injected) video or article
+can't invent a place. Middle ground: one source is enough only if it is a YouTube video dedicated to that
+place (the only place extracted from it, and named in its title). Anything weaker goes to unresolved.json."""
 import re
 import time
 import unicodedata
@@ -115,20 +117,34 @@ def mention_record(c: dict) -> dict:
     return {k: c[k] for k in keep if c.get(k) not in (None, "")}
 
 
-def locate(cl: dict):
+def dedicated_video(cl: dict, places_per_url: dict) -> bool:
+    """Middle ground for single-source places: allowed only from a YouTube video about this one place,
+    i.e. it is the only place extracted from that video AND its name is in the video title.
+    One line in a "23 spots" list doesn't qualify."""
+    if cl["n_sources"] != 1:
+        return False
+    m = cl["mentions"][0]
+    if m.get("source_type") != "youtube" or len(places_per_url.get(m["source_url"], ())) != 1:
+        return False
+    title = norm(m.get("source_title", ""))
+    return bool(title) and fuzz.partial_ratio(cl["key"], title) >= 90
+
+
+def locate(cl: dict, dedicated: bool = False):
     for hit in nominatim(cl["name"]):
         lat, lon = float(hit["lat"]), float(hit["lon"])
         if in_bbox(lat, lon) and (hit.get("type") in FOOD_TYPES or hit.get("category") in ("amenity", "shop")):
             return lat, lon, "exact"
+    # Not in OSM: a single source isn't enough to publish a place (one injected video could invent one)
+    if cl["n_sources"] < 2 and not dedicated:
+        return None
     query = landmark_query(cl["area_hint"]) if cl["area_hint"] else None
     if query:
         for hit in nominatim(query):
             lat, lon = float(hit["lat"]), float(hit["lon"])
             if in_bbox(lat, lon):
                 return lat, lon, "landmark"
-    if cl["n_sources"] >= 2:
-        return BLOK_M_CENTER[0], BLOK_M_CENTER[1], "area"
-    return None
+    return BLOK_M_CENTER[0], BLOK_M_CENTER[1], "area"
 
 
 def main():
@@ -136,6 +152,10 @@ def main():
     candidates = read_json(RAW / "candidates.json")
     clusters = cluster_candidates(candidates)
     print(f"{len(candidates)} mentions -> {len(clusters)} distinct names")
+    places_per_url = {}
+    for cl in clusters:
+        for m in cl["mentions"]:
+            places_per_url.setdefault(m["source_url"], set()).add(cl["key"])
 
     places = {p["id"]: {**p, "origin": "osm", "location_precision": "osm", "mentions": []} for p in osm}
     osm_keys = [(p["id"], norm(p["name"])) for p in osm]
@@ -147,7 +167,8 @@ def main():
         if match:
             places[match]["mentions"].extend(mentions)
             continue
-        loc = locate(cl)
+        dedicated = dedicated_video(cl, places_per_url)
+        loc = locate(cl, dedicated)
         if (i + 1) % 25 == 0:
             print(f"  located {i + 1}/{len(clusters)} names")
         if not loc:
@@ -159,6 +180,7 @@ def main():
             "name": cl["name"], "lat": lat, "lon": lon, "category": cl["kind"], "cuisine": [],
             "osm_tags": {}, "origin": "discovered", "location_precision": precision,
             "area_hint": cl["area_hint"], "mentions": mentions,
+            "single_source": "dedicated video" if dedicated and precision != "exact" else None,
         })
 
     all_places = list(places.values()) + discovered
@@ -176,7 +198,7 @@ def write_report(places, unresolved, n_mentions, n_names):
     osm_mentioned = sum(1 for p in places if p["origin"] == "osm" and p["n_mentions"])
     top = sorted(places, key=lambda p: (-p["n_sources"], -p["total_views"]))[:15]
     lines = [
-        "# Coverage report: week 1 data skeleton", "",
+        "# Coverage report: data skeleton", "",
         "| Metric | Value |", "|---|---|",
         f"| Mentions extracted from videos and articles | {n_mentions} |",
         f"| Distinct place names | {n_names} |",

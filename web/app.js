@@ -2,7 +2,7 @@
 // via transformers.js; the optional chat agent calls the same tool functions through Gemini.
 import {
   pipeline, env, AutoProcessor, CLIPVisionModelWithProjection, RawImage,
-} from "https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.0";
+} from "transformers"; // pinned + integrity-checked via the import map in index.html
 
 env.allowLocalModels = false;
 
@@ -31,8 +31,11 @@ function uniqueByName(items) {
   const seen = new Set();
   return items.filter((x) => { const k = x.place.name.toLowerCase().trim(); if (seen.has(k)) return false; seen.add(k); return true; });
 }
-function store(key, value) { try { value == null ? localStorage.removeItem(key) : localStorage.setItem(key, value); } catch { /* storage unavailable */ } }
-function recall(key) { try { return localStorage.getItem(key); } catch { return null; } }
+// The visitor's API key is kept only for this browser tab (sessionStorage), never permanently.
+function store(key, value) { try { value == null ? sessionStorage.removeItem(key) : sessionStorage.setItem(key, value); } catch { /* storage unavailable */ } }
+function recall(key) { try { return sessionStorage.getItem(key); } catch { return null; } }
+// A diet "yes" counts only at high or medium confidence (low = one anonymous comment or a photo guess).
+const confirmed = (s) => s.value === "yes" && (s.confidence === "high" || s.confidence === "medium");
 
 // ---------- models (lazy, cached by the browser) ----------
 let textExtractor = null;
@@ -69,8 +72,8 @@ async function embedImage(url, statusEl) {
 // ---------- tools (used by the UI and by the chat agent) ----------
 function passes(p, f = {}) {
   if (f.category && p.category !== f.category) return false;
-  if (f.halal_only && p.signals.halal.value !== "yes") return false;
-  if (f.vegetarian_only && p.signals.vegetarian_friendly.value !== "yes") return false;
+  if (f.halal_only && !confirmed(p.signals.halal)) return false;
+  if (f.vegetarian_only && !confirmed(p.signals.vegetarian_friendly)) return false;
   if (f.max_price && !(p.price && p.price <= f.max_price)) return false;
   return true;
 }
@@ -97,15 +100,15 @@ function trending({ mode = "now", k = 10, category } = {}) {
   return uniqueByName(ps.map((p) => ({ place: p }))).slice(0, k);
 }
 function workSpots({ k = 8, halal_only = false } = {}) {
-  const ps = S.places.filter((p) => p.wfc > 0 && (!halal_only || p.signals.halal.value === "yes"))
+  const ps = S.places.filter((p) => p.wfc > 0 && (!halal_only || confirmed(p.signals.halal)))
     .sort((a, b) => b.wfc - a.wfc || b.wfc_known - a.wfc_known);
   return uniqueByName(ps.map((p) => ({ place: p }))).slice(0, k);
 }
 async function groupPick(members, k = 3, statusEl) {
   let pool = S.places.map((p, i) => ({ p, i }));
   for (const m of members) {
-    if (m.halal) pool = pool.filter(({ p }) => p.signals.halal.value === "yes");
-    if (m.vegetarian) pool = pool.filter(({ p }) => p.signals.vegetarian_friendly.value === "yes");
+    if (m.halal) pool = pool.filter(({ p }) => confirmed(p.signals.halal));
+    if (m.vegetarian) pool = pool.filter(({ p }) => confirmed(p.signals.vegetarian_friendly));
     if (m.max_price) pool = pool.filter(({ p }) => !p.price || p.price <= m.max_price);
   }
   if (!pool.length) return { pool: 0, results: [] };
@@ -146,6 +149,7 @@ const SIGNAL_LABELS = { halal: "Halal", vegetarian_friendly: "Vegetarian", wifi:
 const PRECISION = { osm: "exact", exact: "exact", street: "street", landmark: "approx.", area: "somewhere in Blok M" };
 
 function halalBadge(s) {
+  if (s.value === "yes" && !confirmed(s)) return `<span class="badge">halal unconfirmed (low)</span>`;
   if (s.value === "yes") return `<span class="badge good">✓ halal · ${esc(s.confidence)}</span>`;
   if (s.value === "no") return `<span class="badge bad">✗ not halal · ${esc(s.confidence)}</span>`;
   return `<span class="badge">halal not confirmed</span>`;
@@ -156,12 +160,13 @@ function card(p, extra = "", thumb = p.thumb) {
   if (p.buzz.trending_score > 0) badges.push(`<span class="badge hot">🔥 ${p.buzz.trending_score}</span>`);
   if (p.wfc > 0) badges.push(`<span class="badge">💻 ${p.wfc}/10</span>`);
   if (p.price) badges.push(`<span class="badge">~${fmtRp(p.price)}</span>`);
+  if (p.single_source) badges.push(`<span class="badge" title="Known from one video dedicated to this place">1 dedicated video</span>`);
   const evidence = Object.entries(p.signals).filter(([, s]) => s.value !== "unknown" && s.evidence.length);
   const ev = evidence.length ? `<details><summary>Evidence (${evidence.length})</summary><ul>${evidence.map(([k, s]) =>
     `<li><b>${SIGNAL_LABELS[k]}: ${esc(s.value)}</b> (${esc(s.confidence)}) — ${s.evidence.map((e) =>
-      `<a href="${esc(safeUrl(e.url))}" target="_blank" rel="noopener" class="quote">“${esc(e.quote)}”</a>`).join("; ")}</li>`).join("")}</ul></details>` : "";
-  const video = p.videos[0] ? `<a href="${esc(safeUrl(p.videos[0].url))}" target="_blank" rel="noopener">▶ latest video</a>` : "";
-  const map = `<a href="https://www.openstreetmap.org/?mlat=${p.lat}&mlon=${p.lon}#map=19/${p.lat}/${p.lon}" target="_blank" rel="noopener">📍 ${esc(p.where)} (${PRECISION[p.precision] || esc(p.precision)})</a>`;
+      `<a href="${esc(safeUrl(e.url))}" target="_blank" rel="noopener noreferrer" class="quote">“${esc(e.quote)}”</a>`).join("; ")}</li>`).join("")}</ul></details>` : "";
+  const video = p.videos[0] ? `<a href="${esc(safeUrl(p.videos[0].url))}" target="_blank" rel="noopener noreferrer">▶ latest video</a>` : "";
+  const map = `<a href="https://www.openstreetmap.org/?mlat=${p.lat}&mlon=${p.lon}#map=19/${p.lat}/${p.lon}" target="_blank" rel="noopener noreferrer">📍 ${esc(p.where)} (${PRECISION[p.precision] || esc(p.precision)})</a>`;
   return `<article class="card ${thumb ? "" : "no-thumb"}">
     ${thumb ? `<img class="thumb" src="${esc(safeUrl(thumb))}" alt="" loading="lazy" referrerpolicy="no-referrer">` : ""}
     <div><h3>${esc(p.name)}</h3>
@@ -179,10 +184,16 @@ async function runSearch(query) {
   const status = $("#search-status");
   if (!query.trim()) return;
   status.textContent = "Searching…";
-  const res = await searchPlaces({
-    query, k: 8, category: $("#f-cat").value || undefined, halal_only: $("#f-halal").checked,
-    vegetarian_only: $("#f-veg").checked, max_price: Number($("#f-price").value) || undefined,
-  }, status);
+  let res;
+  try {
+    res = await searchPlaces({
+      query, k: 8, category: $("#f-cat").value || undefined, halal_only: $("#f-halal").checked,
+      vegetarian_only: $("#f-veg").checked, max_price: Number($("#f-price").value) || undefined,
+    }, status);
+  } catch (err) {
+    status.textContent = "Search failed: " + err.message;
+    return;
+  }
   status.textContent = res.length ? `Best matches for “${query}”` : "";
   renderList($("#search-results"), res.map((r) => card(r.place)).join(""), "No place passes those filters. Try loosening one.");
 }
@@ -202,7 +213,7 @@ function renderBuzz(mode) {
     if (mode === "now") extra = `#${i + 1} · ${b.n_recent_videos} videos in 60 days (${fmtNum(b.views_60d)} views) · ${b.n_recent_articles} recent articles`;
     else if (mode === "new") {
       const q = p.new.evidence[0];
-      extra = `first seen ${esc(b.first_seen || "recently")}` + (q ? ` · <a class="quote" href="${esc(safeUrl(q.url))}" target="_blank" rel="noopener">“${esc(q.quote.slice(0, 160))}”</a>` : "");
+      extra = `first seen ${esc(b.first_seen || "recently")}` + (q ? ` · <a class="quote" href="${esc(safeUrl(q.url))}" target="_blank" rel="noopener noreferrer">“${esc(q.quote.slice(0, 160))}”</a>` : "");
     } else extra = `#${i + 1} · ⭐ ${b.favorite_score} · ${b.n_videos} videos, ${b.n_articles} articles overall`;
     return card(p, extra);
   }).join("");
@@ -241,7 +252,7 @@ $("#photo-go").addEventListener("click", async () => {
     const res = await vibeMatch(photoUrl, $("#photo-hint").value.trim(), Number($("#photo-weight").value), status);
     status.textContent = "Places whose photos look most like yours:";
     renderList($("#photo-results"), res.map((r) =>
-      card(r.place, `match ${(r.score * 100).toFixed(0)}% · <a href="${esc(safeUrl(r.video))}" target="_blank" rel="noopener">source video</a>`, r.thumb)).join(""));
+      card(r.place, `match ${(r.score * 100).toFixed(0)}% · <a href="${esc(safeUrl(r.video))}" target="_blank" rel="noopener noreferrer">source video</a>`, r.thumb)).join(""));
   } catch (err) {
     status.textContent = "Couldn't analyse that photo: " + err.message;
   } finally { $("#photo-go").disabled = false; }
@@ -326,7 +337,9 @@ const TOOL_DECLS = [
 function brief(p, extra = {}) {
   return { name: p.name, category: p.category, cuisine: p.cuisine, summary: p.summary, where: p.where,
     location_precision: p.precision, price_idr: p.price,
-    halal: p.signals.halal.value === "unknown" ? "not confirmed" : `${p.signals.halal.value} (${p.signals.halal.confidence})`,
+    halal: p.signals.halal.value === "unknown" ? "not confirmed"
+      : p.signals.halal.value === "yes" && !confirmed(p.signals.halal) ? "unconfirmed (low confidence)"
+      : `${p.signals.halal.value} (${p.signals.halal.confidence})`,
     trending_score: p.buzz.trending_score, new: p.new?.kind || null, work_score: p.wfc,
     map: `https://www.openstreetmap.org/?mlat=${p.lat}&mlon=${p.lon}`, ...extra };
 }
@@ -348,7 +361,7 @@ async function runTool(name, args) {
 const chatContents = [];
 function mdToHtml(text) {
   return esc(text).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>")
-    .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
 }
 function addMsg(role, html) {
   const div = document.createElement("div");
@@ -371,7 +384,7 @@ async function gemini(key) {
 $("#chat-form").addEventListener("submit", async (e) => {
   e.preventDefault();
   const key = $("#api-key").value.trim();
-  const text = $("#chat-input").value.trim();
+  const text = $("#chat-input").value.trim().slice(0, 500);
   if (!text) return;
   if (!key) { addMsg("bot", "Paste a Gemini API key above first. It's free from Google AI Studio."); return; }
   store("fs-gemini-key", $("#remember-key").checked ? key : null);
@@ -421,7 +434,9 @@ $("#search-examples").innerHTML = EXAMPLES.map((q) => `<button type="button">${e
 $("#search-examples").addEventListener("click", (e) => { if (e.target.tagName === "BUTTON") { $("#q").value = e.target.textContent; runSearch(e.target.textContent); } });
 
 async function boot() {
-  const [places, vectors] = await Promise.all([fetch("data/places.json").then((r) => r.json()), fetch("data/vectors.json").then((r) => r.json())]);
+  // "no-cache" = revalidate with the server each visit, so a data refresh shows up immediately
+  const get = (url) => fetch(url, { cache: "no-cache" }).then((r) => r.json());
+  const [places, vectors] = await Promise.all([get("data/places.json"), get("data/vectors.json")]);
   S.places = places.places;
   S.built = places.built;
   S.places.forEach((p) => S.byId.set(p.id, p));
@@ -436,6 +451,6 @@ async function boot() {
   if (saved) { $("#api-key").value = saved; $("#remember-key").checked = true; }
   $("#search-status").textContent = `${S.places.length} places in Blok M. Search runs in your browser.`;
   const tab = location.hash.slice(1);
-  showTab(document.querySelector(`.tabs button[data-tab="${tab}"]`) ? tab : "search");
+  showTab(document.querySelector(`.tabs button[data-tab="${CSS.escape(tab)}"]`) ? tab : "search");
 }
 boot().catch((err) => { $("#search-status").textContent = "Couldn't load the data: " + err.message; });

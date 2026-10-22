@@ -1,7 +1,13 @@
 .env
+.env.*
+!.env.example
 .venv/
 __pycache__/
 *.pyc
+.pytest_cache/
+.gradio/
+flagged/
+*.sqlite3
 # raw API responses and cache (third-party content, regenerable)
 data/raw/
 data/cache/

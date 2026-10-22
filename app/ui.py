@@ -134,7 +134,7 @@ def map_html() -> str:
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>html,body,#m{{height:100%;margin:0}}</style></head><body><div id="m"></div><script>
-const pts = {json.dumps(pts, ensure_ascii=False)};
+const pts = {json.dumps(pts, ensure_ascii=False).replace('<', chr(92) + 'u003c')};
 const m = L.map('m').setView([-6.2430, 106.8005], 16);
 L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png',
   {{maxZoom: 19, attribution: '&copy; OpenStreetMap contributors'}}).addTo(m);
@@ -143,7 +143,8 @@ pts.forEach(p => L.circleMarker([p.lat, p.lon], {{radius: 5 + p.viral / 20, colo
   .bindPopup(`<b>${{esc(p.name)}}</b> · ${{esc(p.cat)}}<br>${{esc(p.summary)}}<br><i>location: ${{esc(p.precision)}}</i>`)
   .addTo(m));
 </script></body></html>"""
-    return f'<iframe style="width:100%;height:560px;border:0" srcdoc="{html.escape(doc)}"></iframe>'
+    return (f'<iframe sandbox="allow-scripts allow-popups" style="width:100%;height:560px;border:0" '
+            f'srcdoc="{html.escape(doc)}"></iframe>')
 
 
 ABOUT = """## About Food Scout: Blok M

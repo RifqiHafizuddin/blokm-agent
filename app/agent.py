@@ -20,6 +20,24 @@ LLMS = [
     ("groq", "https://api.groq.com/openai/v1", "GROQ_API_KEY", "qwen/qwen3.8-27b"),
 ]
 MAX_STEPS = 6
+MAX_MESSAGE_CHARS = 500
+MAX_HISTORY_MESSAGES = 8
+# Tools the LLM may call. vibe_match_photo takes a file path, so only the UI calls it directly.
+AGENT_TOOLS = {"search_places", "get_place", "trending", "work_spots", "group_pick"}
+# Global cap on LLM calls per day for this process, so a public deployment can't drain the quota.
+MAX_LLM_CALLS_PER_DAY = int(os.environ.get("MAX_LLM_CALLS_PER_DAY", "300"))
+_budget = {"day": None, "calls": 0}
+
+
+def _spend() -> bool:
+    import datetime
+    today = datetime.date.today()
+    if _budget["day"] != today:
+        _budget.update(day=today, calls=0)
+    if _budget["calls"] >= MAX_LLM_CALLS_PER_DAY:
+        return False
+    _budget["calls"] += 1
+    return True
 
 SYSTEM_PROMPT = """You are Food Scout, a friendly local guide to food and cafes in Blok M, Jakarta.
 Reply in the same language as the user's LATEST message (English question -> English answer,
@@ -48,6 +66,8 @@ def _clients():
 
 
 def _complete(messages, tools):
+    if not _spend():
+        raise RuntimeError("daily LLM budget reached")
     last = None
     for name, client, model in _clients():
         try:
@@ -72,12 +92,12 @@ async def ask(question: str, history: list[dict] | None = None) -> tuple[str, li
     async with Client(mcp) as client:
         tools = [{"type": "function", "function": {"name": t.name, "description": t.description or "",
                                                    "parameters": t.inputSchema}}
-                 for t in await client.list_tools()]
+                 for t in await client.list_tools() if t.name in AGENT_TOOLS]
         messages = [{"role": "system", "content": SYSTEM_PROMPT}]
-        for m in history or []:
+        for m in (history or [])[-MAX_HISTORY_MESSAGES:]:
             if m.get("role") in ("user", "assistant") and isinstance(m.get("content"), str) and m["content"]:
-                messages.append({"role": m["role"], "content": m["content"]})
-        messages.append({"role": "user", "content": question})
+                messages.append({"role": m["role"], "content": m["content"][:2000]})
+        messages.append({"role": "user", "content": question[:MAX_MESSAGE_CHARS]})
 
         called = []
         for _ in range(MAX_STEPS):
@@ -92,6 +112,9 @@ async def ask(question: str, history: list[dict] | None = None) -> tuple[str, li
                              "tool_calls": [tc.model_dump() for tc in msg.tool_calls]})
             for tc in msg.tool_calls:
                 called.append(tc.function.name)
+                if tc.function.name not in AGENT_TOOLS:
+                    messages.append({"role": "tool", "tool_call_id": tc.id, "content": '{"error": "tool not allowed"}'})
+                    continue
                 try:
                     args = json.loads(tc.function.arguments or "{}")
                     result = await client.call_tool(tc.function.name, args)
@@ -117,6 +140,8 @@ def explain_group_pick(members: list[dict], result: dict) -> str:
               "Use only this data.\n\n"
               f"Members: {json.dumps(members, ensure_ascii=False)}\n\nResult: {json.dumps(result, ensure_ascii=False)[:6000]}")
     for _, client, model in _clients():
+        if not _spend():
+            break
         try:
             r = client.chat.completions.create(model=model, temperature=0.4,
                                                messages=[{"role": "user", "content": prompt}])

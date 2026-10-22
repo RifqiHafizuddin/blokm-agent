@@ -1,0 +1,663 @@
+[
+ {
+  "type": "text",
+  "id": "title",
+  "x": 40,
+  "y": 24,
+  "text": "The agentic side: a ReAct loop over read-only tools",
+  "fontSize": 34,
+  "fontFamily": 5,
+  "strokeColor": "#1e40af"
+ },
+ {
+  "type": "text",
+  "id": "subtitle",
+  "x": 40,
+  "y": 72,
+  "text": "same 5 tools, two hosts:  MCP server (Python app)  and  JS functions + Gemini function calling (website)",
+  "fontSize": 19,
+  "fontFamily": 5,
+  "strokeColor": "#64748b"
+ },
+ {
+  "type": "ellipse",
+  "id": "q",
+  "x": 30,
+  "y": 215,
+  "width": 270,
+  "height": 110,
+  "strokeColor": "#c2410c",
+  "backgroundColor": "#fed7aa",
+  "fillStyle": "solid",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "label": {
+   "text": "\"ada tempat\nmakan baru\ndi Blok M?\"",
+   "fontSize": 18,
+   "fontFamily": 5,
+   "strokeColor": "#7c2d12"
+  }
+ },
+ {
+  "type": "text",
+  "id": "q_note",
+  "x": 70,
+  "y": 335,
+  "text": "any new places to eat?",
+  "fontSize": 15,
+  "fontFamily": 5,
+  "strokeColor": "#64748b"
+ },
+ {
+  "type": "rectangle",
+  "id": "reason",
+  "x": 345,
+  "y": 200,
+  "width": 250,
+  "height": 100,
+  "strokeColor": "#6d28d9",
+  "backgroundColor": "#ddd6fe",
+  "fillStyle": "solid",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "roundness": {
+   "type": 3
+  },
+  "label": {
+   "text": "reason\nGemini reads the question\nand the tool descriptions",
+   "fontSize": 17,
+   "fontFamily": 5,
+   "strokeColor": "#4c1d95"
+  }
+ },
+ {
+  "type": "rectangle",
+  "id": "act",
+  "x": 620,
+  "y": 200,
+  "width": 200,
+  "height": 100,
+  "strokeColor": "#1e3a5f",
+  "backgroundColor": "#dbeafe",
+  "fillStyle": "solid",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "roundness": {
+   "type": 3
+  },
+  "label": {
+   "text": "act\nfunction call with\nchosen arguments",
+   "fontSize": 17,
+   "fontFamily": 5,
+   "strokeColor": "#1e3a5f"
+  }
+ },
+ {
+  "type": "rectangle",
+  "id": "observe",
+  "x": 620,
+  "y": 430,
+  "width": 200,
+  "height": 100,
+  "strokeColor": "#1e3a5f",
+  "backgroundColor": "#dbeafe",
+  "fillStyle": "solid",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "roundness": {
+   "type": 3
+  },
+  "label": {
+   "text": "observe\ncompact JSON result\n(no raw quotes)",
+   "fontSize": 17,
+   "fontFamily": 5,
+   "strokeColor": "#1e3a5f"
+  }
+ },
+ {
+  "type": "diamond",
+  "id": "enough",
+  "x": 330,
+  "y": 405,
+  "width": 230,
+  "height": 170,
+  "strokeColor": "#b45309",
+  "backgroundColor": "#fef3c7",
+  "fillStyle": "solid",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "label": {
+   "text": "enough to\nanswer?",
+   "fontSize": 18,
+   "fontFamily": 5,
+   "strokeColor": "#78350f"
+  }
+ },
+ {
+  "type": "ellipse",
+  "id": "answer",
+  "x": 40,
+  "y": 440,
+  "width": 230,
+  "height": 110,
+  "strokeColor": "#047857",
+  "backgroundColor": "#a7f3d0",
+  "fillStyle": "solid",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "label": {
+   "text": "answer in the\nuser's language",
+   "fontSize": 18,
+   "fontFamily": 5,
+   "strokeColor": "#064e3b"
+  }
+ },
+ {
+  "type": "arrow",
+  "id": "a_q_r",
+  "x": 302,
+  "y": 262,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    41,
+    -12
+   ]
+  ],
+  "strokeColor": "#c2410c",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "start": {
+   "id": "q"
+  },
+  "end": {
+   "id": "reason"
+  }
+ },
+ {
+  "type": "arrow",
+  "id": "a_r_a",
+  "x": 597,
+  "y": 250,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    21,
+    0
+   ]
+  ],
+  "strokeColor": "#6d28d9",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "start": {
+   "id": "reason"
+  },
+  "end": {
+   "id": "act"
+  }
+ },
+ {
+  "type": "arrow",
+  "id": "a_o_e",
+  "x": 618,
+  "y": 480,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    -60,
+    10
+   ]
+  ],
+  "strokeColor": "#1e3a5f",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "start": {
+   "id": "observe"
+  },
+  "end": {
+   "id": "enough"
+  }
+ },
+ {
+  "type": "arrow",
+  "id": "a_e_r",
+  "x": 460,
+  "y": 403,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    -101
+   ]
+  ],
+  "strokeColor": "#b45309",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "strokeStyle": "dashed",
+  "start": {
+   "id": "enough"
+  },
+  "end": {
+   "id": "reason"
+  },
+  "label": {
+   "text": "no: loop (max 6 steps)",
+   "fontSize": 15,
+   "fontFamily": 5,
+   "strokeColor": "#b45309"
+  }
+ },
+ {
+  "type": "arrow",
+  "id": "a_e_ans",
+  "x": 328,
+  "y": 490,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    -56,
+    0
+   ]
+  ],
+  "strokeColor": "#047857",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "start": {
+   "id": "enough"
+  },
+  "end": {
+   "id": "answer"
+  },
+  "label": {
+   "text": "yes",
+   "fontSize": 15,
+   "fontFamily": 5,
+   "strokeColor": "#047857"
+  }
+ },
+ {
+  "type": "text",
+  "id": "tools_title",
+  "x": 920,
+  "y": 100,
+  "text": "tools (plain code, read-only)\nhighlighted = chosen this time",
+  "fontSize": 17,
+  "fontFamily": 5,
+  "strokeColor": "#1e40af"
+ },
+ {
+  "type": "rectangle",
+  "id": "t_search",
+  "x": 920,
+  "y": 160,
+  "width": 200,
+  "height": 44,
+  "strokeColor": "#1e3a5f",
+  "backgroundColor": "#ffffff",
+  "fillStyle": "solid",
+  "strokeWidth": 1,
+  "roughness": 1,
+  "roundness": {
+   "type": 3
+  },
+  "label": {
+   "text": "search_places",
+   "fontSize": 16,
+   "fontFamily": 5,
+   "strokeColor": "#1e3a5f"
+  }
+ },
+ {
+  "type": "rectangle",
+  "id": "t_get",
+  "x": 920,
+  "y": 214,
+  "width": 200,
+  "height": 44,
+  "strokeColor": "#1e3a5f",
+  "backgroundColor": "#ffffff",
+  "fillStyle": "solid",
+  "strokeWidth": 1,
+  "roughness": 1,
+  "roundness": {
+   "type": 3
+  },
+  "label": {
+   "text": "get_place",
+   "fontSize": 16,
+   "fontFamily": 5,
+   "strokeColor": "#1e3a5f"
+  }
+ },
+ {
+  "type": "rectangle",
+  "id": "t_trend",
+  "x": 920,
+  "y": 268,
+  "width": 200,
+  "height": 44,
+  "strokeColor": "#b45309",
+  "backgroundColor": "#fef3c7",
+  "fillStyle": "solid",
+  "strokeWidth": 3,
+  "roughness": 1,
+  "roundness": {
+   "type": 3
+  },
+  "label": {
+   "text": "trending(mode=\"new\")",
+   "fontSize": 16,
+   "fontFamily": 5,
+   "strokeColor": "#78350f"
+  }
+ },
+ {
+  "type": "rectangle",
+  "id": "t_work",
+  "x": 920,
+  "y": 322,
+  "width": 200,
+  "height": 44,
+  "strokeColor": "#1e3a5f",
+  "backgroundColor": "#ffffff",
+  "fillStyle": "solid",
+  "strokeWidth": 1,
+  "roughness": 1,
+  "roundness": {
+   "type": 3
+  },
+  "label": {
+   "text": "work_spots",
+   "fontSize": 16,
+   "fontFamily": 5,
+   "strokeColor": "#1e3a5f"
+  }
+ },
+ {
+  "type": "rectangle",
+  "id": "t_group",
+  "x": 920,
+  "y": 376,
+  "width": 200,
+  "height": 44,
+  "strokeColor": "#1e3a5f",
+  "backgroundColor": "#ffffff",
+  "fillStyle": "solid",
+  "strokeWidth": 1,
+  "roughness": 1,
+  "roundness": {
+   "type": 3
+  },
+  "label": {
+   "text": "group_pick",
+   "fontSize": 16,
+   "fontFamily": 5,
+   "strokeColor": "#1e3a5f"
+  }
+ },
+ {
+  "type": "arrow",
+  "id": "f1",
+  "x": 822,
+  "y": 240,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    96,
+    -58
+   ]
+  ],
+  "strokeColor": "#94a3b8",
+  "strokeWidth": 1,
+  "roughness": 1,
+  "start": {
+   "id": "act"
+  },
+  "end": {
+   "id": "t_search"
+  }
+ },
+ {
+  "type": "arrow",
+  "id": "f2",
+  "x": 822,
+  "y": 245,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    96,
+    -9
+   ]
+  ],
+  "strokeColor": "#94a3b8",
+  "strokeWidth": 1,
+  "roughness": 1,
+  "start": {
+   "id": "act"
+  },
+  "end": {
+   "id": "t_get"
+  }
+ },
+ {
+  "type": "arrow",
+  "id": "f3",
+  "x": 822,
+  "y": 255,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    96,
+    35
+   ]
+  ],
+  "strokeColor": "#b45309",
+  "strokeWidth": 3,
+  "roughness": 1,
+  "start": {
+   "id": "act"
+  },
+  "end": {
+   "id": "t_trend"
+  }
+ },
+ {
+  "type": "arrow",
+  "id": "f4",
+  "x": 822,
+  "y": 262,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    96,
+    82
+   ]
+  ],
+  "strokeColor": "#94a3b8",
+  "strokeWidth": 1,
+  "roughness": 1,
+  "start": {
+   "id": "act"
+  },
+  "end": {
+   "id": "t_work"
+  }
+ },
+ {
+  "type": "arrow",
+  "id": "f5",
+  "x": 822,
+  "y": 270,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    96,
+    128
+   ]
+  ],
+  "strokeColor": "#94a3b8",
+  "strokeWidth": 1,
+  "roughness": 1,
+  "start": {
+   "id": "act"
+  },
+  "end": {
+   "id": "t_group"
+  }
+ },
+ {
+  "type": "arrow",
+  "id": "a_t_o",
+  "x": 1122,
+  "y": 290,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    40,
+    0
+   ],
+   [
+    40,
+    190
+   ],
+   [
+    -300,
+    190
+   ]
+  ],
+  "strokeColor": "#b45309",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "start": {
+   "id": "t_trend"
+  },
+  "end": {
+   "id": "observe"
+  },
+  "label": {
+   "text": "result",
+   "fontSize": 15,
+   "fontFamily": 5,
+   "strokeColor": "#b45309"
+  }
+ },
+ {
+  "type": "text",
+  "id": "g_title",
+  "x": 880,
+  "y": 540,
+  "text": "guardrails",
+  "fontSize": 22,
+  "fontFamily": 5,
+  "strokeColor": "#b91c1c"
+ },
+ {
+  "type": "text",
+  "id": "g1",
+  "x": 880,
+  "y": 575,
+  "text": "- tools only read data: no writes, files or network",
+  "fontSize": 16,
+  "fontFamily": 5,
+  "strokeColor": "#374151"
+ },
+ {
+  "type": "text",
+  "id": "g2",
+  "x": 880,
+  "y": 602,
+  "text": "- at most 6 reason/act steps per question",
+  "fontSize": 16,
+  "fontFamily": 5,
+  "strokeColor": "#374151"
+ },
+ {
+  "type": "text",
+  "id": "g3",
+  "x": 880,
+  "y": 629,
+  "text": "- halal / wifi / price come from verified evidence,\n  never from the model's own knowledge",
+  "fontSize": 16,
+  "fontFamily": 5,
+  "strokeColor": "#374151"
+ },
+ {
+  "type": "text",
+  "id": "g4",
+  "x": 880,
+  "y": 678,
+  "text": "- website: visitor's own key  |  Python app: daily cap",
+  "fontSize": 16,
+  "fontFamily": 5,
+  "strokeColor": "#374151"
+ },
+ {
+  "type": "text",
+  "id": "tr_label",
+  "x": 40,
+  "y": 610,
+  "text": "real trace (website chat, Oct 2026)",
+  "fontSize": 16,
+  "fontFamily": 5,
+  "strokeColor": "#64748b"
+ },
+ {
+  "type": "rectangle",
+  "id": "tr_box",
+  "x": 40,
+  "y": 638,
+  "width": 800,
+  "height": 126,
+  "strokeColor": "#1e293b",
+  "backgroundColor": "#1e293b",
+  "fillStyle": "solid",
+  "strokeWidth": 1,
+  "roughness": 0,
+  "roundness": {
+   "type": 3
+  }
+ },
+ {
+  "type": "text",
+  "id": "tr_code",
+  "x": 60,
+  "y": 652,
+  "text": "-> functionCall  trending({ \"mode\": \"new\" })\n<- result        [{ \"name\": \"Peel Of\", \"new\": \"opening\",\n                    \"halal\": \"not confirmed\", \"trending_score\": 100 }, ...]\n-> answer        \"Peel Of (Blok M Hub) - banana cake, open kitchen\n                  (halal not confirmed) ...\"",
+  "fontSize": 15,
+  "fontFamily": 3,
+  "strokeColor": "#22c55e"
+ }
+]

@@ -1,0 +1,705 @@
+[
+ {
+  "type": "text",
+  "id": "title",
+  "x": 40,
+  "y": 24,
+  "text": "Food Scout: Blok M - how it works",
+  "fontSize": 34,
+  "fontFamily": 5,
+  "strokeColor": "#1e40af"
+ },
+ {
+  "type": "text",
+  "id": "subtitle",
+  "x": 40,
+  "y": 72,
+  "text": "free, real data  ->  evidence-checked places  ->  AI that runs in your browser",
+  "fontSize": 20,
+  "fontFamily": 5,
+  "strokeColor": "#64748b"
+ },
+ {
+  "type": "text",
+  "id": "s1",
+  "x": 40,
+  "y": 130,
+  "text": "1. sources",
+  "fontSize": 24,
+  "fontFamily": 5,
+  "strokeColor": "#c2410c"
+ },
+ {
+  "type": "ellipse",
+  "id": "src_osm",
+  "x": 40,
+  "y": 175,
+  "width": 250,
+  "height": 86,
+  "strokeColor": "#c2410c",
+  "backgroundColor": "#fed7aa",
+  "fillStyle": "solid",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "label": {
+   "text": "OpenStreetMap\n95 venues",
+   "fontSize": 18,
+   "fontFamily": 5,
+   "strokeColor": "#7c2d12"
+  }
+ },
+ {
+  "type": "ellipse",
+  "id": "src_yt",
+  "x": 40,
+  "y": 285,
+  "width": 250,
+  "height": 86,
+  "strokeColor": "#c2410c",
+  "backgroundColor": "#fed7aa",
+  "fillStyle": "solid",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "label": {
+   "text": "YouTube vlogs\n611 videos",
+   "fontSize": 18,
+   "fontFamily": 5,
+   "strokeColor": "#7c2d12"
+  }
+ },
+ {
+  "type": "ellipse",
+  "id": "src_web",
+  "x": 40,
+  "y": 395,
+  "width": 250,
+  "height": 86,
+  "strokeColor": "#c2410c",
+  "backgroundColor": "#fed7aa",
+  "fillStyle": "solid",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "label": {
+   "text": "web articles\nTavily search",
+   "fontSize": 18,
+   "fontFamily": 5,
+   "strokeColor": "#7c2d12"
+  }
+ },
+ {
+  "type": "text",
+  "id": "s2",
+  "x": 380,
+  "y": 130,
+  "text": "2. pipeline - twice a week on GitHub Actions",
+  "fontSize": 24,
+  "fontFamily": 5,
+  "strokeColor": "#1e40af"
+ },
+ {
+  "type": "rectangle",
+  "id": "p_discover",
+  "x": 380,
+  "y": 240,
+  "width": 170,
+  "height": 96,
+  "strokeColor": "#6d28d9",
+  "backgroundColor": "#ddd6fe",
+  "fillStyle": "solid",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "roundness": {
+   "type": 3
+  },
+  "label": {
+   "text": "discover\nLLM pulls place\nnames from text",
+   "fontSize": 17,
+   "fontFamily": 5,
+   "strokeColor": "#4c1d95"
+  }
+ },
+ {
+  "type": "rectangle",
+  "id": "p_resolve",
+  "x": 590,
+  "y": 240,
+  "width": 170,
+  "height": 96,
+  "strokeColor": "#1e3a5f",
+  "backgroundColor": "#dbeafe",
+  "fillStyle": "solid",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "roundness": {
+   "type": 3
+  },
+  "label": {
+   "text": "resolve\nmerge, match OSM,\ngeocode",
+   "fontSize": 17,
+   "fontFamily": 5,
+   "strokeColor": "#1e3a5f"
+  }
+ },
+ {
+  "type": "rectangle",
+  "id": "p_structure",
+  "x": 800,
+  "y": 240,
+  "width": 170,
+  "height": 96,
+  "strokeColor": "#6d28d9",
+  "backgroundColor": "#ddd6fe",
+  "fillStyle": "solid",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "roundness": {
+   "type": 3
+  },
+  "label": {
+   "text": "structure\nLLM writes record\n+ cites quotes",
+   "fontSize": 17,
+   "fontFamily": 5,
+   "strokeColor": "#4c1d95"
+  }
+ },
+ {
+  "type": "diamond",
+  "id": "p_verify",
+  "x": 1005,
+  "y": 208,
+  "width": 190,
+  "height": 160,
+  "strokeColor": "#b45309",
+  "backgroundColor": "#fef3c7",
+  "fillStyle": "solid",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "label": {
+   "text": "code\nverifies",
+   "fontSize": 19,
+   "fontFamily": 5,
+   "strokeColor": "#78350f"
+  }
+ },
+ {
+  "type": "rectangle",
+  "id": "p_score",
+  "x": 1235,
+  "y": 240,
+  "width": 170,
+  "height": 96,
+  "strokeColor": "#1e3a5f",
+  "backgroundColor": "#dbeafe",
+  "fillStyle": "solid",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "roundness": {
+   "type": 3
+  },
+  "label": {
+   "text": "score + index\nbuzz, work score,\nMiniLM / CLIP",
+   "fontSize": 17,
+   "fontFamily": 5,
+   "strokeColor": "#1e3a5f"
+  }
+ },
+ {
+  "type": "arrow",
+  "id": "a_osm",
+  "x": 292,
+  "y": 218,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    86,
+    52
+   ]
+  ],
+  "strokeColor": "#c2410c",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "start": {
+   "id": "src_osm"
+  },
+  "end": {
+   "id": "p_discover"
+  }
+ },
+ {
+  "type": "arrow",
+  "id": "a_yt",
+  "x": 292,
+  "y": 328,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    86,
+    -30
+   ]
+  ],
+  "strokeColor": "#c2410c",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "start": {
+   "id": "src_yt"
+  },
+  "end": {
+   "id": "p_discover"
+  }
+ },
+ {
+  "type": "arrow",
+  "id": "a_web",
+  "x": 292,
+  "y": 438,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    86,
+    -118
+   ]
+  ],
+  "strokeColor": "#c2410c",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "start": {
+   "id": "src_web"
+  },
+  "end": {
+   "id": "p_discover"
+  }
+ },
+ {
+  "type": "arrow",
+  "id": "a_d_r",
+  "x": 552,
+  "y": 288,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    36,
+    0
+   ]
+  ],
+  "strokeColor": "#1e3a5f",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "start": {
+   "id": "p_discover"
+  },
+  "end": {
+   "id": "p_resolve"
+  }
+ },
+ {
+  "type": "arrow",
+  "id": "a_r_s",
+  "x": 762,
+  "y": 288,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    36,
+    0
+   ]
+  ],
+  "strokeColor": "#1e3a5f",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "start": {
+   "id": "p_resolve"
+  },
+  "end": {
+   "id": "p_structure"
+  }
+ },
+ {
+  "type": "arrow",
+  "id": "a_s_v",
+  "x": 972,
+  "y": 288,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    31,
+    0
+   ]
+  ],
+  "strokeColor": "#1e3a5f",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "start": {
+   "id": "p_structure"
+  },
+  "end": {
+   "id": "p_verify"
+  }
+ },
+ {
+  "type": "arrow",
+  "id": "a_v_sc",
+  "x": 1197,
+  "y": 288,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    36,
+    0
+   ]
+  ],
+  "strokeColor": "#047857",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "start": {
+   "id": "p_verify"
+  },
+  "end": {
+   "id": "p_score"
+  }
+ },
+ {
+  "type": "text",
+  "id": "rej_title",
+  "x": 1010,
+  "y": 392,
+  "text": "rejected by code, not by the LLM:",
+  "fontSize": 17,
+  "fontFamily": 5,
+  "strokeColor": "#b91c1c"
+ },
+ {
+  "type": "text",
+  "id": "rej_1",
+  "x": 1010,
+  "y": 420,
+  "text": "x  quote not found in the source",
+  "fontSize": 16,
+  "fontFamily": 5,
+  "strokeColor": "#b91c1c"
+ },
+ {
+  "type": "text",
+  "id": "rej_2",
+  "x": 1010,
+  "y": 446,
+  "text": "x  \"halal\" found inside \"non halal\"",
+  "fontSize": 16,
+  "fontFamily": 5,
+  "strokeColor": "#b91c1c"
+ },
+ {
+  "type": "text",
+  "id": "rej_3",
+  "x": 1010,
+  "y": 472,
+  "text": "x  diet claim with no evidence",
+  "fontSize": 16,
+  "fontFamily": 5,
+  "strokeColor": "#b91c1c"
+ },
+ {
+  "type": "text",
+  "id": "rej_4",
+  "x": 1010,
+  "y": 498,
+  "text": "x  new place with 1 source (unless a\n    video is dedicated to it)",
+  "fontSize": 16,
+  "fontFamily": 5,
+  "strokeColor": "#b91c1c"
+ },
+ {
+  "type": "text",
+  "id": "ev_label",
+  "x": 380,
+  "y": 372,
+  "text": "what a verified claim looks like (web/data/places.json)",
+  "fontSize": 16,
+  "fontFamily": 5,
+  "strokeColor": "#64748b"
+ },
+ {
+  "type": "rectangle",
+  "id": "ev_box",
+  "x": 380,
+  "y": 400,
+  "width": 590,
+  "height": 140,
+  "strokeColor": "#1e293b",
+  "backgroundColor": "#1e293b",
+  "fillStyle": "solid",
+  "strokeWidth": 1,
+  "roughness": 0,
+  "roundness": {
+   "type": 3
+  }
+ },
+ {
+  "type": "text",
+  "id": "ev_code",
+  "x": 400,
+  "y": 414,
+  "text": "\"halal\": {\n  \"value\": \"yes\",\n  \"confidence\": \"medium\",   // 1 source = medium, 2+ = high\n  \"evidence\": [{ \"source_type\": \"article\",\n    \"quote\": \"Ramen halal ini bikin aku lupa...\" }]\n}",
+  "fontSize": 15,
+  "fontFamily": 3,
+  "strokeColor": "#22c55e"
+ },
+ {
+  "type": "text",
+  "id": "s3",
+  "x": 1020,
+  "y": 572,
+  "text": "3. human gate",
+  "fontSize": 24,
+  "fontFamily": 5,
+  "strokeColor": "#b45309"
+ },
+ {
+  "type": "rectangle",
+  "id": "g_pr",
+  "x": 1235,
+  "y": 540,
+  "width": 170,
+  "height": 96,
+  "strokeColor": "#b45309",
+  "backgroundColor": "#fef3c7",
+  "fillStyle": "solid",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "roundness": {
+   "type": 3
+  },
+  "label": {
+   "text": "pull request\nowner reviews\nthe data diff",
+   "fontSize": 17,
+   "fontFamily": 5,
+   "strokeColor": "#78350f"
+  }
+ },
+ {
+  "type": "arrow",
+  "id": "a_sc_pr",
+  "x": 1320,
+  "y": 338,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    200
+   ]
+  ],
+  "strokeColor": "#1e3a5f",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "start": {
+   "id": "p_score"
+  },
+  "end": {
+   "id": "g_pr"
+  }
+ },
+ {
+  "type": "rectangle",
+  "id": "o_json",
+  "x": 1235,
+  "y": 720,
+  "width": 170,
+  "height": 96,
+  "strokeColor": "#047857",
+  "backgroundColor": "#a7f3d0",
+  "fillStyle": "solid",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "roundness": {
+   "type": 3
+  },
+  "label": {
+   "text": "published JSON\nplaces + vectors\n~1.3 MB",
+   "fontSize": 17,
+   "fontFamily": 5,
+   "strokeColor": "#064e3b"
+  }
+ },
+ {
+  "type": "arrow",
+  "id": "a_pr_json",
+  "x": 1320,
+  "y": 638,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    80
+   ]
+  ],
+  "strokeColor": "#047857",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "start": {
+   "id": "g_pr"
+  },
+  "end": {
+   "id": "o_json"
+  },
+  "label": {
+   "text": "merge",
+   "fontSize": 14,
+   "fontFamily": 5,
+   "strokeColor": "#047857"
+  }
+ },
+ {
+  "type": "text",
+  "id": "s4",
+  "x": 40,
+  "y": 620,
+  "text": "4. static site on GitHub Pages - everything below runs in the visitor's browser",
+  "fontSize": 24,
+  "fontFamily": 5,
+  "strokeColor": "#1e40af"
+ },
+ {
+  "type": "rectangle",
+  "id": "site",
+  "x": 40,
+  "y": 670,
+  "width": 1110,
+  "height": 200,
+  "strokeColor": "#1e3a5f",
+  "backgroundColor": "transparent",
+  "fillStyle": "solid",
+  "strokeWidth": 2,
+  "strokeStyle": "dashed",
+  "roughness": 1,
+  "roundness": {
+   "type": 3
+  }
+ },
+ {
+  "type": "rectangle",
+  "id": "f_search",
+  "x": 70,
+  "y": 705,
+  "width": 320,
+  "height": 100,
+  "strokeColor": "#1e3a5f",
+  "backgroundColor": "#dbeafe",
+  "fillStyle": "solid",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "roundness": {
+   "type": 3
+  },
+  "label": {
+   "text": "search + vibe match\nMiniLM + CLIP via transformers.js\n(same models as the index)",
+   "fontSize": 17,
+   "fontFamily": 5,
+   "strokeColor": "#1e3a5f"
+  }
+ },
+ {
+  "type": "rectangle",
+  "id": "f_buzz",
+  "x": 425,
+  "y": 705,
+  "width": 320,
+  "height": 100,
+  "strokeColor": "#1e3a5f",
+  "backgroundColor": "#dbeafe",
+  "fillStyle": "solid",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "roundness": {
+   "type": 3
+  },
+  "label": {
+   "text": "buzz, work spots,\ngroup pick, map\nplain JavaScript",
+   "fontSize": 17,
+   "fontFamily": 5,
+   "strokeColor": "#1e3a5f"
+  }
+ },
+ {
+  "type": "rectangle",
+  "id": "f_chat",
+  "x": 780,
+  "y": 705,
+  "width": 330,
+  "height": 100,
+  "strokeColor": "#6d28d9",
+  "backgroundColor": "#ddd6fe",
+  "fillStyle": "solid",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "roundness": {
+   "type": 3
+  },
+  "label": {
+   "text": "chat agent\nGemini + function calling\nvisitor's own API key",
+   "fontSize": 17,
+   "fontFamily": 5,
+   "strokeColor": "#4c1d95"
+  }
+ },
+ {
+  "type": "text",
+  "id": "site_note",
+  "x": 70,
+  "y": 830,
+  "text": "the owner's API keys live only in GitHub Secrets - the site never sees them",
+  "fontSize": 17,
+  "fontFamily": 5,
+  "strokeColor": "#047857"
+ },
+ {
+  "type": "arrow",
+  "id": "a_json_site",
+  "x": 1233,
+  "y": 768,
+  "points": [
+   [
+    0,
+    0
+   ],
+   [
+    -81,
+    0
+   ]
+  ],
+  "strokeColor": "#047857",
+  "strokeWidth": 2,
+  "roughness": 1,
+  "start": {
+   "id": "o_json"
+  },
+  "end": {
+   "id": "site"
+  }
+ }
+]

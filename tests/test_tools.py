@@ -5,7 +5,6 @@ import json
 import sys
 from pathlib import Path
 
-import pytest
 from fastmcp import Client
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "app"))
@@ -110,3 +109,36 @@ def test_vibe_match_photo_finds_its_own_place(tmp_path):
     data = call("vibe_match_photo", {"image_path": str(img), "k": 3})
     assert data["results"][0]["id"] == p["id"], "a place's own thumbnail should be its best match"
     assert data["results"][0]["photo_similarity"] > 0.95
+
+
+def test_halal_filter_requires_trusted_confidence():
+    data = call("search_places", {"query": "food", "halal_only": True, "k": 10})
+    for r in data["results"]:
+        assert r["halal"].startswith("yes (high") or r["halal"].startswith("yes (medium"), r["halal"]
+
+
+def test_no_diet_claim_without_evidence():
+    for p in places().values():
+        for name in ("halal", "vegetarian_friendly"):
+            s = p["signals"][name]
+            if s["value"] != "unknown" and s["confidence"] != "high":
+                assert s["evidence"], f"{p['name']}.{name} has a claim but no evidence"
+
+
+def test_published_text_has_no_links_or_markup():
+    for p in places().values():
+        for field in (p["name"], p["summary"], p.get("address") or "", *p["vibe_tags"], *p["cuisine"]):
+            assert "<" not in field and ">" not in field and "http" not in field.lower(), (p["name"], field)
+
+
+def test_photo_tool_rejects_paths_outside_uploads():
+    import pytest
+    from server import safe_image_path
+    for bad in (str(Path(__file__)), r"\attacker\share\x.jpg", "//attacker/share/x.jpg"):
+        with pytest.raises(ValueError):
+            safe_image_path(bad)
+
+
+def test_agent_cannot_call_photo_tool():
+    import agent
+    assert "vibe_match_photo" not in agent.AGENT_TOOLS

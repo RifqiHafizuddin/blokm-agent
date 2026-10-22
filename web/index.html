@@ -6,7 +6,9 @@
   <title>Food Scout: Blok M</title>
   <meta name="description" content="Where to eat, work and hang out in Blok M, Jakarta. A multimodal food guide grounded in real vlogs, articles and maps, with AI search running in your browser.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍜</text></svg>">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' blob: https://unpkg.com https://cdn.jsdelivr.net 'wasm-unsafe-eval' 'sha256-imjEpOpREM0vstO6TobOoQmgIE0xAiXXalWO/+RavL0='; style-src 'self' https://unpkg.com; img-src 'self' data: blob: https://i.ytimg.com https://*.tile.openstreetmap.org; connect-src 'self' blob: data: https://huggingface.co https://*.huggingface.co https://*.hf.co https://cdn.jsdelivr.net https://generativelanguage.googleapis.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -41,7 +43,7 @@
             <option>dessert</option><option>bakery</option><option>bar</option><option>food_court</option>
           </select>
         </label>
-        <label><input type="checkbox" id="f-halal"> Halal confirmed</label>
+        <label title="Only places with high or medium confidence evidence"><input type="checkbox" id="f-halal"> Halal confirmed</label>
         <label><input type="checkbox" id="f-veg"> Vegetarian-friendly</label>
         <label>Max Rp/person <input id="f-price" type="number" min="0" step="5000" placeholder="no limit"></label>
       </div>
@@ -111,15 +113,15 @@
 
     <section id="tab-chat" class="panel" role="tabpanel" hidden>
       <p class="hint">The chat agent runs on Google Gemini with <b>your own free API key</b>
-        (<a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">get one</a>).
-        The key stays in your browser and is sent only to Google. The agent calls the same search tools as this page.</p>
+        (<a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener noreferrer">get one</a>).
+        The key stays in this browser tab and is sent only to Google. The agent calls the same search tools as this page.</p>
       <div class="key-row">
         <input id="api-key" type="password" placeholder="Gemini API key" autocomplete="off" aria-label="Gemini API key">
-        <label class="inline"><input type="checkbox" id="remember-key"> Remember on this device</label>
+        <label class="inline"><input type="checkbox" id="remember-key"> Remember until I close this tab</label>
       </div>
       <div class="chat-log" id="chat-log" aria-live="polite"></div>
       <form id="chat-form" class="search-row">
-        <input id="chat-input" type="text" placeholder="e.g. “ramen halal yang enak” or “cafe buat nugas yang ada colokan”" autocomplete="off">
+        <input id="chat-input" type="text" maxlength="500" placeholder="e.g. “ramen halal yang enak” or “cafe buat nugas yang ada colokan”" autocomplete="off">
         <button type="submit" class="primary">Send</button>
       </form>
     </section>
@@ -139,17 +141,19 @@
       <p>Search and Vibe Match run in your browser (MiniLM and CLIP via transformers.js), so this site needs no server.
         The data refreshes weekly via GitHub Actions.</p>
       <p class="warn">Signals come from public mentions and can be wrong or outdated. Check halal status at the venue.</p>
-      <p>Data: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors (ODbL) ·
+      <p>Data: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors (ODbL) ·
         video data via the YouTube Data API · web search via Tavily.
-        Code: <a href="https://github.com/RifqiHafizuddin/blokm-agent" target="_blank" rel="noopener">github.com/RifqiHafizuddin/blokm-agent</a></p>
+        Code: <a href="https://github.com/RifqiHafizuddin/blokm-agent" target="_blank" rel="noopener noreferrer">github.com/RifqiHafizuddin/blokm-agent</a></p>
       <p class="muted" id="built-on"></p>
     </section>
   </main>
 
   <footer class="wrap muted small">Map data © OpenStreetMap contributors ·
-    Built by <a href="https://github.com/RifqiHafizuddin" target="_blank" rel="noopener">@RifqiHafizuddin</a></footer>
+    Built by <a href="https://github.com/RifqiHafizuddin" target="_blank" rel="noopener noreferrer">@RifqiHafizuddin</a></footer>
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
+  <script type="importmap">{"imports":{"transformers":"https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.0/dist/transformers.min.js"},"integrity":{"https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.0/dist/transformers.min.js":"sha384-qgXJ7dcf8bYoYbel57c9rhOd7qRdLSraaF9XvjXERQll0Pf5e/HV8CDccvn3xgTp"}}</script>
   <script type="module" src="app.js"></script>
 </body>
 </html>

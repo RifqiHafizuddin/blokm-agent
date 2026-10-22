@@ -8,7 +8,7 @@ pillow==12.3.0
 pydantic==2.14.1
 python-dotenv==1.2.4
 RapidFuzz==3.10.1
-requests==2.32.3
+requests==2.34.2
 sentence-transformers==6.1.0
 torch==2.14.1+cpu
 transformers==5.20.2

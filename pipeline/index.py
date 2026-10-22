@@ -34,6 +34,9 @@ def metadata(p: dict) -> dict:
         "lat": p["lat"], "lon": p["lon"], "location_precision": p["location_precision"],
         "price_idr": p["price_idr_per_person"] or 0, "halal": s["halal"]["value"],
         "halal_confidence": s["halal"]["confidence"], "vegetarian": s["vegetarian_friendly"]["value"],
+        "halal_ok": s["halal"]["value"] == "yes" and s["halal"]["confidence"] in ("high", "medium"),
+        "vegetarian_ok": (s["vegetarian_friendly"]["value"] == "yes"
+                          and s["vegetarian_friendly"]["confidence"] in ("high", "medium")),
         "wifi": s["wifi"]["value"], "wfc_score": p["wfc_score"],
         "trending_score": p["buzz"]["trending_score"], "favorite_score": p["buzz"]["favorite_score"],
     }

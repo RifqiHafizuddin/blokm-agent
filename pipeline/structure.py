@@ -123,16 +123,37 @@ def clean_spaces(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip().lower()
 
 
+NEGATION = re.compile(r"(non|tidak|bukan|belum|not|no|tanpa|without)[\s-]*$")
+NEGATIVE_TERMS = ("non halal", "non-halal", "nonhalal", "tidak halal", "bukan halal", "belum halal",
+                  "babi", "pork", "lard", "b2", "bpk")
+DIET_SIGNALS = ("halal", "vegetarian_friendly")
+
+
 def verified(cites: list[Cite], sources: dict) -> list[dict]:
+    """Keep only quotes that really appear in the cited source. Exact match, or a near match for long
+    quotes only (a short word like "halal" must match exactly). Records the 20 characters before
+    the quote so negations ("non halal", "tidak halal") can be detected."""
     out = []
     for c in cites:
         src = sources.get(c.source.strip("[]"))
-        if not src or not c.quote.strip():
+        q = clean_spaces(c.quote)
+        if not src or len(q) < 3:
             continue
-        q, text = clean_spaces(c.quote), clean_spaces(src["text"] + " " + src.get("title", ""))
-        if q in text or fuzz.partial_ratio(q, text) >= 90:
-            out.append({"source_type": src["type"], "url": src["url"], "quote": c.quote.strip()})
+        text = clean_spaces(src["text"] + " " + src.get("title", ""))
+        i = text.find(q)
+        if i < 0 and not (len(q) >= 20 and fuzz.partial_ratio(q, text) >= 95):
+            continue
+        out.append({"source_type": src["type"], "url": src["url"], "quote": c.quote.strip()[:300],
+                    "_before": text[max(0, i - 20):i] if i >= 0 else ""})
     return out
+
+
+def supports(name: str, value: str, e: dict) -> bool:
+    """Does this quote support the claimed value? Guards against "halal" matched inside "non halal"."""
+    if name != "halal" or value != "yes":
+        return True
+    q = clean_spaces(e["quote"])
+    return not NEGATION.search(e["_before"]) and not any(t in q for t in NEGATIVE_TERMS)
 
 
 def osm_signal(tags: dict, name: str):
@@ -148,16 +169,28 @@ def osm_signal(tags: dict, name: str):
 
 
 def finalize_signal(name: str, out: SignalOut, sources: dict, tags: dict) -> dict:
-    ev = verified(out.evidence, sources)
+    ev = [e for e in verified(out.evidence, sources) if supports(name, out.value, e)]
+    for e in ev:
+        e.pop("_before", None)
     osm_val = osm_signal(tags, name)
     if osm_val:
         ev.insert(0, {"source_type": "osm", "url": "https://www.openstreetmap.org", "quote": f"OSM tag: {name}={osm_val}"})
         return {"value": osm_val, "confidence": "high", "evidence": ev}
-    if out.value == "unknown":
-        return {"value": "unknown", "confidence": "none", "evidence": []}
+    if out.value == "unknown" or (name in DIET_SIGNALS and not ev):
+        return {"value": "unknown", "confidence": "none", "evidence": []}  # diet claims are never inferred
     independent = {e["url"] + ("#comments" if e["source_type"] == "comment" else "") for e in ev}
     conf = "high" if len(independent) >= 2 else "medium" if independent else "low"
+    if name in DIET_SIGNALS and all(e["source_type"] == "comment" for e in ev):
+        conf = "low"  # anonymous viewer comments alone never make a diet claim more than low
     return {"value": out.value, "confidence": conf, "evidence": ev}
+
+
+URLISH = re.compile(r"(https?://|www\.)\S*|[<>]", re.I)
+
+
+def tidy(text, limit: int) -> str:
+    """Free LLM text is published: strip links and markup, collapse whitespace, cap the length."""
+    return re.sub(r"\s+", " ", URLISH.sub("", str(text or ""))).strip()[:limit]
 
 
 def run_batch(docs: list[str], prefer: str) -> dict:
@@ -230,16 +263,21 @@ def main():
             continue
         tags = p.get("osm_tags", {})
         relocate(p, out.address)
+        price_ev = [{k: v for k, v in e.items() if k != "_before"} for e in verified(out.price_evidence, sources)]
+        if out.price_idr_per_person and not 1000 <= out.price_idr_per_person <= 2_000_000:
+            price_ev = []  # implausible per-person price: drop it
         final.append({
-            "id": p["id"], "name": out.clean_name, "lat": p["lat"], "lon": p["lon"],
+            "id": p["id"], "name": tidy(out.clean_name, 80) or tidy(p["name"], 80), "lat": p["lat"], "lon": p["lon"],
             "location_precision": p["location_precision"], "area_hint": p.get("area_hint", ""),
-            "address": out.address, "origin": p["origin"], "category": out.category,
-            "cuisine": out.cuisine or p.get("cuisine", []),
-            "price_idr_per_person": out.price_idr_per_person if verified(out.price_evidence, sources) else None,
-            "price_evidence": verified(out.price_evidence, sources),
-            "vibe_tags": [t.lower() for t in out.vibe_tags][:5], "summary": out.summary,
+            "address": tidy(out.address, 200) or None, "origin": p["origin"], "category": out.category,
+            "cuisine": [tidy(c, 30) for c in (out.cuisine or p.get("cuisine", []))][:3],
+            "price_idr_per_person": out.price_idr_per_person if price_ev else None,
+            "price_evidence": price_ev,
+            "vibe_tags": [tidy(t, 30).lower() for t in out.vibe_tags if tidy(t, 30)][:5],
+            "summary": tidy(out.summary, 400),
             "signals": {s: finalize_signal(s, getattr(out.signals, s), sources, tags) for s in SIGNALS},
             "osm_tags": tags, "mentions": p["mentions"], "n_sources": p["n_sources"],
+            "single_source": p.get("single_source"),
             "total_views": p["total_views"],
             "videos": [{k: v[k] for k in ("url", "title", "views", "published_at", "solo")}
                        for v in evidence.get(p["id"], {}).get("videos", [])],

@@ -35,6 +35,7 @@ def slim(p: dict) -> dict:
         "videos": sorted(({k: v[k] for k in ("url", "title", "views", "published_at")} for v in p["videos"]),
                          key=lambda v: v["published_at"], reverse=True)[:3],
         "thumb": p["thumbnails"][0]["url"] if p.get("thumbnails") else None,
+        "single_source": p.get("single_source"),
     }
 
 

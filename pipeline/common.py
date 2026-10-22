@@ -75,6 +75,31 @@ def http(method: str, url: str, retries: int = 6, **kwargs) -> requests.Response
     raise RuntimeError(f"{method} {url} failed after {retries} attempts")
 
 
+class BudgetExceeded(RuntimeError):
+    pass
+
+
+TAVILY_MAX_CALLS = int(os.environ.get("TAVILY_MAX_CALLS", "400"))  # new (uncached) searches per run
+_tavily_calls = [0]
+
+
+def tavily_search(cache_key: str, body: dict) -> dict:
+    """Cached Tavily search with a hard cap on paid-for calls per run (cache hits are free)."""
+    def call():
+        if _tavily_calls[0] >= TAVILY_MAX_CALLS:
+            raise BudgetExceeded(f"Tavily cap of {TAVILY_MAX_CALLS} new searches reached")
+        _tavily_calls[0] += 1
+        return http("POST", "https://api.tavily.com/search",
+                    headers={"Authorization": f"Bearer {os.environ['TAVILY_API_KEY']}"}, json=body).json()
+    return cached("tavily", cache_key, call)
+
+
+def youtube_get(endpoint: str, retries: int = 6, **params) -> dict:
+    """YouTube Data API call with the key in a header, so it never appears in URLs or error messages."""
+    return http("GET", f"https://www.googleapis.com/youtube/v3/{endpoint}", params=params, retries=retries,
+                headers={"X-Goog-Api-Key": os.environ["YOUTUBE_API_KEY"]}).json()
+
+
 def _parse_json(text: str) -> dict:
     text = re.sub(r"<think>.*?</think>", "", text, flags=re.S).strip()
     text = text.removeprefix("```json").removeprefix("```").removesuffix("```").strip()

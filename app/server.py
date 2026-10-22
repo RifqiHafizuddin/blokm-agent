@@ -3,7 +3,9 @@
 Tools: search_places, get_place, vibe_match_photo, trending, work_spots, group_pick.
 All tools are deterministic (no LLM calls), so the server itself never touches LLM quotas."""
 import json
+import os
 import sys
+import tempfile
 from functools import lru_cache
 from pathlib import Path
 from typing import Optional
@@ -58,17 +60,48 @@ def embed_text(texts: list[str]) -> np.ndarray:
     return text_model().encode(texts, normalize_embeddings=True)
 
 
+MAX_IMAGE_BYTES = 10 * 1024 * 1024
+UPLOAD_ROOTS = [Path(tempfile.gettempdir()).resolve()] + (
+    [Path(os.environ["GRADIO_TEMP_DIR"]).resolve()] if os.environ.get("GRADIO_TEMP_DIR") else [])
+
+
+def safe_image_path(path: str) -> Path:
+    """Only read uploaded images from the temp folder (where Gradio stores uploads): no arbitrary
+    local files, no network (UNC) paths, no huge files."""
+    if path.startswith(("\\\\", "//")):
+        raise ValueError("network paths are not allowed")
+    p = Path(path).resolve()
+    if not any(p.is_relative_to(root) for root in UPLOAD_ROOTS):
+        raise ValueError("only uploaded images can be used")
+    if not p.is_file() or p.stat().st_size > MAX_IMAGE_BYTES:
+        raise ValueError("image missing or too large")
+    return p
+
+
 def embed_image(path: str) -> np.ndarray:
     import torch
     from PIL import Image
     model, processor = clip()
     with torch.no_grad():
-        pixels = processor(images=[Image.open(path).convert("RGB")], return_tensors="pt")["pixel_values"]
+        pixels = processor(images=[Image.open(safe_image_path(path)).convert("RGB")], return_tensors="pt")["pixel_values"]
         f = model.visual_projection(model.vision_model(pixel_values=pixels).pooler_output)
     return (f / f.norm(dim=-1, keepdim=True)).numpy()[0]
 
 
 # ---------- formatting ----------
+
+TRUSTED = ("high", "medium")
+
+
+def confirmed(signal: dict) -> bool:
+    """A "yes" counts for filters only at high or medium confidence (low = a single comment or a photo guess)."""
+    return signal["value"] == "yes" and signal["confidence"] in TRUSTED
+
+
+def halal_label(s: dict) -> str:
+    if s["value"] == "unknown" or (s["value"] == "yes" and s["confidence"] not in TRUSTED):
+        return "not confirmed" if s["value"] == "unknown" else "unconfirmed (low confidence)"
+    return f'{s["value"]} ({s["confidence"]} confidence)'
 
 def card(p: dict, **extra) -> dict:
     """Compact view of a place for tool results."""
@@ -76,8 +109,7 @@ def card(p: dict, **extra) -> dict:
     return {
         "id": p["id"], "name": p["name"], "category": p["category"], "cuisine": p["cuisine"],
         "price_idr_per_person": p["price_idr_per_person"],
-        "halal": ("not confirmed" if s["halal"]["value"] == "unknown"
-                  else f'{s["halal"]["value"]} ({s["halal"]["confidence"]} confidence)'),
+        "halal": halal_label(s["halal"]),
         "vegetarian_friendly": s["vegetarian_friendly"]["value"],
         "work_from_cafe_score": p["wfc_score"], "trending_score": p["buzz"]["trending_score"],
         "favorite_score": p["buzz"]["favorite_score"],
@@ -107,9 +139,9 @@ def build_where(category, halal_only, vegetarian_only, max_price_idr) -> Optiona
     if category:
         clauses.append({"category": category})
     if halal_only:
-        clauses.append({"halal": "yes"})
+        clauses.append({"halal_ok": True})
     if vegetarian_only:
-        clauses.append({"vegetarian": "yes"})
+        clauses.append({"vegetarian_ok": True})
     if max_price_idr:
         clauses += [{"price_idr": {"$gt": 0}}, {"price_idr": {"$lte": max_price_idr}}]
     return None if not clauses else clauses[0] if len(clauses) == 1 else {"$and": clauses}
@@ -127,7 +159,7 @@ def search_places(query: str, category: Optional[str] = None, halal_only: bool =
     """Semantic search over Blok M food places.
     query: what the user wants, e.g. "cozy ramen spot" or "cheap padang food".
     category: optional, one of cafe, restaurant, street_food, dessert, bakery, bar, food_court.
-    halal_only / vegetarian_only: only places with that signal = yes.
+    halal_only / vegetarian_only: only places where that signal is "yes" with high or medium confidence.
     max_price_idr: only places with a known price per person at or below this (IDR)."""
     text_col, _ = chroma()
     where = build_where(category, halal_only, vegetarian_only, max_price_idr)
@@ -216,7 +248,7 @@ def work_spots(k: int = 5, halal_only: bool = False) -> str:
     """Best places to work or study (WFC / nugas): ranked by the work-from-cafe score (0-10)
     from wifi, power outlets, quiet and long-stay evidence, with each signal shown."""
     ps = [p for p in places().values() if p["wfc_score"] > 0
-          and (not halal_only or p["signals"]["halal"]["value"] == "yes")]
+          and (not halal_only or confirmed(p["signals"]["halal"]))]
     ps.sort(key=lambda p: (-p["wfc_score"], -p["wfc_evidence"]))
     ps = [places()[pid] for pid in unique_by_name([p["id"] for p in ps])]
     def fmt(sig):
@@ -234,12 +266,13 @@ def group_pick(members: list[dict], k: int = 3) -> str:
     against what they want, and places are ranked by the LEAST happy member's score (maximin),
     so nobody is left out. Returns each member's fit so the trade-offs can be explained."""
     text_col, _ = chroma()
+    members = members[:10]  # bound the work per call
     pool = list(places().values())
     for m in members:
         if m.get("halal"):
-            pool = [p for p in pool if p["signals"]["halal"]["value"] == "yes"]
+            pool = [p for p in pool if confirmed(p["signals"]["halal"])]
         if m.get("vegetarian"):
-            pool = [p for p in pool if p["signals"]["vegetarian_friendly"]["value"] == "yes"]
+            pool = [p for p in pool if confirmed(p["signals"]["vegetarian_friendly"])]
         if m.get("max_price_idr"):
             pool = [p for p in pool if not p["price_idr_per_person"] or p["price_idr_per_person"] <= m["max_price_idr"]]
     if not pool:

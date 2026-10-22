@@ -2,11 +2,14 @@
 
 Collects videos (with view counts) and articles about Blok M food, then asks an LLM
 to extract the specific places each one mentions, with a supporting quote."""
-import os
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 
-from common import RAW, cached, http, llm_json, write_json
+import re
+
+from rapidfuzz import fuzz
+
+from common import RAW, BudgetExceeded, cached, llm_json, tavily_search, write_json, youtube_get
 
 YT_QUERIES = [
     ("kuliner blok m", "relevance"),
@@ -58,9 +61,7 @@ Rules:
 - If no places are mentioned, return {"places": []}."""
 
 
-def yt_get(endpoint: str, **params) -> dict:
-    params["key"] = os.environ["YOUTUBE_API_KEY"]
-    return http("GET", f"https://www.googleapis.com/youtube/v3/{endpoint}", params=params).json()
+yt_get = youtube_get
 
 
 def recent_after() -> str:
@@ -116,10 +117,11 @@ def fetch_articles() -> list[dict]:
         if time_range:
             body["time_range"] = time_range
         key = q if not time_range else f"{q}|{time_range}|{today}"
-        res = cached("tavily", key, lambda: http(
-            "POST", "https://api.tavily.com/search",
-            headers={"Authorization": f"Bearer {os.environ['TAVILY_API_KEY']}"}, json=body,
-        ).json())
+        try:
+            res = tavily_search(key, body)
+        except BudgetExceeded as e:
+            print(f"  {e}; skipping the remaining article searches")
+            break
         for r in res.get("results", []):
             text = r.get("raw_content") or r.get("content") or ""
             if r["url"] not in seen and any(k in text.lower() for k in AREA_KEYWORDS):
@@ -130,12 +132,32 @@ def fetch_articles() -> list[dict]:
     return list(seen.values())
 
 
+def _clean(s: str) -> str:
+    return re.sub(r"\s+", " ", s).strip().lower()
+
+
+def grounded(places: list[dict], doc_text: str) -> list[dict]:
+    """Keep only what the source really says (defence against hallucination and prompt injection):
+    the place name must appear in the document, and a quote is kept only if it is verbatim."""
+    text = _clean(doc_text)
+    out = []
+    for p in places:
+        name = str(p.get("name") or "").strip()[:80]
+        if len(name) < 3 or fuzz.partial_ratio(_clean(name), text) < 90:
+            continue
+        quote = str(p.get("quote") or "").strip()[:300]
+        out.append({**p, "name": name, "area_hint": str(p.get("area_hint") or "").strip()[:120],
+                    "quote": quote if quote and _clean(quote) in text else ""})
+    return out
+
+
 def extract(doc_text: str, prefer: str) -> list[dict]:
     try:
-        return llm_json(EXTRACT_SYSTEM, doc_text, cache_ns="extract", prefer=prefer).get("places", [])
+        places = llm_json(EXTRACT_SYSTEM, doc_text, cache_ns="extract", prefer=prefer).get("places", [])
     except Exception as e:
         print(f"  extraction failed: {str(e)[:100]}")
         return []
+    return grounded([p for p in places if isinstance(p, dict)], doc_text)
 
 
 def main():
@@ -163,7 +185,7 @@ def main():
         places = extract(text, prefer="groq" if i % 2 == 0 else "flash")
         if (i + 1) % 20 == 0:
             print(f"  {i + 1}/{len(jobs)} documents done")
-        return [{**p, **meta} for p in places if p.get("name")]
+        return [{**p, **meta} for p in places]
 
     with ThreadPoolExecutor(max_workers=2) as pool:
         results = list(pool.map(run, enumerate(jobs)))

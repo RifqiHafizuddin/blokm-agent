@@ -1,15 +1,25 @@
-# Weekly data refresh: rerun the pipeline so "Trending now" and "New spots" stay current,
-# then commit the updated data. "Deploy site" runs automatically afterwards.
-# API responses are cached between runs (actions/cache), so a refresh only pays for what's new.
+# Data refresh: rerun the pipeline so "Trending now" and "New spots" stay current, then open a
+# pull request with the new data. Nothing reaches the live site until the owner reviews and merges
+# the PR (merging changes web/data, which triggers "Deploy site").
+#
+# Hardening: secrets are only visible to the pipeline step; dependencies are installed from a
+# hash-locked file; no git credentials are stored while third-party code runs; actions are pinned
+# to commit SHAs; new Tavily searches are capped per run. API responses are cached between runs,
+# and the twice-weekly schedule keeps that cache from expiring (GitHub evicts after 7 idle days).
 name: Refresh data
 
 on:
   schedule:
-    - cron: "0 1 * * 1"   # Mondays 01:00 UTC (08:00 in Jakarta)
+    - cron: "0 1 * * 1,4"   # Mondays and Thursdays, 01:00 UTC (08:00 in Jakarta)
   workflow_dispatch:
+    inputs:
+      tavily_cap:
+        description: "Max new Tavily searches this run (use ~300 for the first run with an empty cache)"
+        default: "60"
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: refresh
@@ -19,32 +29,24 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 90
-    env:
-      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-      TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
-      PYTHONUNBUFFERED: "1"
-      HF_HUB_DISABLE_PROGRESS_BARS: "1"
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
-      - name: Check secrets
-        run: |
-          for k in GEMINI_API_KEY GROQ_API_KEY YOUTUBE_API_KEY TAVILY_API_KEY; do
-            if [ -z "${!k}" ]; then echo "::error::Missing repository secret $k"; exit 1; fi
-          done
-
-      - uses: actions/setup-python@v7
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.12"
           cache: pip
+          cache-dependency-path: requirements-lock.txt
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - name: Install dependencies (hash-locked, no secrets in this step)
+        run: >
+          pip install --require-hashes --no-deps -r requirements-lock.txt
+          --extra-index-url https://download.pytorch.org/whl/cpu
 
       - name: Restore API cache
-        uses: actions/cache@v6
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: |
             data/cache
@@ -54,7 +56,18 @@ jobs:
 
       - name: Run pipeline
         working-directory: pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          TAVILY_MAX_CALLS: ${{ inputs.tavily_cap || '60' }}
+          PYTHONUNBUFFERED: "1"
+          HF_HUB_DISABLE_PROGRESS_BARS: "1"
         run: |
+          for k in GEMINI_API_KEY GROQ_API_KEY YOUTUBE_API_KEY TAVILY_API_KEY; do
+            if [ -z "${!k}" ]; then echo "::error::Missing repository secret $k"; exit 1; fi
+          done
           python seed_osm.py
           python discover.py
           python resolve.py
@@ -66,14 +79,22 @@ jobs:
           python index.py
           python export_web.py
 
-      - name: Commit updated data
+      - name: Open a pull request with the new data
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/places.json data/places_raw.json data/vectors.json data/coverage_report.md web/data
-          if git diff --cached --quiet; then
-            echo "No data changes."
+          if git diff --cached --quiet; then echo "No data changes."; exit 0; fi
+          git checkout -B data-refresh
+          git commit -m "Data refresh ($(date -u +%Y-%m-%d))"
+          git push --force "https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git" data-refresh
+          if gh pr view data-refresh --json state -q .state 2>/dev/null | grep -q OPEN; then
+            echo "Updated the open data-refresh pull request."
           else
-            git commit -m "Weekly data refresh ($(date -u +%Y-%m-%d))"
-            git push
+            gh pr create --head data-refresh --base main --title "Data refresh ($(date -u +%Y-%m-%d))" \
+              --body "Automated pipeline refresh. Review the place changes (new places, halal signals) before merging; merging deploys the site." \
+              || echo "::warning::Could not open the PR automatically. Allow GitHub Actions to create pull requests in Settings > Actions > General, or open it from the data-refresh branch."
           fi
