@@ -27,7 +27,7 @@ jobs:
       PYTHONUNBUFFERED: "1"
       HF_HUB_DISABLE_PROGRESS_BARS: "1"
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Check secrets
         run: |
@@ -35,7 +35,7 @@ jobs:
             if [ -z "${!k}" ]; then echo "::error::Missing repository secret $k"; exit 1; fi
           done
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
@@ -44,7 +44,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Restore API cache
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: |
             data/cache
