@@ -2,30 +2,30 @@
 
 | Metric | Value |
 |---|---|
-| Mentions extracted from videos and articles | 537 |
-| Distinct place names | 269 |
-| **Places in dataset** | **194** |
-| From OSM | 95 (with social evidence: 21) |
-| Newly discovered | 99 |
-| Location: osm / exact / landmark / area | 95 / 5 / 42 / 52 |
-| Unresolved (1 mention, no location) | 149 |
+| Mentions extracted from videos and articles | 586 |
+| Distinct place names | 288 |
+| **Places in dataset** | **199** |
+| From OSM | 95 (with social evidence: 17) |
+| Newly discovered | 104 |
+| Location: osm / exact / landmark / area | 95 / 2 / 39 / 63 |
+| Unresolved (1 mention, no location) | 167 |
 
 ## Most-mentioned places
 
 | # | Place | Origin | Location | Sources | Video views |
 |---|---|---|---|---|---|
-| 1 | Bakmi Piring | discovered | area | 10 | 436,350 |
-| 2 | Little Salt Bread | osm | osm | 9 | 616,885 |
-| 3 | Mack's Creamery | osm | osm | 9 | 469,320 |
-| 4 | Filosofi Kopi | discovered | area | 9 | 311,103 |
-| 5 | Artirasa | discovered | area | 8 | 1,306,519 |
-| 6 | OO Donut | discovered | area | 8 | 643,272 |
-| 7 | Mie Ayam Baso Dondon | discovered | landmark | 8 | 621,123 |
-| 8 | Uma Oma Cafe | discovered | area | 8 | 589,240 |
-| 9 | Butter Baby | osm | osm | 8 | 436,742 |
-| 10 | Sarang Semut | discovered | area | 8 | 20,090 |
-| 11 | Kedai Penuh Nikmat | discovered | landmark | 7 | 417,054 |
-| 12 | Obihiro Nikudon | discovered | area | 7 | 203,067 |
-| 13 | Love Cheese | discovered | area | 6 | 1,183,576 |
-| 14 | Echigoya Ramen | discovered | landmark | 6 | 418,974 |
-| 15 | Ayam Renald | discovered | landmark | 6 | 417,536 |
+| 1 | Bakmi Piring | discovered | area | 14 | 438,853 |
+| 2 | Little Salt Bread | osm | osm | 11 | 631,230 |
+| 3 | Obihiro Nikudon | discovered | area | 11 | 228,054 |
+| 4 | Uma Oma Cafe | discovered | area | 10 | 426,073 |
+| 5 | Love Cheese | discovered | area | 9 | 1,196,406 |
+| 6 | Butter Baby | osm | osm | 9 | 441,265 |
+| 7 | Mie Ayam Baso Dondon | discovered | landmark | 8 | 621,217 |
+| 8 | OO Donut | discovered | area | 8 | 478,085 |
+| 9 | Mack's Creamery | osm | osm | 8 | 472,777 |
+| 10 | Filosofi Kopi Melawai | discovered | area | 8 | 140,772 |
+| 11 | Artirasa | discovered | area | 7 | 1,309,808 |
+| 12 | Kedai Penuh Nikmat | discovered | landmark | 7 | 425,553 |
+| 13 | Ayam Renald | discovered | area | 7 | 422,268 |
+| 14 | Echigoya Ramen | discovered | landmark | 7 | 422,197 |
+| 15 | Suasana Kopi | discovered | landmark | 7 | 5,763 |
